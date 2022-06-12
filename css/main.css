@@ -1909,6 +1909,14 @@ header.header {
   }
 }
 
+.footer-inner .vendors-list a {
+  margin-right: 5px;
+}
+
+.footer-inner .vendors-list img {
+  display: inline-block;
+}
+
 .use-motion .footer {
   opacity: 0;
 }
