@@ -14,6 +14,13 @@
 * :pisces: 双鱼座 (Pisces)
 * :gemini: 双子座 (Gemini) (**默认**)
 
+## 预览
+
+| Environment | :gemini: (**Default**) | :heart_decoration: | :six_pointed_star: | :pisces: | Status |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Preliminary | [双子座](https://hugo-next-dev.vercel.app/) | [冥想](https://hugo-next-dev.vercel.app/muse/) | [迷雾](https://hugo-next-dev.vercel.app/mist/) | [双鱼座](https://hugo-next-dev.vercel.app/pisces/) | ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=hugo-next-dev&style=for-the-badge) |
+| Production | [双子座](https://hugo-next-prod.vercel.app/) | [冥想](https://hugo-next-prod.vercel.app/muse/) | [迷雾](https://hugo-next-prod.vercel.app/mist/) | [双鱼座](https://hugo-next-prod.vercel.app/pisces/) | ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=hugo-next-prod&style=for-the-badge) |
+
 ## 开始
 
 在本地安装 Hugo(**extended**) 版本和 `Hugo NexT` 文档站点源码，以及下载 `Hugo NexT` 的主题：
