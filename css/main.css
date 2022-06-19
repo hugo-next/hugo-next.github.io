@@ -1220,11 +1220,10 @@ pre code {
 
 .post-comments .comment-head .comment-switch .first-comment {
   color: #27ae60;
-  font-weight: bold;
 }
 
 .post-comments .comment-head .comment-switch .second-comment {
-  color: #494949;
+  color: #886ce4;
 }
 
 .post-comments .comment-head .comment-switch .switch-btn {
@@ -1258,6 +1257,10 @@ pre code {
   -o-transition: .4s;
   -ms-transition: .4s;
   transition: .4s;
+}
+
+.post-comments .comment-head .comment-switch .switch-btn.move {
+  background-color: #886ce4;
 }
 
 .post-comments .comment-head .comment-switch .switch-btn.move:before {
@@ -3044,7 +3047,7 @@ ul.breadcrumb li:last-child {
 }
 
 .utterances {
-  max-width: unset;
+  min-height: 300px;
 }
 
 .search-active {

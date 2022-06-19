@@ -9,11 +9,10 @@ if (!window.NexT) window.NexT = {};
     "scheme"     : "Muse",
     "darkmode"   : true,
     "version"    : "4.0.0",
-    "exturl"     : false,
     "sidebar"    : {"display":"post","offset":12,"padding":18,"position":"left","width":256},
     "copycode"   : {"enable":false,"style":"default"},
     "bookmark"   : {"color":"#222","enable":true,"save":"auto"},
-    "comments"   : {"active":"waline","enable":true,"nav":[{"color":"#27ae60","name":"Waline","title":"Waline","weight":1},{"color":"#494949","name":"Utterances","title":"Utters","weight":2}],"storage":true},
+    "comments"   : {"active":"waline","enable":true,"nav":[{"color":"#27ae60","name":"Waline","title":"Waline","weight":1},{"color":"#886ce4","name":"Utterances","title":"Utters","weight":2}],"storage":true},
     "mediumzoom" : false,
     "lazyload"   : false,
     "pangu"      : false,
@@ -65,22 +64,6 @@ HTMLElement.prototype.wrap = function(wrapper) {
 })();
 
 NexT.utils = {
-
-  registerExtURL: function() {
-    document.querySelectorAll('span.exturl').forEach(element => {
-      const link = document.createElement('a');
-      // https://stackoverflow.com/questions/30106476/using-javascripts-atob-to-decode-base64-doesnt-properly-decode-utf-8-strings
-      link.href = decodeURIComponent(atob(element.dataset.url).split('').map(c => {
-        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-      }).join(''));
-      link.rel = 'noopener external nofollow noreferrer';
-      link.target = '_blank';
-      link.className = element.className;
-      link.title = element.title;
-      link.innerHTML = element.innerHTML;
-      element.parentNode.replaceChild(link, element);
-    });
-  },
 
   /**
    * One-click copy code support.
@@ -302,6 +285,20 @@ NexT.utils = {
     });
   },
 
+  registerCommonSwitch: function() {
+    const button = document.querySelector('.comment-switch .switch-btn');
+    if (!button) return;
+    const cwrap = document.querySelector('.comment-wrap');
+    button.addEventListener('click', () => {
+      button.classList.toggle('move');
+      const comms = document.querySelectorAll('.comment-wrap > div');
+      let len = comms.length;
+      while(len--){
+        cwrap.appendChild(comms[len]);
+      }
+    });
+  },
+
   activateNavByIndex: function(index) {
     const target = document.querySelectorAll('.post-toc li a.nav-link')[index];
     if (!target || target.classList.contains('active-current')) return;
@@ -481,20 +478,20 @@ NexT.boot.refresh = function() {
    * Register JS handlers by condition option.
    * Need to add config option in Front-End at 'scripts/helpers/next-config.js' file.
    */
-  CONFIG.prism && window.Prism.highlightAll();
+  //CONFIG.prism && window.Prism.highlightAll();
   /*CONFIG.mediumzoom && window.mediumZoom('.post-body :not(a) > img, .post-body > img', {
     background: 'var(--content-bg-color)'
   });*/
   CONFIG.lazyload && window.lozad('.post-body img').observe();
   CONFIG.pangu && window.pangu.spacingPage();
 
-  CONFIG.exturl && NexT.utils.registerExtURL();
   NexT.utils.registerCopyCode();
   NexT.utils.registerTabsTag();
   /*NexT.utils.registerActiveMenuItem();
   NexT.utils.registerLangSelect();*/
   NexT.utils.registerSidebarTOC();
   NexT.utils.registerPostReward();
+  NexT.utils.registerCommonSwitch();
   NexT.utils.wrapTableWithBox();
   NexT.utils.registerVideoIframe();
 };
