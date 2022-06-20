@@ -18,8 +18,8 @@
 
 | Environment | :gemini: (**Default**) | :heart_decoration: | :six_pointed_star: | :pisces: | Status |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| Preliminary | [双子座](https://hugo-next-dev.vercel.app/) | [冥想](https://hugo-next-dev.vercel.app/muse/) | [迷雾](https://hugo-next-dev.vercel.app/mist/) | [双鱼座](https://hugo-next-dev.vercel.app/pisces/) | ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=hugo-next-dev&style=for-the-badge) |
-| Production | [双子座](https://hugo-next-prod.vercel.app/) | [冥想](https://hugo-next-prod.vercel.app/muse/) | [迷雾](https://hugo-next-prod.vercel.app/mist/) | [双鱼座](https://hugo-next-prod.vercel.app/pisces/) | ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=hugo-next-prod&style=for-the-badge) |
+| Preliminary | [双子座](https://preview.hugo-next.eu.org/) | [冥想](https://preview.hugo-next.eu.org/muse/) | [迷雾](https://preview.hugo-next.eu.org/mist/) | [双鱼座](https://preview.hugo-next.eu.org/pisces/) | ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=hugo-next&style=for-the-badge) |
+| Production | [双子座](https://hugo-next.eu.org/) | [冥想](https://hugo-next.eu.org/muse/) | [迷雾](https://hugo-next.eu.org/mist/) | [双鱼座](https://hugo-next.eu.org/pisces/) | ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=hugo-next&style=for-the-badge) |
 
 ## 开始
 
