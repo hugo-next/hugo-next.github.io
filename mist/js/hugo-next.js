@@ -1,147 +1,44 @@
 if (!window.NexT) window.NexT = {};
 
 (function() {
-  const className = 'next-config';
 
-  const staticConfig = {};
-  let variableConfig = {};
-
-  const parse = text => JSON.parse(text || '{}');
-
-  const update = name => {
-    const targetEle = document.querySelector(`.${className}[data-name="${name}"]`);
-    if (!targetEle) return;
-    const parsedConfig = parse(targetEle.text);
-    if (name === 'main') {
-      Object.assign(staticConfig, parsedConfig);
-    } else {
-      variableConfig[name] = parsedConfig;
-    }
+  const siteConfig = {
+    "hostname"   : "/mist",
+    "root"       : "/",
+    "images"     : "imgs",
+    "scheme"     : "Mist",
+    "darkmode"   : true,
+    "version"    : "4.0.0",
+    "sidebar"    : {"display":"post","offset":12,"padding":18,"position":"left","width":256},
+    "copycode"   : {"enable":false,"style":"default"},
+    "bookmark"   : {"color":"#222","enable":true,"save":"auto"},
+    "comments"   : {"active":"waline","enable":true,"nav":[{"color":"#27ae60","name":"Waline","title":"Waline","weight":1},{"color":"#886ce4","name":"Utterances","title":"Utters","weight":2}],"storage":true},
+    "mediumzoom" : false,
+    "lazyload"   : false,
+    "pangu"      : false,
+    "stickytabs" : false,
+    "motion"     : {"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},
+    // TODO Find prismjs 
+    //"prism"    : "",
+    "i18n"       : {
+      "placeholder"  : "",
+      "empty"        : "${query}",
+      "hits_time"    : "'${hits}', '${time}'",
+      "hits"         : "${hits}"
+    },
+    // TODO
+    "path"       : "/search.json",
+    "localsearch": {"enable":true,"preload":false,"top_n_per_article":1,"trigger":"auto","unescape":false},
+    "lang"       : "zh-CN",
+    "permalink"  : "/mist/about.html",
+    "title"      : "关于 Hugo NexT 组织",
+    "isHome"     : false,
+    "isPage"     : true
   };
+  
+  window.CONFIG = new Proxy(siteConfig, {});
 
-  update('main');
-
-  window.CONFIG = new Proxy({}, {
-    get(overrideConfig, name) {
-      let existing;
-      if (name in staticConfig) {
-        existing = staticConfig[name];
-      } else {
-        if (!(name in variableConfig)) update(name);
-        existing = variableConfig[name];
-      }
-
-      // For unset override and mixable existing
-      if (!(name in overrideConfig) && typeof existing === 'object') {
-        // Get ready to mix.
-        overrideConfig[name] = {};
-      }
-
-      if (name in overrideConfig) {
-        const override = overrideConfig[name];
-
-        // When mixable
-        if (typeof override === 'object' && typeof existing === 'object') {
-          // Mix, proxy changes to the override.
-          return new Proxy({ ...existing, ...override }, {
-            set(target, prop, value) {
-              target[prop] = value;
-              override[prop] = value;
-              return true;
-            }
-          });
-        }
-
-        return override;
-      }
-
-      // Only when not mixable and override hasn't been set.
-      return existing;
-    }
-  });
-
-  document.addEventListener('pjax:success', () => {
-    variableConfig = {};
-  });
 })();
-
-;
-/* global NexT, CONFIG */
-
-NexT.boot = {};
-
-NexT.boot.registerEvents = function() {
-
-  NexT.utils.registerScrollPercent();
-  NexT.utils.registerCanIUseTag();
-
-  // Mobile top menu bar.
-  document.querySelector('.site-nav-toggle .toggle').addEventListener('click', event => {
-    event.currentTarget.classList.toggle('toggle-close');
-    const siteNav = document.querySelector('.site-nav');
-    if (!siteNav) return;
-    siteNav.style.setProperty('--scroll-height', siteNav.scrollHeight + 'px');
-    document.body.classList.toggle('site-nav-on');
-  });
-
-  document.querySelectorAll('.sidebar-nav li').forEach((element, index) => {
-    element.addEventListener('click', () => {
-      NexT.utils.activateSidebarPanel(index);
-    });
-  });
-
-  window.addEventListener('hashchange', () => {
-    const tHash = location.hash;
-    if (tHash !== '' && !tHash.match(/%\S{2}/)) {
-      const target = document.querySelector(`.tabs ul.nav-tabs li a[href="${tHash}"]`);
-      target && target.click();
-    }
-  });
-};
-
-NexT.boot.refresh = function() {
-
-  /**
-   * Register JS handlers by condition option.
-   * Need to add config option in Front-End at 'scripts/helpers/next-config.js' file.
-   */
-  CONFIG.prism && window.Prism.highlightAll();
-  /*CONFIG.mediumzoom && window.mediumZoom('.post-body :not(a) > img, .post-body > img', {
-    background: 'var(--content-bg-color)'
-  });*/
-  CONFIG.lazyload && window.lozad('.post-body img').observe();
-  CONFIG.pangu && window.pangu.spacingPage();
-
-  CONFIG.exturl && NexT.utils.registerExtURL();
-  NexT.utils.registerCopyCode();
-  NexT.utils.registerTabsTag();
-  /*NexT.utils.registerActiveMenuItem();
-  NexT.utils.registerLangSelect();*/
-  NexT.utils.registerSidebarTOC();
-  NexT.utils.registerPostReward();
-  NexT.utils.wrapTableWithBox();
-  NexT.utils.registerVideoIframe();
-};
-
-NexT.boot.motion = function() {
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .add(NexT.motion.middleWares.header)
-      .add(NexT.motion.middleWares.postList)
-      .add(NexT.motion.middleWares.sidebar)
-      .add(NexT.motion.middleWares.footer)
-      .bootstrap();
-  }
-  NexT.utils.updateSidebarPosition();
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-  NexT.boot.registerEvents();
-  NexT.boot.refresh();
-  NexT.boot.motion();
-});
-
 ;
 /* global NexT, CONFIG */
 
@@ -168,20 +65,17 @@ HTMLElement.prototype.wrap = function(wrapper) {
 
 NexT.utils = {
 
-  registerExtURL: function() {
-    document.querySelectorAll('span.exturl').forEach(element => {
-      const link = document.createElement('a');
-      // https://stackoverflow.com/questions/30106476/using-javascripts-atob-to-decode-base64-doesnt-properly-decode-utf-8-strings
-      link.href = decodeURIComponent(atob(element.dataset.url).split('').map(c => {
-        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-      }).join(''));
-      link.rel = 'noopener external nofollow noreferrer';
-      link.target = '_blank';
-      link.className = element.className;
-      link.title = element.title;
-      link.innerHTML = element.innerHTML;
-      element.parentNode.replaceChild(link, element);
-    });
+  replacePostCRLink: function() {
+    if (CONFIG.hostname.startsWith('http')) return;
+    // Try to support mutli domain without base URL sets.
+    let href = window.location.href;
+    if (href.indexOf('#')>-1){
+      href = href.split('#')[0];
+    }
+    let postLink = document.getElementById('post-cr-link');
+    if (!postLink) return;
+    postLink.text = href;
+    postLink.href = href;
   },
 
   /**
@@ -404,6 +298,31 @@ NexT.utils = {
     });
   },
 
+  initCommontesDispaly: function(){
+    const comms = document.querySelectorAll('.comment-wrap > div');
+    if (comms.length<=1) return;
+    comms.forEach(function(item){
+      var dis = window.getComputedStyle(item, null).display;
+      item.style.display = dis;
+    });
+  },
+
+  registerCommonSwitch: function() {
+    const button = document.querySelector('.comment-switch .switch-btn');
+    if (!button) return;
+    const comms = document.querySelectorAll('.comment-wrap > div');
+    button.addEventListener('click', () => {
+      button.classList.toggle('move');
+      comms.forEach(function(item){        
+        if (item.style.display === 'none') {
+          item.style.cssText = "display: block; animation: tabshow .8s";
+        } else {
+          item.style.cssText = "display: none;"
+        }
+      });
+    });
+  },
+
   activateNavByIndex: function(index) {
     const target = document.querySelectorAll('.post-toc li a.nav-link')[index];
     if (!target || target.classList.contains('active-current')) return;
@@ -432,7 +351,7 @@ NexT.utils = {
     if (window.innerWidth < 992 || CONFIG.scheme === 'Pisces' || CONFIG.scheme === 'Gemini') return;
     // Expand sidebar on post detail page by default, when post has a toc.
     const hasTOC = document.querySelector('.post-toc');
-    let display = CONFIG.page.sidebar;
+    let display = CONFIG.sidebar;
     if (typeof display !== 'boolean') {
       // There's no definition sidebar in the page front-matter.
       display = CONFIG.sidebar.display === 'always' || (CONFIG.sidebar.display === 'post' && hasTOC);
@@ -542,3 +461,267 @@ NexT.utils = {
     });
   }
 };
+
+;
+/* global NexT, CONFIG */
+
+NexT.boot = {};
+
+NexT.boot.registerEvents = function() {
+
+  NexT.utils.registerScrollPercent();
+  NexT.utils.registerCanIUseTag();
+
+  // Mobile top menu bar.
+  document.querySelector('.site-nav-toggle .toggle').addEventListener('click', event => {
+    event.currentTarget.classList.toggle('toggle-close');
+    const siteNav = document.querySelector('.site-nav');
+    if (!siteNav) return;
+    siteNav.style.setProperty('--scroll-height', siteNav.scrollHeight + 'px');
+    document.body.classList.toggle('site-nav-on');
+  });
+
+  document.querySelectorAll('.sidebar-nav li').forEach((element, index) => {
+    element.addEventListener('click', () => {
+      NexT.utils.activateSidebarPanel(index);
+    });
+  });
+
+  window.addEventListener('hashchange', () => {
+    const tHash = location.hash;
+    if (tHash !== '' && !tHash.match(/%\S{2}/)) {
+      const target = document.querySelector(`.tabs ul.nav-tabs li a[href="${tHash}"]`);
+      target && target.click();
+    }
+  });
+};
+
+NexT.boot.refresh = function() {
+
+  /**
+   * Register JS handlers by condition option.
+   * Need to add config option in Front-End at 'scripts/helpers/next-config.js' file.
+   */
+  //CONFIG.prism && window.Prism.highlightAll();
+  /*CONFIG.mediumzoom && window.mediumZoom('.post-body :not(a) > img, .post-body > img', {
+    background: 'var(--content-bg-color)'
+  });*/
+  CONFIG.lazyload && window.lozad('.post-body img').observe();
+  CONFIG.pangu && window.pangu.spacingPage();
+
+  CONFIG.isPage && NexT.utils.replacePostCRLink();
+  CONFIG.isPage && NexT.utils.registerCopyCode();
+  NexT.utils.registerTabsTag();
+  /*NexT.utils.registerActiveMenuItem();
+  NexT.utils.registerLangSelect();*/
+  CONFIG.isPage && NexT.utils.registerSidebarTOC();
+  CONFIG.isPage && NexT.utils.registerPostReward();
+  CONFIG.isPage && NexT.utils.initCommontesDispaly();
+  CONFIG.isPage && NexT.utils.registerCommonSwitch();
+  NexT.utils.wrapTableWithBox();
+  NexT.utils.registerVideoIframe();
+};
+
+NexT.boot.motion = function() {
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .add(NexT.motion.middleWares.header)
+      .add(NexT.motion.middleWares.postList)
+      .add(NexT.motion.middleWares.sidebar)
+      .add(NexT.motion.middleWares.footer)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  NexT.boot.registerEvents();
+  NexT.boot.refresh();
+  NexT.boot.motion();
+});
+
+;
+/* global NexT, CONFIG */
+
+NexT.motion = {};
+
+NexT.motion.integrator = {
+  queue: [],
+  init : function() {
+    this.queue = [];
+    return this;
+  },
+  add: function(fn) {
+    const sequence = fn();
+    if (CONFIG.motion.async) this.queue.push(sequence);
+    else this.queue = this.queue.concat(sequence);
+    return this;
+  },
+  bootstrap: function() {
+    if (!CONFIG.motion.async) this.queue = [this.queue];
+    this.queue.forEach(sequence => {
+      const timeline = window.anime.timeline({
+        duration: 200,
+        easing  : 'linear'
+      });
+      sequence.forEach(item => {
+        if (item.deltaT) timeline.add(item, item.deltaT);
+        else timeline.add(item);
+      });
+    });
+  }
+};
+
+NexT.motion.middleWares = {
+  header: function() {
+    const sequence = [];
+
+    function getMistLineSettings(targets) {
+      sequence.push({
+        targets,
+        scaleX  : [0, 1],
+        duration: 500,
+        deltaT  : '-=200'
+      });
+    }
+
+    function pushToSequence(targets, sequenceQueue = false) {
+      sequence.push({
+        targets,
+        opacity: 1,
+        top    : 0,
+        deltaT : sequenceQueue ? '-=200' : '-=0'
+      });
+    }
+
+    pushToSequence('header.header');
+    CONFIG.scheme === 'Mist' && getMistLineSettings('.logo-line');
+    CONFIG.scheme === 'Muse' && pushToSequence('.custom-logo-image');
+    pushToSequence('.site-title');
+    pushToSequence('.site-brand-container .toggle', true);
+    pushToSequence('.site-subtitle');
+    (CONFIG.scheme === 'Pisces' || CONFIG.scheme === 'Gemini') && pushToSequence('.custom-logo-image');
+
+    document.querySelectorAll('.menu-item').forEach(targets => {
+      sequence.push({
+        targets,
+        complete: () => targets.classList.add('animated', 'fadeInDown'),
+        deltaT  : '-=200'
+      });
+    });
+
+    return sequence;
+  },
+
+  subMenu: function() {
+    const subMenuItem = document.querySelectorAll('.sub-menu .menu-item');
+    if (subMenuItem.length > 0) {
+      subMenuItem.forEach(element => {
+        element.classList.add('animated');
+      });
+    }
+    return [];
+  },
+
+  postList: function() {
+    const sequence = [];
+    const { postblock, postheader, postbody, collheader } = CONFIG.motion.transition;
+
+    function animate(animation, selector) {
+      if (!animation) return;
+      document.querySelectorAll(selector).forEach(targets => {
+        sequence.push({
+          targets,
+          complete: () => targets.classList.add('animated', animation),
+          deltaT  : '-=100'
+        });
+      });
+    }
+
+    animate(postblock, '.post-block, .pagination, .post-comments');
+    animate(collheader, '.collection-header');
+    animate(postheader, '.post-header');
+    animate(postbody, '.post-body');
+
+    return sequence;
+  },
+
+  sidebar: function() {
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarTransition = CONFIG.motion.transition.sidebar;
+    // Only for Pisces | Gemini.
+    if (sidebarTransition && (CONFIG.scheme === 'Pisces' || CONFIG.scheme === 'Gemini')) {
+      return [{
+        targets : sidebar,
+        complete: () => sidebar.classList.add('animated', sidebarTransition)
+      }];
+    }
+    return [];
+  },
+
+  footer: function() {
+    return [{
+      targets: document.querySelector('.footer'),
+      opacity: 1
+    }];
+  }
+};
+
+;
+/* global CONFIG */
+
+document.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+
+  const doSaveScroll = () => {
+    localStorage.setItem('bookmark' + location.pathname, window.scrollY);
+  };
+
+  const scrollToMark = () => {
+    let top = localStorage.getItem('bookmark' + location.pathname);
+    top = parseInt(top, 10);
+    // If the page opens with a specific hash, just jump out
+    if (!isNaN(top) && location.hash === '') {
+      // Auto scroll to the position
+      window.anime({
+        targets  : document.scrollingElement,
+        duration : 200,
+        easing   : 'linear',
+        scrollTop: top
+      });
+    }
+  };
+  // Register everything
+  const init = function(trigger) {
+    // Create a link element
+    const link = document.querySelector('.book-mark-link');
+    // Scroll event
+    window.addEventListener('scroll', () => link.classList.toggle('book-mark-link-fixed', window.scrollY === 0), { passive: true });
+    // Register beforeunload event when the trigger is auto
+    if (trigger === 'auto') {
+      // Register beforeunload event
+      window.addEventListener('beforeunload', doSaveScroll);
+      document.addEventListener('pjax:send', doSaveScroll);
+    }
+    // Save the position by clicking the icon
+    link.addEventListener('click', () => {
+      doSaveScroll();
+      window.anime({
+        targets : link,
+        duration: 200,
+        easing  : 'linear',
+        top     : -30,
+        complete: () => {
+          setTimeout(() => {
+            link.style.top = '';
+          }, 400);
+        }
+      });
+    });
+    scrollToMark();
+    document.addEventListener('pjax:success', scrollToMark);
+  };
+
+  init(CONFIG.bookmark.save);
+});
