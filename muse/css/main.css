@@ -1211,6 +1211,14 @@ pre code {
   font-size: 2em;
 }
 
+@media (max-width: 991px) {
+  .post-comments .comment-loading {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+  }
+}
+
 .post-comments .comment-head {
   margin-bottom: 20px;
 }
@@ -3410,7 +3418,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #755c95;
+  background: #fdf157;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

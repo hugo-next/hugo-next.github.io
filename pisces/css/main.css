@@ -1211,6 +1211,14 @@ pre code {
   font-size: 2em;
 }
 
+@media (max-width: 991px) {
+  .post-comments .comment-loading {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+  }
+}
+
 .post-comments .comment-head {
   margin-bottom: 20px;
 }
