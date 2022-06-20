@@ -1195,7 +1195,20 @@ pre code {
 
 .post-comments {
   margin-top: 60px;
+  min-height: 300px;
   overflow: hidden;
+}
+
+.post-comments .comment-loading {
+  padding-left: 268px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2em;
 }
 
 .post-comments .comment-head {
@@ -1222,7 +1235,7 @@ pre code {
   padding: 4px 16px;
   width: max-content;
   border-radius: 8px;
-  background: #eee;
+  background: var(--card-bg-color);
 }
 
 @media (max-width: 567px) {
@@ -1283,11 +1296,6 @@ pre code {
   -o-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
-}
-
-.post-comments .comment-wrap .storage {
-  display: block;
-  animation: 0.5s ease 0s 1 normal none running tabshow;
 }
 
 .post-comments .comment-wrap > div:nth-child(1) {
@@ -3067,10 +3075,6 @@ ul.breadcrumb li:last-child {
   }
 }
 
-.utterances {
-  min-height: 300px;
-}
-
 .search-active {
   overflow: hidden;
 }
@@ -3542,7 +3546,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #8c2d56;
+  background: #be10f4;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
