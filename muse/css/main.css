@@ -1209,6 +1209,12 @@ pre code {
   font-size: 1.4em;
 }
 
+@media (max-width: 567px) {
+  .post-comments .comment-head .comment-headline {
+    font-size: 0.8125em;
+  }
+}
+
 .post-comments .comment-head .comment-switch {
   display: inline-block;
   float: right;
@@ -1217,6 +1223,13 @@ pre code {
   width: max-content;
   border-radius: 8px;
   background: #eee;
+}
+
+@media (max-width: 567px) {
+  .post-comments .comment-head .comment-switch {
+    font-size: 0.8125em;
+    padding: 4px;
+  }
 }
 
 .post-comments .comment-head .comment-switch .first-comment {
@@ -1230,7 +1243,7 @@ pre code {
 .post-comments .comment-head .comment-switch .switch-btn {
   position: relative;
   display: inline-block;
-  margin: -4px 8px 0;
+  margin: 5px;
   width: 42px;
   height: 22px;
   border-radius: 34px;
@@ -1270,6 +1283,11 @@ pre code {
   -o-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
+}
+
+.post-comments .comment-wrap .storage {
+  display: block;
+  animation: 0.5s ease 0s 1 normal none running tabshow;
 }
 
 .post-comments .comment-wrap > div:nth-child(1) {
@@ -3388,7 +3406,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #d553ee;
+  background: #4c174c;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
