@@ -3,7 +3,7 @@ if (!window.NexT) window.NexT = {};
 (function() {
 
   const siteConfig = {
-    "hostname"   : "https://hugo-next-dev.vercel.app/mist",
+    "hostname"   : "/mist",
     "root"       : "/",
     "images"     : "imgs",
     "scheme"     : "Mist",
@@ -30,8 +30,8 @@ if (!window.NexT) window.NexT = {};
     "path"       : "/search.json",
     "localsearch": {"enable":true,"preload":false,"top_n_per_article":1,"trigger":"auto","unescape":false},
     "lang"       : "zh-CN",
-    "permalink"  : "https://hugo-next-dev.vercel.app/mist/post/emoji-support.html",
-    "title"      : "支持 Emoji 表情",
+    "permalink"  : "/mist/about.html",
+    "title"      : "关于 Hugo NexT 组织",
     "isHome"     : false,
     "isPage"     : true
   };
@@ -64,6 +64,19 @@ HTMLElement.prototype.wrap = function(wrapper) {
 })();
 
 NexT.utils = {
+
+  replacePostCRLink: function() {
+    if (CONFIG.hostname.startsWith('http')) return;
+    // Try to support mutli domain without base URL sets.
+    let href = window.location.href;
+    if (href.indexOf('#')>-1){
+      href = href.split('#')[0];
+    }
+    let postLink = document.getElementById('post-cr-link');
+    if (!postLink) return;
+    postLink.text = href;
+    postLink.href = href;
+  },
 
   /**
    * One-click copy code support.
@@ -496,14 +509,15 @@ NexT.boot.refresh = function() {
   CONFIG.lazyload && window.lozad('.post-body img').observe();
   CONFIG.pangu && window.pangu.spacingPage();
 
-  NexT.utils.registerCopyCode();
+  CONFIG.isPage && NexT.utils.replacePostCRLink();
+  CONFIG.isPage && NexT.utils.registerCopyCode();
   NexT.utils.registerTabsTag();
   /*NexT.utils.registerActiveMenuItem();
   NexT.utils.registerLangSelect();*/
-  NexT.utils.registerSidebarTOC();
-  NexT.utils.registerPostReward();
-  NexT.utils.initCommontesDispaly();
-  NexT.utils.registerCommonSwitch();
+  CONFIG.isPage && NexT.utils.registerSidebarTOC();
+  CONFIG.isPage && NexT.utils.registerPostReward();
+  CONFIG.isPage && NexT.utils.initCommontesDispaly();
+  CONFIG.isPage && NexT.utils.registerCommonSwitch();
   NexT.utils.wrapTableWithBox();
   NexT.utils.registerVideoIframe();
 };
