@@ -10,7 +10,7 @@ if (!window.NexT) window.NexT = {};
     "darkmode"   : true,
     "version"    : "4.0.0",
     "sidebar"    : {"display":"post","offset":12,"padding":18,"position":"left","width":256},
-    "copycode"   : {"enable":false,"style":"default"},
+    "copycode"   : {"enable":true,"style":"mac"},
     "bookmark"   : {"color":"#222","enable":true,"save":"auto"},
     "comments"   : {"active":"waline","enable":true,"nav":[{"color":"#27ae60","name":"Waline","title":"Waline","weight":1},{"color":"#886ce4","name":"Utterances","title":"Utters","weight":2}],"storage":true},
     "mediumzoom" : false,
@@ -82,15 +82,12 @@ NexT.utils = {
    * One-click copy code support.
    */
   registerCopyCode: function() {
-    let figure = document.querySelectorAll('figure.highlight');
-    if (figure.length === 0) figure = document.querySelectorAll('pre:not(.mermaid)');
+    let figure = document.querySelectorAll('.highlight pre');
+    if (figure.length === 0 || !CONFIG.copycode) return;
     figure.forEach(element => {
-      element.querySelectorAll('.code .line span').forEach(span => {
-        span.classList.forEach(name => {
-          span.classList.replace(name, `hljs-${name}`);
-        });
-      });
-      if (!CONFIG.copycode) return;
+      let cn = element.querySelector('code').className;
+      // TODO seems hard code need find other ways fixed it.
+      if (cn == '') return;
       element.insertAdjacentHTML('beforeend', '<div class="copy-btn"><i class="fa fa-copy fa-fw"></i></div>');
       const button = element.querySelector('.copy-btn');
       button.addEventListener('click', () => {

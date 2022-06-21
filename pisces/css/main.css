@@ -20,10 +20,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: white;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #000;
-  --highlight-foreground: #222;
-  --highlight-gutter-background: #030303;
-  --highlight-gutter-foreground: #1f1f1f;
+  --highlight-background: #fff;
+  --highlight-foreground: #555;
+  --highlight-gutter-background: #eeeeee;
+  --highlight-gutter-foreground: #666666;
   color-scheme: light;
 }
 
@@ -48,10 +48,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #000;
-    --highlight-foreground: #222;
-    --highlight-gutter-background: #030303;
-    --highlight-gutter-foreground: #1f1f1f;
+    --highlight-background: #1c1b1b;
+    --highlight-foreground: #fff;
+    --highlight-gutter-background: #333232;
+    --highlight-gutter-foreground: #e8e8e8;
     color-scheme: dark;
   }
   img {
@@ -600,48 +600,71 @@ td {
   transform: rotate(-45deg);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  @import '(theme.darkmode && theme.highlight.enable && theme.highlight.dark.file) ? theme.highlight.dark.file : null';
-  @import '(theme.darkmode && theme.prism.enable && theme.prism.dark) ? theme.prism.dark : null';
-} */
-kbd, code, pre, figure.highlight {
+.highlight:hover .copy-btn, pre:hover .copy-btn {
+  opacity: 1;
+}
+
+.highlight {
+  background: var(--highlight-background);
+}
+
+.highlight .table-container, .highlight pre {
+  position: relative;
+}
+
+.highlight .table-container table tbody tr {
+  background: none;
+}
+
+.copy-btn {
+  color: #333;
+  cursor: pointer;
+  line-height: 1.6;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  transition: opacity 0.2s ease-in-out;
+  background: var(--highlight-background);
+  color: var(--highlight-foreground);
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.highlight {
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.4);
+  padding-top: 30px;
+}
+
+.highlight .table-container {
+  border-radius: 0 0 5px 5px;
+}
+
+.highlight::before {
+  background: #fc625d;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  margin-top: -20px;
+  margin-left: 10px;
+  position: absolute;
+  border-radius: 50%;
+  content: ' ';
+  height: 12px;
+  width: 12px;
+}
+
+kbd {
   background: var(--highlight-background);
   color: var(--highlight-foreground);
 }
 
-pre, figure.highlight {
-  line-height: 1.6;
-  margin: 0 auto 20px;
-}
-
-pre .caption, pre figcaption, figure.highlight figcaption {
-  background: var(--highlight-gutter-background);
-  color: var(--highlight-foreground);
-  display: flow-root;
-  font-size: 0.875em;
-  line-height: 1.2;
-  padding: .5em;
-}
-
-pre .caption a, pre figcaption a, figure.highlight figcaption a {
-  color: var(--highlight-foreground);
-  float: right;
-}
-
-pre .caption a:hover, pre figcaption a:hover, figure.highlight figcaption a:hover {
-  border-bottom-color: var(--highlight-foreground);
+pre {
+  padding: 10px;
 }
 
 pre, code {
   font-family: codes, consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
-  color: #fff;
-}
-
-code {
-  border-radius: 3px;
-  font-size: 0.875em;
-  padding: 2px 4px;
-  overflow-wrap: break-word;
 }
 
 kbd {
@@ -651,76 +674,6 @@ kbd {
   font-family: inherit;
   padding: .1em .3em;
   white-space: nowrap;
-  color: #fff;
-}
-
-figure.highlight {
-  position: relative;
-}
-
-figure.highlight pre {
-  border: 0;
-  margin: 0;
-  padding: 10px 0;
-}
-
-figure.highlight table {
-  border: 0;
-  margin: 0;
-  width: auto;
-}
-
-figure.highlight td {
-  border: 0;
-  padding: 0;
-}
-
-figure.highlight .gutter {
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-figure.highlight .gutter pre {
-  background: var(--highlight-gutter-background);
-  color: var(--highlight-gutter-foreground);
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: right;
-}
-
-figure.highlight .code pre {
-  padding-left: 10px;
-  width: 100%;
-}
-
-figure.highlight .marked {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-pre .caption, pre figcaption {
-  margin-bottom: 10px;
-}
-
-.gist table {
-  width: auto;
-}
-
-.gist table td {
-  border: 0;
-}
-
-pre {
-  overflow: auto;
-  padding: 10px;
-  position: relative;
-}
-
-pre code {
-  background: none;
-  padding: 0;
-  text-shadow: none;
 }
 
 .blockquote-center {
