@@ -1319,6 +1319,21 @@ pre code {
   animation: fa-spin .8s infinite linear;
 }
 
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
+}
+
 @-moz-keyframes tabshow {
   0% {
     -webkit-transform: translateY(15px);
@@ -2218,23 +2233,28 @@ header.header {
   display: inline-block;
 }
 
-.use-motion .footer {
-  opacity: 0;
+.footer-inner .vendors-list a:nth-child(1) img {
+  width: 50px;
 }
 
-@keyframes icon-animate {
-  0%, 100% {
-    transform: scale(1);
+@media (max-width: 767px) {
+  .footer-inner .vendors-list a:nth-child(1) img {
+    width: 40px;
   }
-  10%, 30% {
-    transform: scale(0.9);
+}
+
+.footer-inner .vendors-list a:nth-child(2) img {
+  width: 43px;
+}
+
+@media (max-width: 767px) {
+  .footer-inner .vendors-list a:nth-child(2) img {
+    width: 33px;
   }
-  20%, 40%, 60%, 80% {
-    transform: scale(1.1);
-  }
-  50%, 70% {
-    transform: scale(1.1);
-  }
+}
+
+.use-motion .footer {
+  opacity: 0;
 }
 
 .languages {
@@ -2260,7 +2280,7 @@ header.header {
   color: #ff0000;
   display: inline-block;
   margin: 0 5px;
-  animation: icon-animate 1.33s ease-in-out infinite;
+  animation: beat 1.33s ease-in-out infinite;
 }
 
 .beian img {
@@ -3803,7 +3823,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #eb3bf2;
+  background: #614a66;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
