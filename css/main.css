@@ -661,6 +661,7 @@ kbd {
 
 pre {
   padding: 10px;
+  margin: 0;
 }
 
 pre, code {

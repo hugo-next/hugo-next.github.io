@@ -661,6 +661,7 @@ kbd {
 
 pre {
   padding: 10px;
+  margin: 0;
 }
 
 pre, code {
@@ -3640,7 +3641,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #7e9c03;
+  background: #c8b003;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
