@@ -20,10 +20,10 @@
   --btn-default-hover-bg: white;
   --btn-default-hover-color: #222;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #fff;
-  --highlight-foreground: #555;
-  --highlight-gutter-background: #eeeeee;
-  --highlight-gutter-foreground: #666666;
+  --highlight-background: #565656;
+  --highlight-foreground: #fff;
+  --highlight-gutter-background: #676767;
+  --highlight-gutter-foreground: #eeeeee;
   color-scheme: light;
 }
 
@@ -654,7 +654,7 @@ td {
   width: 12px;
 }
 
-kbd {
+kbd, p > code {
   background: var(--highlight-background);
   color: var(--highlight-foreground);
 }
@@ -662,6 +662,11 @@ kbd {
 pre {
   padding: 10px;
   margin: 0;
+}
+
+p > code {
+  border-radius: 3px;
+  padding: 3px 6px;
 }
 
 pre, code {
@@ -3641,7 +3646,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #c8b003;
+  background: #87494c;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
