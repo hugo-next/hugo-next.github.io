@@ -2744,10 +2744,6 @@ header.header {
   height: 0;
 }
 
-#busuanzi_container_page_pv {
-  display: inline-block;
-}
-
 .post-nav {
   border-top: 1px solid #eee;
   display: flex;
@@ -3646,7 +3642,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #243101;
+  background: #bbf01c;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

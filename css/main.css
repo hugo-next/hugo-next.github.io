@@ -2747,10 +2747,6 @@ header.header {
   height: 0;
 }
 
-#busuanzi_container_page_pv {
-  display: inline-block;
-}
-
 .post-nav {
   border-top: 1px solid #eee;
   display: flex;

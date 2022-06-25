@@ -30,8 +30,8 @@ if (!window.NexT) window.NexT = {};
     "path"       : "/search.json",
     "localsearch": {"enable":true,"preload":false,"top_n_per_article":1,"trigger":"auto","unescape":false},
     "lang"       : "zh-CN",
-    "permalink"  : "/post/emoji-support.html",
-    "title"      : "支持 Emoji 表情",
+    "permalink"  : "/about.html",
+    "title"      : "关于 Hugo NexT 组织",
     "isHome"     : false,
     "isPage"     : true
   };
