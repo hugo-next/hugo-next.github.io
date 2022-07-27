@@ -20,10 +20,10 @@
   --btn-default-hover-bg: white;
   --btn-default-hover-color: #222;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #000;
-  --highlight-foreground: #222;
-  --highlight-gutter-background: #030303;
-  --highlight-gutter-foreground: #1f1f1f;
+  --highlight-background: #565656;
+  --highlight-foreground: #fff;
+  --highlight-gutter-background: #676767;
+  --highlight-gutter-foreground: #eeeeee;
   color-scheme: light;
 }
 
@@ -48,10 +48,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #000;
-    --highlight-foreground: #222;
-    --highlight-gutter-background: #030303;
-    --highlight-gutter-foreground: #1f1f1f;
+    --highlight-background: #1c1b1b;
+    --highlight-foreground: #fff;
+    --highlight-gutter-background: #333232;
+    --highlight-gutter-foreground: #e8e8e8;
     color-scheme: dark;
   }
   img {
@@ -402,6 +402,7 @@ body {
   min-height: 100%;
   position: relative;
   transition: padding 0.2s ease-in-out;
+  overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -600,48 +601,77 @@ td {
   transform: rotate(-45deg);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  @import '(theme.darkmode && theme.highlight.enable && theme.highlight.dark.file) ? theme.highlight.dark.file : null';
-  @import '(theme.darkmode && theme.prism.enable && theme.prism.dark) ? theme.prism.dark : null';
-} */
-kbd, code, pre, figure.highlight {
+.highlight {
+  background: var(--highlight-background);
+}
+
+.highlight .table-container, .highlight pre {
+  position: relative;
+}
+
+.highlight .table-container table tbody tr {
+  background: none;
+}
+
+.highlight:hover .copy-btn, pre:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn {
+  color: #333;
+  cursor: pointer;
+  line-height: 1.6;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  transition: opacity 0.2s ease-in-out;
+  background: var(--highlight-background);
+  color: var(--highlight-foreground);
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.highlight {
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.4);
+  padding-top: 30px;
+}
+
+.highlight .table-container {
+  border-radius: 0 0 5px 5px;
+}
+
+.highlight::before {
+  background: #fc625d;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  margin-top: -20px;
+  margin-left: 10px;
+  position: absolute;
+  border-radius: 50%;
+  content: ' ';
+  height: 12px;
+  width: 12px;
+}
+
+kbd, p > code, li > code {
   background: var(--highlight-background);
   color: var(--highlight-foreground);
 }
 
-pre, figure.highlight {
-  line-height: 1.6;
-  margin: 0 auto 20px;
+pre {
+  padding: 10px;
+  margin: 0;
 }
 
-pre .caption, pre figcaption, figure.highlight figcaption {
-  background: var(--highlight-gutter-background);
-  color: var(--highlight-foreground);
-  display: flow-root;
-  font-size: 0.875em;
-  line-height: 1.2;
-  padding: .5em;
-}
-
-pre .caption a, pre figcaption a, figure.highlight figcaption a {
-  color: var(--highlight-foreground);
-  float: right;
-}
-
-pre .caption a:hover, pre figcaption a:hover, figure.highlight figcaption a:hover {
-  border-bottom-color: var(--highlight-foreground);
+p > code, li > code {
+  border-radius: 3px;
+  padding: 3px 6px;
 }
 
 pre, code {
   font-family: codes, consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
-  color: #fff;
-}
-
-code {
-  border-radius: 3px;
-  font-size: 0.875em;
-  padding: 2px 4px;
-  overflow-wrap: break-word;
 }
 
 kbd {
@@ -651,76 +681,6 @@ kbd {
   font-family: inherit;
   padding: .1em .3em;
   white-space: nowrap;
-  color: #fff;
-}
-
-figure.highlight {
-  position: relative;
-}
-
-figure.highlight pre {
-  border: 0;
-  margin: 0;
-  padding: 10px 0;
-}
-
-figure.highlight table {
-  border: 0;
-  margin: 0;
-  width: auto;
-}
-
-figure.highlight td {
-  border: 0;
-  padding: 0;
-}
-
-figure.highlight .gutter {
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-figure.highlight .gutter pre {
-  background: var(--highlight-gutter-background);
-  color: var(--highlight-gutter-foreground);
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: right;
-}
-
-figure.highlight .code pre {
-  padding-left: 10px;
-  width: 100%;
-}
-
-figure.highlight .marked {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-pre .caption, pre figcaption {
-  margin-bottom: 10px;
-}
-
-.gist table {
-  width: auto;
-}
-
-.gist table td {
-  border: 0;
-}
-
-pre {
-  overflow: auto;
-  padding: 10px;
-  position: relative;
-}
-
-pre code {
-  background: none;
-  padding: 0;
-  text-shadow: none;
 }
 
 .blockquote-center {
@@ -1254,11 +1214,11 @@ pre code {
 }
 
 .post-comments .comment-head .comment-switch .first-comment {
-  color: #27ae60;
+  color: #886ce4;
 }
 
 .post-comments .comment-head .comment-switch .second-comment {
-  color: #886ce4;
+  color: #27ae60;
 }
 
 .post-comments .comment-head .comment-switch .switch-btn {
@@ -1275,7 +1235,7 @@ pre code {
   -o-transition: .4s;
   -ms-transition: .4s;
   transition: .4s;
-  background-color: #27ae60;
+  background-color: #886ce4;
 }
 
 .post-comments .comment-head .comment-switch .switch-btn:before {
@@ -1295,7 +1255,7 @@ pre code {
 }
 
 .post-comments .comment-head .comment-switch .switch-btn.move {
-  background-color: #886ce4;
+  background-color: #27ae60;
 }
 
 .post-comments .comment-head .comment-switch .switch-btn.move:before {
@@ -1317,6 +1277,21 @@ pre code {
 .fa-spin {
   -webkit-animation: fa-spin .8s infinite linear;
   animation: fa-spin .8s infinite linear;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
 }
 
 @-moz-keyframes tabshow {
@@ -2212,23 +2187,28 @@ header.header {
   display: inline-block;
 }
 
-.use-motion .footer {
-  opacity: 0;
+.footer-inner .vendors-list a:nth-child(1) img {
+  width: 50px;
 }
 
-@keyframes icon-animate {
-  0%, 100% {
-    transform: scale(1);
+@media (max-width: 767px) {
+  .footer-inner .vendors-list a:nth-child(1) img {
+    width: 40px;
   }
-  10%, 30% {
-    transform: scale(0.9);
+}
+
+.footer-inner .vendors-list a:nth-child(2) img {
+  width: 43px;
+}
+
+@media (max-width: 767px) {
+  .footer-inner .vendors-list a:nth-child(2) img {
+    width: 33px;
   }
-  20%, 40%, 60%, 80% {
-    transform: scale(1.1);
-  }
-  50%, 70% {
-    transform: scale(1.1);
-  }
+}
+
+.use-motion .footer {
+  opacity: 0;
 }
 
 .languages {
@@ -2254,21 +2234,13 @@ header.header {
   color: #ff0000;
   display: inline-block;
   margin: 0 5px;
-  animation: icon-animate 1.33s ease-in-out infinite;
+  animation: beat 1.33s ease-in-out infinite;
 }
 
 .beian img {
   display: inline-block;
   margin: 0 3px;
   vertical-align: middle;
-}
-
-.busuanzi-count #busuanzi_container_site_uv {
-  display: none;
-}
-
-.busuanzi-count #busuanzi_container_site_pv {
-  display: none;
 }
 
 /*
@@ -2351,11 +2323,6 @@ header.header {
   position: fixed;
   z-index: 30;
   left: 30px;
-  width: 24px;
-}
-
-.back-to-top span {
-  display: none;
 }
 
 @media (max-width: 991px) {
@@ -2390,7 +2357,7 @@ header.header {
   z-index: 50;
   width: var(--progress);
   left: 0;
-  bottom: 0;
+  top: 0;
 }
 
 .rtl.post-body p, .rtl.post-body a, .rtl.post-body h1, .rtl.post-body h2, .rtl.post-body h3, .rtl.post-body h4, .rtl.post-body h5, .rtl.post-body h6, .rtl.post-body li, .rtl.post-body ul, .rtl.post-body ol {
@@ -2763,10 +2730,6 @@ header.header {
 .post-meta-break {
   flex-basis: 100%;
   height: 0;
-}
-
-#busuanzi_container_page_pv {
-  display: inline-block;
 }
 
 .post-nav {
@@ -3467,10 +3430,6 @@ mark.search-keyword {
   right: 10px !important;
 }
 
-#livereAdWrapper, #taboola-livere {
-  display: none;
-}
-
 .wl-actions > button:nth-child(3) {
   display: none;
 }
@@ -3667,7 +3626,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #4d6645;
+  background: #e9e426;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
