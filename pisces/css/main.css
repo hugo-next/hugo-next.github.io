@@ -402,6 +402,7 @@ body {
   min-height: 100%;
   position: relative;
   transition: padding 0.2s ease-in-out;
+  overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -600,10 +601,6 @@ td {
   transform: rotate(-45deg);
 }
 
-.highlight:hover .copy-btn, pre:hover .copy-btn {
-  opacity: 1;
-}
-
 .highlight {
   background: var(--highlight-background);
 }
@@ -614,6 +611,10 @@ td {
 
 .highlight .table-container table tbody tr {
   background: none;
+}
+
+.highlight:hover .copy-btn, pre:hover .copy-btn {
+  opacity: 1;
 }
 
 .copy-btn {
@@ -654,7 +655,7 @@ td {
   width: 12px;
 }
 
-kbd, p > code {
+kbd, p > code, li > code {
   background: var(--highlight-background);
   color: var(--highlight-foreground);
 }
@@ -664,7 +665,7 @@ pre {
   margin: 0;
 }
 
-p > code {
+p > code, li > code {
   border-radius: 3px;
   padding: 3px 6px;
 }
@@ -1213,11 +1214,11 @@ kbd {
 }
 
 .post-comments .comment-head .comment-switch .first-comment {
-  color: #27ae60;
+  color: #886ce4;
 }
 
 .post-comments .comment-head .comment-switch .second-comment {
-  color: #886ce4;
+  color: #27ae60;
 }
 
 .post-comments .comment-head .comment-switch .switch-btn {
@@ -1234,7 +1235,7 @@ kbd {
   -o-transition: .4s;
   -ms-transition: .4s;
   transition: .4s;
-  background-color: #27ae60;
+  background-color: #886ce4;
 }
 
 .post-comments .comment-head .comment-switch .switch-btn:before {
@@ -1254,7 +1255,7 @@ kbd {
 }
 
 .post-comments .comment-head .comment-switch .switch-btn.move {
-  background-color: #886ce4;
+  background-color: #27ae60;
 }
 
 .post-comments .comment-head .comment-switch .switch-btn.move:before {
@@ -2246,14 +2247,6 @@ header.header {
   vertical-align: middle;
 }
 
-.busuanzi-count #busuanzi_container_site_uv {
-  display: none;
-}
-
-.busuanzi-count #busuanzi_container_site_pv {
-  display: none;
-}
-
 /*
 // < 767px
 @include mobile() {
@@ -2334,11 +2327,6 @@ header.header {
   position: fixed;
   z-index: 30;
   right: 30px;
-  width: 24px;
-}
-
-.back-to-top span {
-  display: none;
 }
 
 @media (max-width: 991px) {
@@ -2373,7 +2361,7 @@ header.header {
   z-index: 50;
   width: var(--progress);
   left: 0;
-  bottom: 0;
+  top: 0;
 }
 
 .rtl.post-body p, .rtl.post-body a, .rtl.post-body h1, .rtl.post-body h2, .rtl.post-body h3, .rtl.post-body h4, .rtl.post-body h5, .rtl.post-body h6, .rtl.post-body li, .rtl.post-body ul, .rtl.post-body ol {
@@ -3444,10 +3432,6 @@ mark.search-keyword {
 .gitter-open-chat-button {
   right: auto !important;
   left: 10px !important;
-}
-
-#livereAdWrapper, #taboola-livere {
-  display: none;
 }
 
 .wl-actions > button:nth-child(3) {
