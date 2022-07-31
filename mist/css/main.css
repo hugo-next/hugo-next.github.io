@@ -3762,7 +3762,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #6e41db;
+  background: #7e450f;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
