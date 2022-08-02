@@ -3638,7 +3638,7 @@ ul.breadcrumb li:last-child {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #e2d2bf;
+  background: #3ca107;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
