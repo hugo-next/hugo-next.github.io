@@ -3404,6 +3404,13 @@ ul.breadcrumb li:last-child {
   padding: 5px 0;
 }
 
+mark.search-keyword {
+  background: transparent;
+  border-bottom: 1px dashed #ff2a2a;
+  color: #ff2a2a;
+  font-weight: bold;
+}
+
 .search-input-container {
   flex-grow: 1;
 }

@@ -3400,6 +3400,13 @@ ul.breadcrumb li:last-child {
   padding: 5px 0;
 }
 
+mark.search-keyword {
+  background: transparent;
+  border-bottom: 1px dashed #ff2a2a;
+  color: #ff2a2a;
+  font-weight: bold;
+}
+
 .search-input-container {
   flex-grow: 1;
 }
@@ -3638,7 +3645,7 @@ ul.breadcrumb li:last-child {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #3ca107;
+  background: #327c09;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
