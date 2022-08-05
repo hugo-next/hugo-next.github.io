@@ -29,4 +29,4 @@ Hugo 文档
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
 Hugo
 &lt;i class="fa fa-external-link-alt">&lt;/i>
-&lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item></channel></rss>
+&lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item><item><title>站点示例</title><link>/pisces/flinks.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/pisces/flinks.html</guid><description>如你也正在使用 Hugo NexT 主题，欢迎在 flinks.yaml 文件底部提交贵站的名称，描述，头像，链接等信息，具体格式内容参考如下： 1 2 3 4 - name: NexT 主题 desc: 保持简单的易用性和</description></item></channel></rss>
