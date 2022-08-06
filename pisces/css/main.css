@@ -880,8 +880,9 @@ kbd {
   margin-bottom: 20px;
   padding: 1em;
   position: relative;
-  border: 1px solid #eee;
-  border-left-width: 5px;
+  background: white;
+  border: initial;
+  border-left: 3px solid #eee;
 }
 
 .post-body .note summary {
@@ -907,51 +908,146 @@ kbd {
   margin-bottom: 0;
 }
 
+.post-body .note:not(.no-icon) {
+  padding-left: 2.5em;
+}
+
+.post-body .note:not(.no-icon)::before {
+  font-size: 1.5em;
+  left: .3em;
+  position: absolute;
+  top: calc(50% - 1em);
+}
+
 .post-body .note.default {
+  background: white;
   border-left-color: #777;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-body .note.default {
+    background: #3e3e3e;
+  }
 }
 
 .post-body .note.default h2, .post-body .note.default h3, .post-body .note.default h4, .post-body .note.default h5, .post-body .note.default h6 {
   color: #777;
 }
 
+.post-body .note.default:not(.no-icon)::before {
+  content: "";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #777;
+}
+
 .post-body .note.primary {
+  background: white;
   border-left-color: #6f42c1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-body .note.primary {
+    background: #3e3e3e;
+  }
 }
 
 .post-body .note.primary h2, .post-body .note.primary h3, .post-body .note.primary h4, .post-body .note.primary h5, .post-body .note.primary h6 {
   color: #6f42c1;
 }
 
+.post-body .note.primary:not(.no-icon)::before {
+  content: "";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #6f42c1;
+}
+
 .post-body .note.info {
+  background: white;
   border-left-color: #428bca;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-body .note.info {
+    background: #3e3e3e;
+  }
 }
 
 .post-body .note.info h2, .post-body .note.info h3, .post-body .note.info h4, .post-body .note.info h5, .post-body .note.info h6 {
   color: #428bca;
 }
 
+.post-body .note.info:not(.no-icon)::before {
+  content: "";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #428bca;
+}
+
 .post-body .note.success {
+  background: white;
   border-left-color: #5cb85c;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-body .note.success {
+    background: #3e3e3e;
+  }
 }
 
 .post-body .note.success h2, .post-body .note.success h3, .post-body .note.success h4, .post-body .note.success h5, .post-body .note.success h6 {
   color: #5cb85c;
 }
 
+.post-body .note.success:not(.no-icon)::before {
+  content: "";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #5cb85c;
+}
+
 .post-body .note.warning {
+  background: white;
   border-left-color: #f0ad4e;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-body .note.warning {
+    background: #3e3e3e;
+  }
 }
 
 .post-body .note.warning h2, .post-body .note.warning h3, .post-body .note.warning h4, .post-body .note.warning h5, .post-body .note.warning h6 {
   color: #f0ad4e;
 }
 
+.post-body .note.warning:not(.no-icon)::before {
+  content: "";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #f0ad4e;
+}
+
 .post-body .note.danger {
+  background: white;
   border-left-color: #d9534f;
 }
 
+@media (prefers-color-scheme: dark) {
+  .post-body .note.danger {
+    background: #3e3e3e;
+  }
+}
+
 .post-body .note.danger h2, .post-body .note.danger h3, .post-body .note.danger h4, .post-body .note.danger h5, .post-body .note.danger h6 {
+  color: #d9534f;
+}
+
+.post-body .note.danger:not(.no-icon)::before {
+  content: "";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   color: #d9534f;
 }
 
@@ -2282,6 +2378,9 @@ header.header {
   .post-body .note {
     margin-bottom: 10px !important;
     padding: 10px !important;
+  }
+  .post-body .note:not(.no-icon) {
+    padding-left: 35px !important;
   }
   .post-body .tabs .tab-content .tab-pane {
     padding: 10px 10px 0 !important;
