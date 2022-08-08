@@ -4006,7 +4006,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #2c6634;
+  background: #9d2ae1;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
