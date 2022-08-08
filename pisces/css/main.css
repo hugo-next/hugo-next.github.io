@@ -603,6 +603,7 @@ td {
 
 .highlight {
   background: var(--highlight-background);
+  margin-bottom: 26px;
 }
 
 .highlight .table-container, .highlight pre {
@@ -611,6 +612,10 @@ td {
 
 .highlight .table-container table tbody tr {
   background: none;
+}
+
+.highlight pre > code span {
+  white-space: break-spaces;
 }
 
 .highlight:hover .copy-btn, pre:hover .copy-btn {
