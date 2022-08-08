@@ -616,6 +616,9 @@ td {
 
 .highlight pre > code span {
   white-space: break-spaces;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .highlight:hover .copy-btn, pre:hover .copy-btn {
@@ -3867,7 +3870,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #d12ec8;
+  background: #6293ba;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

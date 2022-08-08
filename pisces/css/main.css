@@ -616,6 +616,9 @@ td {
 
 .highlight pre > code span {
   white-space: break-spaces;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .highlight:hover .copy-btn, pre:hover .copy-btn {
