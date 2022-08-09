@@ -606,12 +606,12 @@ td {
   margin-bottom: 26px;
 }
 
-.highlight .table-container, .highlight pre {
+.highlight pre {
   position: relative;
 }
 
-.highlight .table-container table tbody tr {
-  background: none;
+.highlight table tbody tr {
+  background: #272822;
 }
 
 .highlight pre > code span {
@@ -669,7 +669,7 @@ kbd, p > code, li > code {
 }
 
 pre {
-  padding: 10px;
+  padding: 18px;
   margin: 0;
 }
 
@@ -4006,7 +4006,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #9d2ae1;
+  background: #a4f019;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
