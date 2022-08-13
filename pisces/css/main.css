@@ -2702,6 +2702,10 @@ header.header {
   width: 100%;
 }
 
+.post-body svg {
+  max-width: 98%;
+}
+
 .post-gallery {
   display: flex;
   min-height: 200px;

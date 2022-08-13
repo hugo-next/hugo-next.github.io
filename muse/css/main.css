@@ -2698,6 +2698,10 @@ header.header {
   width: 100%;
 }
 
+.post-body svg {
+  max-width: 98%;
+}
+
 .post-gallery {
   display: flex;
   min-height: 200px;
@@ -3870,7 +3874,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #68eb49;
+  background: #59ced4;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
