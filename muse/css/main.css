@@ -604,6 +604,16 @@ td {
 .highlight {
   background: var(--highlight-background);
   margin-bottom: 26px;
+  /* pre > code span {
+    white-space: break-spaces;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+  } */
+}
+
+.highlight div:first-child {
+  overflow-x: auto;
 }
 
 .highlight pre {
@@ -612,13 +622,6 @@ td {
 
 .highlight table tbody tr {
   background: #272822;
-}
-
-.highlight pre > code span {
-  white-space: break-spaces;
-  overflow: hidden;
-  word-break: break-all;
-  word-wrap: break-word;
 }
 
 .highlight:hover .copy-btn, pre:hover .copy-btn {
@@ -883,7 +886,7 @@ kbd {
   }
 }
 
-.post-body .note {
+.main .note {
   border-radius: 3px;
   margin-bottom: 20px;
   padding: 1em;
@@ -893,166 +896,166 @@ kbd {
   border-left: 3px solid #eee;
 }
 
-.post-body .note summary {
+.main .note summary {
   cursor: pointer;
   outline: 0;
 }
 
-.post-body .note summary p {
+.main .note summary p {
   display: inline;
 }
 
-.post-body .note h2, .post-body .note h3, .post-body .note h4, .post-body .note h5, .post-body .note h6 {
+.main .note h2, .main .note h3, .main .note h4, .main .note h5, .main .note h6 {
   border-bottom: initial;
   margin: 0;
   padding-top: 0;
 }
 
-.post-body .note p:first-child, .post-body .note ul:first-child, .post-body .note ol:first-child, .post-body .note table:first-child, .post-body .note pre:first-child, .post-body .note blockquote:first-child, .post-body .note img:first-child {
+.main .note p:first-child, .main .note ul:first-child, .main .note ol:first-child, .main .note table:first-child, .main .note pre:first-child, .main .note blockquote:first-child, .main .note img:first-child {
   margin-top: 0;
 }
 
-.post-body .note p:last-child, .post-body .note ul:last-child, .post-body .note ol:last-child, .post-body .note table:last-child, .post-body .note pre:last-child, .post-body .note blockquote:last-child, .post-body .note img:last-child {
+.main .note p:last-child, .main .note ul:last-child, .main .note ol:last-child, .main .note table:last-child, .main .note pre:last-child, .main .note blockquote:last-child, .main .note img:last-child {
   margin-bottom: 0;
 }
 
-.post-body .note:not(.no-icon) {
+.main .note:not(.no-icon) {
   padding-left: 2.5em;
 }
 
-.post-body .note:not(.no-icon)::before {
+.main .note:not(.no-icon)::before {
   font-size: 1.5em;
   left: .3em;
   position: absolute;
   top: calc(50% - 1em);
 }
 
-.post-body .note.default {
+.main .note.default {
   background: white;
   border-left-color: #777;
 }
 
 @media (prefers-color-scheme: dark) {
-  .post-body .note.default {
+  .main .note.default {
     background: #3e3e3e;
   }
 }
 
-.post-body .note.default h2, .post-body .note.default h3, .post-body .note.default h4, .post-body .note.default h5, .post-body .note.default h6 {
+.main .note.default h2, .main .note.default h3, .main .note.default h4, .main .note.default h5, .main .note.default h6 {
   color: #777;
 }
 
-.post-body .note.default:not(.no-icon)::before {
+.main .note.default:not(.no-icon)::before {
   content: "";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #777;
 }
 
-.post-body .note.primary {
+.main .note.primary {
   background: white;
   border-left-color: #6f42c1;
 }
 
 @media (prefers-color-scheme: dark) {
-  .post-body .note.primary {
+  .main .note.primary {
     background: #3e3e3e;
   }
 }
 
-.post-body .note.primary h2, .post-body .note.primary h3, .post-body .note.primary h4, .post-body .note.primary h5, .post-body .note.primary h6 {
+.main .note.primary h2, .main .note.primary h3, .main .note.primary h4, .main .note.primary h5, .main .note.primary h6 {
   color: #6f42c1;
 }
 
-.post-body .note.primary:not(.no-icon)::before {
+.main .note.primary:not(.no-icon)::before {
   content: "";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #6f42c1;
 }
 
-.post-body .note.info {
+.main .note.info {
   background: white;
   border-left-color: #428bca;
 }
 
 @media (prefers-color-scheme: dark) {
-  .post-body .note.info {
+  .main .note.info {
     background: #3e3e3e;
   }
 }
 
-.post-body .note.info h2, .post-body .note.info h3, .post-body .note.info h4, .post-body .note.info h5, .post-body .note.info h6 {
+.main .note.info h2, .main .note.info h3, .main .note.info h4, .main .note.info h5, .main .note.info h6 {
   color: #428bca;
 }
 
-.post-body .note.info:not(.no-icon)::before {
+.main .note.info:not(.no-icon)::before {
   content: "";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #428bca;
 }
 
-.post-body .note.success {
+.main .note.success {
   background: white;
   border-left-color: #5cb85c;
 }
 
 @media (prefers-color-scheme: dark) {
-  .post-body .note.success {
+  .main .note.success {
     background: #3e3e3e;
   }
 }
 
-.post-body .note.success h2, .post-body .note.success h3, .post-body .note.success h4, .post-body .note.success h5, .post-body .note.success h6 {
+.main .note.success h2, .main .note.success h3, .main .note.success h4, .main .note.success h5, .main .note.success h6 {
   color: #5cb85c;
 }
 
-.post-body .note.success:not(.no-icon)::before {
+.main .note.success:not(.no-icon)::before {
   content: "";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #5cb85c;
 }
 
-.post-body .note.warning {
+.main .note.warning {
   background: white;
   border-left-color: #f0ad4e;
 }
 
 @media (prefers-color-scheme: dark) {
-  .post-body .note.warning {
+  .main .note.warning {
     background: #3e3e3e;
   }
 }
 
-.post-body .note.warning h2, .post-body .note.warning h3, .post-body .note.warning h4, .post-body .note.warning h5, .post-body .note.warning h6 {
+.main .note.warning h2, .main .note.warning h3, .main .note.warning h4, .main .note.warning h5, .main .note.warning h6 {
   color: #f0ad4e;
 }
 
-.post-body .note.warning:not(.no-icon)::before {
+.main .note.warning:not(.no-icon)::before {
   content: "";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #f0ad4e;
 }
 
-.post-body .note.danger {
+.main .note.danger {
   background: white;
   border-left-color: #d9534f;
 }
 
 @media (prefers-color-scheme: dark) {
-  .post-body .note.danger {
+  .main .note.danger {
     background: #3e3e3e;
   }
 }
 
-.post-body .note.danger h2, .post-body .note.danger h3, .post-body .note.danger h4, .post-body .note.danger h5, .post-body .note.danger h6 {
+.main .note.danger h2, .main .note.danger h3, .main .note.danger h4, .main .note.danger h5, .main .note.danger h6 {
   color: #d9534f;
 }
 
-.post-body .note.danger:not(.no-icon)::before {
+.main .note.danger:not(.no-icon)::before {
   content: "";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
@@ -3438,6 +3441,14 @@ ul.breadcrumb li:last-child {
   box-shadow: 0.6rem 0.5rem 0.3rem var(--body-bg-color);
 }
 
+@media (max-width: 767px) {
+  .flinks-block .flinks-list-items .flinks-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .flinks-block .flinks-list-items .flinks-list-item:hover:before, .flinks-block .flinks-list-items .flinks-list-item:focus:before, .flinks-block .flinks-list-items .flinks-list-item:active:before {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -3509,9 +3520,21 @@ ul.breadcrumb li:last-child {
   font-weight: bold;
 }
 
+@media (max-width: 767px) {
+  .flinks-block .flinks-list-items .flinks-list-item .flinks-item-name {
+    display: none;
+  }
+}
+
 .flinks-block .flinks-list-items .flinks-list-item .flinks-item-desc {
   padding: 10px 0;
   font-size: .92em;
+}
+
+@media (max-width: 767px) {
+  .flinks-block .flinks-list-items .flinks-list-item .flinks-item-desc {
+    display: none;
+  }
 }
 
 .flinks-block .flinks-page-desc {
@@ -3874,7 +3897,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #59ced4;
+  background: #85afbc;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
