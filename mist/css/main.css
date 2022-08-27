@@ -1817,6 +1817,8 @@ header.header {
 
 .menu-item .fa, .menu-item .fab, .menu-item .far, .menu-item .fas {
   margin-right: 8px;
+  width: 16px;
+  text-align: center;
 }
 
 .menu-item .badge {
@@ -4033,7 +4035,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #664559;
+  background: #059bb9;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

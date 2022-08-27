@@ -1817,6 +1817,8 @@ header.header {
 
 .menu-item .fa, .menu-item .fab, .menu-item .far, .menu-item .fas {
   margin-right: 8px;
+  width: 16px;
+  text-align: center;
 }
 
 .menu-item .badge {
