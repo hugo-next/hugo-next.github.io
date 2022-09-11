@@ -618,6 +618,7 @@ td {
 
 .highlight pre {
   position: relative;
+  overflow-x: auto;
 }
 
 .highlight table tbody tr {
@@ -1913,7 +1914,7 @@ header.header {
   }
 }
 
-.sidebar-inner {
+.sidebar-inner, .sidebar-card-widget {
   color: #999;
   max-height: calc(100vh - 24px);
   padding: 18px 10px;
@@ -2243,6 +2244,64 @@ header.header {
 .site-state-item-name {
   color: #999;
   font-size: 0.8125em;
+}
+
+.sidebar-card-widget {
+  background: var(--content-bg-color);
+  border-radius: initial;
+  box-shadow: initial;
+  box-sizing: border-box;
+  color: var(--text-color);
+  margin-top: 12px;
+}
+
+.sidebar-card-widget .item-headline {
+  text-align: left;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+.sidebar-card-widget .item-headline span {
+  margin-left: 8px;
+}
+
+.sidebar-card-widget .siteinfo {
+  font-size: 0.875em;
+  text-align: left;
+}
+
+.sidebar-card-widget .siteinfo .siteinfo-item {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 2px 10px 0;
+}
+
+.sidebar-card-widget .siteinfo .siteinfo-item i {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  margin-right: 4px;
+}
+
+.sidebar-card-widget .siteinfo .siteinfo-item div:first-child {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.back-to-top-card {
+  margin: 0;
+  padding: 0;
+}
+
+.back-to-top-card div:first-child {
+  margin: 0;
 }
 
 .footer {
