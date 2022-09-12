@@ -91,53 +91,101 @@ HTMLElement.prototype.wrap = function(wrapper) {
 
 NexT.utils = {
 
-  calSiteInfo:() => {
-    const $runtimeCount = document.getElementById('runTimes');
-    if ($runtimeCount) {
-      const publishDate = $runtimeCount.getAttribute('data-publishDate');
-      $runtimeCount.innerText = NexT.utils.diffDate(publishDate) + NexT.CONFIG.i18n.ds_days;
+  calSiteInfo: function() {
+    const runtimeCount = document.getElementById('runTimes');
+    if (runtimeCount) {
+      const publishDate = runtimeCount.getAttribute('data-publishDate');
+      const runTimes = NexT.utils.diffDate(publishDate, 2);
+      runtimeCount.innerText = runTimes;
     }
+
+    const wordsCount = document.getElementById('wordsCount');
+    if (wordsCount) {
+      const words = wordsCount.getAttribute('data-count');
+      let wordsLabel;
+      if (words > 10000) {
+        wordsLabel = (words / 10000.0).toFixed(2) + ' w';
+      } else if (words > 1000) {
+        wordsLabel = (words / 1000.0).toFixed(2) + ' k';
+      } else {
+        wordsLabel = words;
+      }
+      wordsCount.innerText = wordsLabel;
+    }
+
+    const readTimes = document.getElementById('readTimes');
+    if (readTimes) {
+      const times = readTimes.getAttribute('data-times');
+      
+      const hour = 60;
+      const day = hour * 24;
+
+      const daysCount = parseInt(times / day);
+      const hoursCount = parseInt(times / hour);
+
+      let timesLabel;
+      if (daysCount >= 1) {
+        timesLabel = daysCount + NexT.CONFIG.i18n.ds_days + parseInt((times - daysCount * day)/hour) + NexT.CONFIG.i18n.ds_hours;
+      } else if (hoursCount >= 1) {
+        timesLabel = hoursCount + NexT.CONFIG.i18n.ds_hours + (times - hoursCount * hour) + NexT.CONFIG.i18n.ds_mins;
+      } else {
+        timesLabel = times + NexT.CONFIG.i18n.ds_mins;
+      }
+
+      readTimes.innerText = timesLabel;
+    }
+
     const lastPushDate = document.getElementById('last-push-date');
     if (lastPushDate) {
-      const pushStr = NexT.utils.diffDate(lastPushDate.getAttribute('data-lastPushDate'), true);
-      lastPushDate.innerHTML = pushStr;
+      const pushDateVal = NexT.utils.diffDate(lastPushDate.getAttribute('data-lastPushDate'), 1);
+      lastPushDate.innerText = pushDateVal;
     }
   },
 
-  diffDate: (d, more = false) => {
-    const dateNow = new Date()
-    const datePost = new Date(d)
-    const dateDiff = dateNow.getTime() - datePost.getTime()
-    const minute = 1000 * 60
-    const hour = minute * 60
-    const day = hour * 24
-    const month = day * 30
+  diffDate: function(date, mode = 0) {
+    const dateNow = new Date();
+    const datePost = new Date(date);
+    const dateDiff = dateNow.getTime() - datePost.getTime();
+    const minute = 1000 * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+    const month = day * 30;
+    const year = month * 12;
 
-    let result
-    if (more) {
-      const monthCount = dateDiff / month
-      const dayCount = dateDiff / day
-      const hourCount = dateDiff / hour
-      const minuteCount = dateDiff / minute
+    let result;
+    if (mode == 1) {
+      const monthCount = dateDiff / month;
+      const dayCount = dateDiff / day;
+      const hourCount = dateDiff / hour;
+      const minuteCount = dateDiff / minute;
 
       if (monthCount > 12) {
-        result = datePost.toLocaleDateString().replace(/\//g, '-')
+        result = datePost.toLocaleDateString().replace(/\//g, '-');
       } else if (monthCount >= 1) {
-        result = parseInt(monthCount) + NexT.CONFIG.i18n.ds_month
+        result = parseInt(monthCount) + NexT.CONFIG.i18n.ds_month;
       } else if (dayCount >= 1) {
-        result = parseInt(dayCount) + NexT.CONFIG.i18n.ds_day
+        result = parseInt(dayCount) + NexT.CONFIG.i18n.ds_day;
       } else if (hourCount >= 1) {
-        result = parseInt(hourCount) + NexT.CONFIG.i18n.ds_hour
+        result = parseInt(hourCount) + NexT.CONFIG.i18n.ds_hour;
       } else if (minuteCount >= 1) {
-        result = parseInt(minuteCount) + NexT.CONFIG.i18n.ds_min
+        result = parseInt(minuteCount) + NexT.CONFIG.i18n.ds_min;
       } else {
-        result = NexT.CONFIG.i18n.ds_just
+        result = NexT.CONFIG.i18n.ds_just;
       }
+    } else if (mode == 2) {      
+      const yearCount = parseInt(dateDiff / year);
+      if (yearCount >= 1) {
+        const dayCount = parseInt((dateDiff - (yearCount * year))/day);
+        result = yearCount + NexT.CONFIG.i18n.ds_years + dayCount + NexT.CONFIG.i18n.ds_days;
+      } else {
+        const dayCount = parseInt(dateDiff/day);
+        result = dayCount + NexT.CONFIG.i18n.ds_days;
+      }      
     } else {
-      result = parseInt(dateDiff / day)
+      result = parseInt(dateDiff / day);
     }
 
-    return result
+    return result;
   },
 
   checkDOMExist: function(selector) {
