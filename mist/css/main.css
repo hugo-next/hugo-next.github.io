@@ -3770,6 +3770,10 @@ mark.search-keyword {
   display: none;
 }
 
+.mermaid {
+  background: var(--highlight-foreground);
+}
+
 .use-motion .animated {
   animation-fill-mode: none;
   visibility: inherit;
@@ -4092,7 +4096,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #f614a8;
+  background: #f3ed5a;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
