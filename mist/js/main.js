@@ -91,6 +91,216 @@ HTMLElement.prototype.wrap = function(wrapper) {
 
 NexT.utils = {
 
+  regSwitchThemeBtn: function() {
+    const switchThemeBtn = document.getElementById('switch-theme');
+    if (!switchThemeBtn) return;
+    switchThemeBtn.addEventListener('click', () => {
+      const colorTheme = document.documentElement.getAttribute('data-theme');
+      NexT.utils.toggleDarkMode(!(colorTheme == 'dark'));
+
+    });    
+  },
+
+  activeThemeMode: function() {
+
+    const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+    let darkModeState = useDark.matches;
+    const localState = NexT.utils.getLocalStorage('theme');
+    if (localState == 'light') {
+      darkModeState = false;
+    }
+    NexT.utils.toggleDarkMode(darkModeState);
+
+    useDark.addListener(function(evt) {
+      toggleDarkMode(evt.matches);
+    });
+  },
+
+  toggleDarkMode: function(state) {
+    if(state) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      NexT.utils.setLocalStorage('theme', 'dark', 2);
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      NexT.utils.setLocalStorage('theme', 'light', 2);
+    }
+
+    const theme = state ? 'dark' : 'light';
+    NexT.utils.toggleGiscusDarkMode(theme);
+  },
+
+  toggleGiscusDarkMode: function(theme) {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      const config = { setConfig: { theme: theme } };
+      iframe.contentWindow.postMessage({ giscus: config }, 'https://giscus.app');
+    }
+  },
+
+  setLocalStorage: function(key, value, ttl) {
+    if (ttl === 0) return;
+    const now = new Date();
+    const expiryDay = ttl * 86400000;
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay
+    };
+    localStorage.setItem(key, JSON.stringify(item));
+  },
+
+  getLocalStorage: function(key) {
+    const itemStr = localStorage.getItem(key);
+    if (!itemStr) {
+      return undefined;
+    }
+
+    const item = JSON.parse(itemStr);
+    const now = new Date();
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key);
+      return undefined;
+    }
+    return item.value;
+  },
+
+  domAddClass: function(selector, cls) {
+    const doms = document.querySelectorAll(selector);
+    if (doms) {
+      doms.forEach(dom => {
+        dom.classList.add(cls);
+      });
+    }
+  },
+
+  calSiteInfo: function() {
+    const runtimeCount = document.getElementById('runTimes');
+    if (runtimeCount) {
+      const publishDate = runtimeCount.getAttribute('data-publishDate');
+      const runTimes = NexT.utils.diffDate(publishDate, 2);
+      runtimeCount.innerText = runTimes;
+    }
+
+    const wordsCount = document.getElementById('wordsCount');
+    if (wordsCount) {
+      const words = wordsCount.getAttribute('data-count');
+      wordsCount.innerText = NexT.utils.numberFormat(words);
+    }
+
+    const readTimes = document.getElementById('readTimes');
+    if (readTimes) {
+      const times = readTimes.getAttribute('data-times');
+      
+      const hour = 60;
+      const day = hour * 24;
+
+      const daysCount = parseInt(times / day);
+      const hoursCount = parseInt(times / hour);
+
+      let timesLabel;
+      if (daysCount >= 1) {
+        timesLabel = daysCount + NexT.CONFIG.i18n.ds_days + parseInt((times - daysCount * day)/hour) + NexT.CONFIG.i18n.ds_hours;
+      } else if (hoursCount >= 1) {
+        timesLabel = hoursCount + NexT.CONFIG.i18n.ds_hours + (times - hoursCount * hour) + NexT.CONFIG.i18n.ds_mins;
+      } else {
+        timesLabel = times + NexT.CONFIG.i18n.ds_mins;
+      }
+
+      readTimes.innerText = timesLabel;
+    }
+
+    const lastPushDate = document.getElementById('last-push-date');
+    if (lastPushDate) {
+      const pushDateVal = NexT.utils.diffDate(lastPushDate.getAttribute('data-lastPushDate'), 1);
+      lastPushDate.innerText = pushDateVal;
+    }
+
+    const statisWidget = document.querySelectorAll('#la-siteinfo-widget span');
+    if (statisWidget.length > 0) {
+      const valIds = [0,2,4,6];
+      const domIds = ['today_site_pv', 'yesterday_site_pv', 'month_site_pv', 'total_site_pv']
+      for (var i in valIds) {
+        let pv = NexT.utils.numberFormat(statisWidget[valIds[i]].innerText);
+        document.getElementById(domIds[i]).innerText = pv;
+      }
+    }
+
+    setTimeout(()=>{ NexT.utils.fmtBusuanzi(); }, 500);
+  },
+
+  fmtBusuanzi: function() {
+    const bszUV = document.getElementById('busuanzi_value_site_uv');
+    if (bszUV) {
+      bszUV.innerText = NexT.utils.numberFormat(bszUV.innerText);
+    }
+    const bszPV = document.getElementById('busuanzi_value_site_pv');
+    if (bszPV) {
+      bszPV.innerText = NexT.utils.numberFormat(bszPV.innerText);
+    }
+  },
+
+  numberFormat: function(number) {
+    let result;
+    if (number.indexOf(',') > 0) {
+      number = number.replaceAll(",", "");
+    }
+    
+    if (number > 10000) {
+      result = (number / 10000.0).toFixed(2) + ' w';
+    } else if (number > 1000) {
+      result = (number / 1000.0).toFixed(2) + ' k';
+    } else {
+      result = number;
+    }
+    return result;
+  },
+
+  diffDate: function(date, mode = 0) {
+    const dateNow = new Date();
+    const datePost = new Date(date);
+    const dateDiff = dateNow.getTime() - datePost.getTime();
+    const minute = 1000 * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+    const month = day * 30;
+    const year = month * 12;
+
+    let result;
+    if (mode == 1) {
+      const monthCount = dateDiff / month;
+      const dayCount = dateDiff / day;
+      const hourCount = dateDiff / hour;
+      const minuteCount = dateDiff / minute;
+
+      if (monthCount > 12) {
+        result = datePost.toLocaleDateString().replace(/\//g, '-');
+      } else if (monthCount >= 1) {
+        result = parseInt(monthCount) + NexT.CONFIG.i18n.ds_month;
+      } else if (dayCount >= 1) {
+        result = parseInt(dayCount) + NexT.CONFIG.i18n.ds_day;
+      } else if (hourCount >= 1) {
+        result = parseInt(hourCount) + NexT.CONFIG.i18n.ds_hour;
+      } else if (minuteCount >= 1) {
+        result = parseInt(minuteCount) + NexT.CONFIG.i18n.ds_min;
+      } else {
+        result = NexT.CONFIG.i18n.ds_just;
+      }
+    } else if (mode == 2) {      
+      const yearCount = parseInt(dateDiff / year);
+      if (yearCount >= 1) {
+        const dayCount = parseInt((dateDiff - (yearCount * year))/day);
+        result = yearCount + NexT.CONFIG.i18n.ds_years + dayCount + NexT.CONFIG.i18n.ds_days;
+      } else {
+        const dayCount = parseInt(dateDiff/day);
+        result = dayCount + NexT.CONFIG.i18n.ds_days;
+      }      
+    } else {
+      result = parseInt(dateDiff / day);
+    }
+
+    return result;
+  },
+
   checkDOMExist: function(selector) {
     return document.querySelector(selector) != null;
   },
@@ -216,8 +426,10 @@ NexT.utils = {
         const contentHeight = document.body.scrollHeight - window.innerHeight;
         const scrollPercent = contentHeight > 0 ? Math.min(100 * window.scrollY / contentHeight, 100) : 0;
         if (backToTop) {
-          backToTop.classList.toggle('back-to-top-on', Math.round(scrollPercent) >= 5);
-          backToTop.querySelector('span').innerText = Math.round(scrollPercent) + '%';
+          const scrollPercentRound = Math.round(scrollPercent)
+          const isShow = scrollPercentRound >= 5;          
+          backToTop.classList.toggle('back-to-top-on', isShow);
+          backToTop.querySelector('span').innerText = scrollPercentRound + '%';
         }
         if (readingProgressBar) {
           readingProgressBar.style.setProperty('--progress', scrollPercent.toFixed(2) + '%');
@@ -535,6 +747,10 @@ NexT.utils = {
 
 NexT.boot = {};
 
+NexT.boot.activeThemeMode = function(){
+  NexT.utils.activeThemeMode();
+};
+
 NexT.boot.registerEvents = function() {
 
   NexT.utils.registerScrollPercent();
@@ -566,15 +782,20 @@ NexT.boot.registerEvents = function() {
 
 NexT.boot.refresh = function() {
 
+  NexT.utils.calSiteInfo();
+  NexT.utils.regSwitchThemeBtn();
+
   if (!NexT.CONFIG.page.isPage) return;
  
   NexT.utils.registerSidebarTOC();
+
   NexT.utils.replacePostCRLink();
   NexT.utils.registerCopyCode();
   NexT.utils.registerPostReward();
   if(NexT.CONFIG.page.comments) {    
     NexT.utils.initCommontesDispaly();
     NexT.utils.registerCommonSwitch();
+    NexT.utils.domAddClass('#goto-comments', 'goto-comments-on');
   } else {
     NexT.utils.hideCommontes();
   }
@@ -612,6 +833,7 @@ NexT.boot.motion = function() {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  NexT.boot.activeThemeMode();
   NexT.boot.registerEvents();
   NexT.boot.motion();
   NexT.boot.refresh();
@@ -862,7 +1084,7 @@ document.addEventListener('DOMContentLoaded', () => {
         requiredMeta  : requiredmeta,
         serverURL     : serverurl,
         lang          : NexT.CONFIG.lang,
-        dark          : "auto"
+        dark          : 'html[data-theme="dark"]'
       });
 
       NexT.utils.hiddeLodingCmp(element);
@@ -1055,3 +1277,177 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+;
+(function () {
+    var gtConstEvalStartTime = new Date();
+    var h = this || self,
+        l = /^[\w+/_-]+[=]{0,2}$/,
+        m = null;
+    function n(a) {
+        return (a = a.querySelector && a.querySelector("script[nonce]")) && (a = a.nonce || a.getAttribute("nonce")) &&
+            l.test(a) ? a : ""
+    }
+    function p(a, b) {
+        function c() {}
+        c.prototype = b.prototype;
+        a.i = b.prototype;
+        a.prototype = new c;
+        a.prototype.constructor = a;
+        a.h = function (g, f, k) {
+            for (var e = Array(arguments.length - 2), d = 2; d < arguments.length; d++) e[d - 2] = arguments[d];
+            return b.prototype[f].apply(g, e)
+        }
+    }
+    function q(a) {
+        return a
+    };
+    function r(a) {
+        if (Error.captureStackTrace) Error.captureStackTrace(this, r);
+        else {
+            var b = Error().stack;
+            b && (this.stack = b)
+        }
+        a && (this.message = String(a))
+    }
+    p(r, Error);
+    r.prototype.name = "CustomError";
+    function u(a, b) {
+        a = a.split("%s");
+        for (var c = "", g = a.length - 1, f = 0; f < g; f++) c += a[f] + (f < b.length ? b[f] : "%s");
+        r.call(this, c + a[g])
+    }
+    p(u, r);
+    u.prototype.name = "AssertionError";
+    function v(a, b) {
+        throw new u("Failure" + (a ? ": " + a : ""), Array.prototype.slice.call(arguments, 1));
+    };
+    var w;
+    function x(a, b) {
+        this.g = b === y ? a : ""
+    }
+    x.prototype.toString = function () {
+        return this.g + ""
+    };
+    var y = {};
+    function z(a) {
+        var b = document.getElementsByTagName("head")[0];
+        b || (b = document.body.parentNode.appendChild(document.createElement("head")));
+        b.appendChild(a)
+    }
+    function _loadJs(a) {
+        var b = document;
+        var c = "SCRIPT";
+        "application/xhtml+xml" === b.contentType && (c = c.toLowerCase());
+        c = b.createElement(c);
+        c.type = "text/javascript";
+        c.charset = "UTF-8";
+        if (void 0 === w) {
+            b = null;
+            var g = h.trustedTypes;
+            if (g && g.createPolicy) {
+                try {
+                    b = g.createPolicy("goog#html", {
+                        createHTML: q,
+                        createScript: q,
+                        createScriptURL: q
+                    })
+                } catch (t) {
+                    h.console && h.console.error(t.message)
+                }
+                w = b
+            } else w = b
+        }
+        a = (b = w) ? b.createScriptURL(a) : a;
+        a = new x(a, y);
+        a: {
+            try {
+                var f = c && c.ownerDocument,
+                    k = f && (f.defaultView || f.parentWindow);
+                k = k || h;
+                if (k.Element && k.Location) {
+                    var e = k;
+                    break a
+                }
+            } catch (t) {}
+            e = null
+        }
+        if (e && "undefined" != typeof e.HTMLScriptElement && (!c || !(c instanceof e.HTMLScriptElement) && (c instanceof e
+                .Location || c instanceof e.Element))) {
+            e = typeof c;
+            if ("object" == e && null != c || "function" == e) try {
+                var d = c.constructor.displayName || c.constructor.name || Object.prototype.toString.call(c)
+            } catch (t) {
+                d = "<object could not be stringified>"
+            } else d = void 0 === c ? "undefined" : null === c ? "null" : typeof c;
+            v("Argument is not a %s (or a non-Element, non-Location mock); got: %s",
+                "HTMLScriptElement", d)
+        }
+        a instanceof x && a.constructor === x ? d = a.g : (d = typeof a, v(
+            "expected object of type TrustedResourceUrl, got '" + a + "' of type " + ("object" != d ? d : a ?
+                Array.isArray(a) ? "array" : d : "null")), d = "type_error:TrustedResourceUrl");
+        c.src = d;
+        (d = c.ownerDocument && c.ownerDocument.defaultView) && d != h ? d = n(d.document) : (null === m && (m = n(
+            h.document)), d = m);
+        d && c.setAttribute("nonce", d);
+        z(c)
+    }
+    function _loadCss(a) {
+        var b = document.createElement("link");
+        b.type = "text/css";
+        b.rel = "stylesheet";
+        b.charset = "UTF-8";
+        b.href = a;
+        z(b)
+    }
+    function _isNS(a) {
+        a = a.split(".");
+        for (var b = window, c = 0; c < a.length; ++c)
+            if (!(b = b[a[c]])) return !1;
+        return !0
+    }
+    function _setupNS(a) {
+        a = a.split(".");
+        for (var b = window, c = 0; c < a.length; ++c) b.hasOwnProperty ? b.hasOwnProperty(a[c]) ? b = b[a[c]] : b =
+            b[a[c]] = {} : b = b[a[c]] || (b[a[c]] = {});
+        return b
+    }
+    window.addEventListener && "undefined" == typeof document.readyState && window.addEventListener(
+        "DOMContentLoaded",
+        function () {
+            document.readyState = "complete"
+        }, !1);
+    if (_isNS('google.translate.Element')) {
+        return
+    }(function () {
+        var c = _setupNS('google.translate._const');
+        c._cest = gtConstEvalStartTime;
+        gtConstEvalStartTime = undefined;
+        c._cl = navigator.language || navigator.userLanguage;
+        c._cuc = 'googleTranslateElementInit';
+        c._cac = '';
+        c._cam = '';
+        c._ctkk = '449649.3822363247';
+        var h = 'translate.googleapis.com';
+        var s = (true ? 'https' : window.location.protocol == 'https:' ? 'https' : 'http') + '://';
+        var b = s + h;
+        c._pah = h;
+        c._pas = s;
+        // c._pbi = b + '/translate_static/img/te_bk.gif';
+        c._pbi = '';
+        c._pci = b + '/translate_static/img/te_ctrl3.gif';
+        c._pli = b + '/translate_static/img/loading.gif';
+        c._plla = h + '/translate_a/l';
+        c._pmi = b + '/translate_static/img/mini_google.png';
+        c._ps = window.translateelement_styles;
+        c._puh = 'translate.google.cn';
+        _loadCss(c._ps);
+        _loadJs(b + `/translate_static/js/element/main_${navigator.language || navigator.userLanguage}.js`);
+    })();
+})();
+
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+    includedLanguages: 'zh-CN,zh-TW,en,ru',
+    autoDisplay:false
+  },'google_translate_element');
+}
