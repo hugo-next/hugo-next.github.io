@@ -3791,17 +3791,11 @@ ul.breadcrumb li:last-child {
 }
 
 .search-popup .search-header {
-  background: #eee;
+  background: var(--content-bg-color);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
   padding: 5px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .search-popup .search-header {
-    background: #666;
-  }
 }
 
 .search-popup input.search-input {
@@ -3809,6 +3803,7 @@ ul.breadcrumb li:last-child {
   border: 0;
   outline: 0;
   width: 100%;
+  color: var(--text-color);
 }
 
 .search-popup input.search-input::-webkit-search-cancel-button {
@@ -3818,7 +3813,7 @@ ul.breadcrumb li:last-child {
 .search-popup .search-result-container {
   height: calc(100% - 55px);
   overflow: auto;
-  padding: 5px 25px;
+  padding: 0px 25px;
 }
 
 .search-popup .search-result-container hr {
@@ -3827,6 +3822,37 @@ ul.breadcrumb li:last-child {
 
 .search-popup .search-result-container hr:first-child {
   display: none;
+}
+
+.search-popup .search-footer {
+  background: var(--content-bg-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  padding: 0 5px;
+}
+
+.search-popup .search-footer div {
+  color: var(--text-color);
+  padding: 5px;
+}
+
+.search-popup .search-footer .search-hit-stats {
+  width: 65%;
+  font-size: 0.8125em;
+}
+
+.search-popup .search-footer .search-vendor {
+  width: 35%;
+  text-align: right;
+  font-size: 0.875em;
+}
+
+.search-popup .search-footer .search-vendor img {
+  width: 68px;
+  margin: 5px;
+  vertical-align: middle;
+  display: inline;
 }
 
 .search-popup .search-result-list {
@@ -3873,6 +3899,10 @@ mark.search-keyword {
   margin: 40px 0;
   opacity: 1;
   padding: 0;
+}
+
+.algolia-pagination .pagination {
+  visibility: visible;
 }
 
 .algolia-pagination .pagination-item {
@@ -4092,7 +4122,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #43ee4e;
+  background: #5c0d5b;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
