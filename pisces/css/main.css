@@ -3860,6 +3860,10 @@ ul.breadcrumb li:last-child {
   display: inline;
 }
 
+.search-popup .search-footer .search-meta-info .search-vendor a {
+  border: none;
+}
+
 .search-popup .search-result-list {
   margin: 0 5px;
   padding: 0;
