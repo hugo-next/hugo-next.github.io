@@ -2063,11 +2063,13 @@ header.header {
 
 .sidebar-nav li:hover {
   color: #f5f5f5;
+  border-bottom-color: #87daff;
 }
 
 .sidebar-toc-active .sidebar-nav-toc, .sidebar-overview-active .sidebar-nav-overview {
   border-bottom-color: #87daff;
   color: #87daff;
+  font-weight: bold;
 }
 
 .sidebar-toc-active .sidebar-nav-toc:hover, .sidebar-overview-active .sidebar-nav-overview:hover {
@@ -2169,17 +2171,40 @@ header.header {
   counter-reset: item;
 }
 
-.post-toc ul > li {
+.post-toc ul > li > ul {
+  border-left: 1px solid;
+  margin-left: 6px;
+}
+
+.post-toc ul > li > ul li {
+  position: relative;
   padding-left: 0;
+}
+
+.post-toc ul > li > ul li:before {
+  position: absolute;
+  content: ' ';
+  top: 0.14em;
+  left: -0.75em;
+  width: 0.68em;
+  height: 0.815em;
+  border-style: none none dashed none;
+  border-width: 0.05em;
 }
 
 .post-toc ul a {
   transition: all 0.2s ease-in-out;
+  border: none;
 }
 
 .post-toc ul a:before {
   content: counters(item, ".") ". ";
   counter-increment: item;
+}
+
+.post-toc ul a:hover {
+  text-decoration: underline;
+  color: #fc6423;
 }
 
 .post-toc .nav-item {
@@ -4067,7 +4092,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #b07703;
+  background: #6c422c;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
