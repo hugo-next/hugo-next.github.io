@@ -346,7 +346,7 @@ NexT.utils = {
     return res_src;
   },
 
-  replacePostCRLink: function() {
+ /* replacePostCRLink: function() {
     if (NexT.CONFIG.hostname.startsWith('http')) return;
     // Try to support mutli domain without base URL sets.
     let href = window.location.href;
@@ -357,7 +357,7 @@ NexT.utils = {
     if (!postLink) return;
     postLink.text = href;
     postLink.href = href;
-  },
+  },*/
 
   /**
    * One-click copy code support.
@@ -820,7 +820,7 @@ NexT.boot.refresh = function() {
  
   NexT.utils.registerSidebarTOC();
 
-  NexT.utils.replacePostCRLink();
+  //NexT.utils.replacePostCRLink();
   NexT.utils.registerCopyCode();
   NexT.utils.registerPostReward();
   if(NexT.CONFIG.page.comments) {    

@@ -3931,6 +3931,22 @@ mark.search-keyword {
   display: none;
 }
 
+@media (max-width: 767px) {
+  .wl-reaction-img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wl-reaction-votes {
+    padding: 0.85px;
+    font-weight: 500;
+    font-size: .65em;
+    line-height: .85;
+  }
+}
+
 .post-block .post-body .mermaid {
   background: var(--highlight-foreground);
 }
@@ -4127,7 +4143,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #34e091;
+  background: #437b8b;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
