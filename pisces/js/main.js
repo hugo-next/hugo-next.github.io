@@ -1,4 +1,52 @@
-if (!window.NexT) window.NexT = {};
+/* global NexT, boot, CONFIG */
+window.NexT = {};
+NexT.boot = {};
+NexT.plugins = {};
+
+// Defined comment component & add register event
+NexT.plugins.comments = {};
+NexT.plugins.comments.register = function() {
+  if (!NexT.CONFIG.page.comments) return;
+  for(var c in NexT.plugins.comments) { 
+    if (c === 'register') continue;
+    eval('NexT.plugins.comments.'+c)();
+  };
+}
+
+// Defined search engine & add register event
+NexT.plugins.search = {}
+NexT.plugins.search.register = function() {
+  for(var s in NexT.plugins.search) { 
+    if (s === 'register') continue;
+    eval('NexT.plugins.search.'+s)();
+  };
+}
+
+// Defined share plugin & add register event
+NexT.plugins.share = {}
+NexT.plugins.share.register = function() {
+  for(var s in NexT.plugins.share) { 
+    if (s === 'register') continue;
+    eval('NexT.plugins.share.'+s)();
+  };
+}
+
+// Defined other plugin & add register event
+NexT.plugins.others = {}
+NexT.plugins.others.register = function() {
+  for(var o in NexT.plugins.others) { 
+    if (o === 'register') continue;
+    eval('NexT.plugins.others.'+o)();
+  };
+}
+
+// Add event to register all third party plugins
+NexT.plugins.register = function() {
+  for(var p in NexT.plugins) {
+    if (p === 'register') continue;
+    eval('NexT.plugins.'+p+'.register')();
+  }
+};
 
 (function() {
   const className = 'next-config';
@@ -66,127 +114,45 @@ if (!window.NexT) window.NexT = {};
   // });
 })();
 ;
-/* global NexT, CONFIG */
+/* util tools */
 
-HTMLElement.prototype.wrap = function(wrapper) {
+HTMLElement.prototype.wrap = function (wrapper) {
   this.parentNode.insertBefore(wrapper, this);
   this.parentNode.removeChild(this);
   wrapper.appendChild(this);
 };
 
-(function() {
-  const onPageLoaded = () => document.dispatchEvent(
-    new Event('page:loaded', {
-      bubbles: true
-    })
-  );
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('readystatechange', onPageLoaded, { once: true });
-  } else {
-    onPageLoaded();
-  }
-  document.addEventListener('pjax:success', onPageLoaded);
-})();
-
 NexT.utils = {
-
-  registerToolButtons: function() {
-    document.getElementById('goto-comments').addEventListener('click', () => {
-       window.anime({
-        targets  : document.scrollingElement,
-        duration : 500,
-        easing   : 'linear',
-        scrollTop: document.getElementById('comments').getBoundingClientRect().top + window.scrollY
-      });
-    });
+  registerToolButtons: function () {
+    const buttons = document.querySelector('.tool-buttons');
     
-
-    document.getElementById('goto-gt').addEventListener('click', () => {
-       window.anime({
-        targets  : document.scrollingElement,
-        duration : 500,
-        easing   : 'linear',
-        scrollTop: document.getElementById('google_translate_element').getBoundingClientRect().top + window.scrollY
+    const scrollbar_buttons = buttons.querySelectorAll('div:not(#toggle-theme)');
+    scrollbar_buttons.forEach(button => {
+      let targetId = button.id;
+      if (targetId != '') {
+        targetId = targetId.substring(5);
+      }
+      button.addEventListener('click', () => {
+        this.slidScrollBarAnime(targetId);
       });
     });
-  },
 
-  regSwitchThemeBtn: function() {
-    const switchThemeBtn = document.getElementById('switch-theme');
-    if (!switchThemeBtn) return;
-    switchThemeBtn.addEventListener('click', () => {
-      const colorTheme = document.documentElement.getAttribute('data-theme');
-      NexT.utils.toggleDarkMode(!(colorTheme == 'dark'));
-
-    });    
-  },
-
-  activeThemeMode: function() {
-
-    const useDark = window.matchMedia("(prefers-color-scheme: dark)");
-    let darkModeState = NexT.CONFIG.darkmode || useDark.matches;
-    const localState = NexT.utils.getLocalStorage('theme');
-    if (localState == 'light' 
-      || (localState == undefined && !NexT.CONFIG.darkmode)) {
-      darkModeState = false;
-    }
-    NexT.utils.toggleDarkMode(darkModeState);
-
-    useDark.addListener(function(evt) {
-      toggleDarkMode(evt.matches);
+    buttons.querySelector('div#toggle-theme').addEventListener('click', () => {
+      const cur_theme = document.documentElement.getAttribute('data-theme');
+      window.theme.toggle(cur_theme === 'dark' ? 'light' : 'dark');
     });
   },
 
-  toggleDarkMode: function(state) {
-    if(state) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      NexT.utils.setLocalStorage('theme', 'dark', 2);
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      NexT.utils.setLocalStorage('theme', 'light', 2);
-    }
-
-    const theme = state ? 'dark' : 'light';
-    NexT.utils.toggleGiscusDarkMode(theme);
+  slidScrollBarAnime: function (targetId, easing = 'linear', duration = 500) {
+    window.anime({
+      targets: document.scrollingElement,
+      duration: duration,
+      easing: easing,
+      scrollTop: targetId == '' ? 0 : document.getElementById(targetId).getBoundingClientRect().top + window.scrollY
+    });
   },
 
-  toggleGiscusDarkMode: function(theme) {
-    const iframe = document.querySelector('iframe.giscus-frame');
-    if (iframe) {
-      const config = { setConfig: { theme: theme } };
-      iframe.contentWindow.postMessage({ giscus: config }, 'https://giscus.app');
-    }
-  },
-
-  setLocalStorage: function(key, value, ttl) {
-    if (ttl === 0) return;
-    const now = new Date();
-    const expiryDay = ttl * 86400000;
-    const item = {
-      value: value,
-      expiry: now.getTime() + expiryDay
-    };
-    localStorage.setItem(key, JSON.stringify(item));
-  },
-
-  getLocalStorage: function(key) {
-    const itemStr = localStorage.getItem(key);
-    if (!itemStr) {
-      return undefined;
-    }
-
-    const item = JSON.parse(itemStr);
-    const now = new Date();
-
-    if (now.getTime() > item.expiry) {
-      localStorage.removeItem(key);
-      return undefined;
-    }
-    return item.value;
-  },
-
-  domAddClass: function(selector, cls) {
+  domAddClass: function (selector, cls) {
     const doms = document.querySelectorAll(selector);
     if (doms) {
       doms.forEach(dom => {
@@ -195,24 +161,24 @@ NexT.utils = {
     }
   },
 
-  calSiteInfo: function() {
+  calSiteInfo: function () {
     const runtimeCount = document.getElementById('runTimes');
     if (runtimeCount) {
       const publishDate = runtimeCount.getAttribute('data-publishDate');
-      const runTimes = NexT.utils.diffDate(publishDate, 2);
+      const runTimes = this.diffDate(publishDate, 2);
       runtimeCount.innerText = runTimes;
     }
 
     const wordsCount = document.getElementById('wordsCount');
     if (wordsCount) {
       const words = wordsCount.getAttribute('data-count');
-      wordsCount.innerText = NexT.utils.numberFormat(words);
+      wordsCount.innerText = this.numberFormat(words);
     }
 
     const readTimes = document.getElementById('readTimes');
     if (readTimes) {
       const times = readTimes.getAttribute('data-times');
-      
+
       const hour = 60;
       const day = hour * 24;
 
@@ -221,7 +187,7 @@ NexT.utils = {
 
       let timesLabel;
       if (daysCount >= 1) {
-        timesLabel = daysCount + NexT.CONFIG.i18n.ds_days + parseInt((times - daysCount * day)/hour) + NexT.CONFIG.i18n.ds_hours;
+        timesLabel = daysCount + NexT.CONFIG.i18n.ds_days + parseInt((times - daysCount * day) / hour) + NexT.CONFIG.i18n.ds_hours;
       } else if (hoursCount >= 1) {
         timesLabel = hoursCount + NexT.CONFIG.i18n.ds_hours + (times - hoursCount * hour) + NexT.CONFIG.i18n.ds_mins;
       } else {
@@ -233,40 +199,40 @@ NexT.utils = {
 
     const lastPushDate = document.getElementById('last-push-date');
     if (lastPushDate) {
-      const pushDateVal = NexT.utils.diffDate(lastPushDate.getAttribute('data-lastPushDate'), 1);
+      const pushDateVal = this.diffDate(lastPushDate.getAttribute('data-lastPushDate'), 1);
       lastPushDate.innerText = pushDateVal;
     }
 
     const statisWidget = document.querySelectorAll('#la-siteinfo-widget span');
     if (statisWidget.length > 0) {
-      const valIds = [0,2,4,6];
+      const valIds = [0, 2, 4, 6];
       const domIds = ['today_site_pv', 'yesterday_site_pv', 'month_site_pv', 'total_site_pv']
       for (var i in valIds) {
-        let pv = NexT.utils.numberFormat(statisWidget[valIds[i]].innerText);
+        let pv = this.numberFormat(statisWidget[valIds[i]].innerText);
         document.getElementById(domIds[i]).innerText = pv;
       }
     }
 
-    setTimeout(()=>{ NexT.utils.fmtBusuanzi(); }, 500);
+    setTimeout(() => { this.fmtBusuanzi(); }, 500);
   },
 
-  fmtBusuanzi: function() {
+  fmtBusuanzi: function () {
     const bszUV = document.getElementById('busuanzi_value_site_uv');
     if (bszUV) {
-      bszUV.innerText = NexT.utils.numberFormat(bszUV.innerText);
+      bszUV.innerText = this.numberFormat(bszUV.innerText);
     }
     const bszPV = document.getElementById('busuanzi_value_site_pv');
     if (bszPV) {
-      bszPV.innerText = NexT.utils.numberFormat(bszPV.innerText);
+      bszPV.innerText = this.numberFormat(bszPV.innerText);
     }
   },
 
-  numberFormat: function(number) {
+  numberFormat: function (number) {
     let result;
     if (number.indexOf(',') > 0) {
       number = number.replaceAll(",", "");
     }
-    
+
     if (number > 10000) {
       result = (number / 10000.0).toFixed(2) + ' w';
     } else if (number > 1000) {
@@ -277,7 +243,7 @@ NexT.utils = {
     return result;
   },
 
-  diffDate: function(date, mode = 0) {
+  diffDate: function (date, mode = 0) {
     const dateNow = new Date();
     const datePost = new Date(date);
     const dateDiff = dateNow.getTime() - datePost.getTime();
@@ -307,15 +273,15 @@ NexT.utils = {
       } else {
         result = NexT.CONFIG.i18n.ds_just;
       }
-    } else if (mode == 2) {      
+    } else if (mode == 2) {
       const yearCount = parseInt(dateDiff / year);
       if (yearCount >= 1) {
-        const dayCount = parseInt((dateDiff - (yearCount * year))/day);
+        const dayCount = parseInt((dateDiff - (yearCount * year)) / day);
         result = yearCount + NexT.CONFIG.i18n.ds_years + dayCount + NexT.CONFIG.i18n.ds_days;
       } else {
-        const dayCount = parseInt(dateDiff/day);
+        const dayCount = parseInt(dateDiff / day);
         result = dayCount + NexT.CONFIG.i18n.ds_days;
-      }      
+      }
     } else {
       result = parseInt(dateDiff / day);
     }
@@ -323,17 +289,18 @@ NexT.utils = {
     return result;
   },
 
-  checkDOMExist: function(selector) {
+  checkDOMExist: function (selector) {
     return document.querySelector(selector) != null;
   },
 
-  getCDNResource: function(res) {
+  getCDNResource: function (res) {
     let { plugins, router } = NexT.CONFIG.vendor;
-    let { name, version, file, alias } = res;
+    let { name, version, file, alias, alias_name } = res;
 
     let npm_name = name;
+    if (alias_name) npm_name = alias_name;
     let res_src = '';
-    switch(plugins) {
+    switch (plugins) {
       case 'cdnjs':
         let cdnjs_name = alias || name;
         let cdnjs_file = file.replace(/\.js$/, '.min.js').replace(/^(dist|lib|source\/js|)\/(browser\/|)/, '');
@@ -346,23 +313,10 @@ NexT.utils = {
     return res_src;
   },
 
- /* replacePostCRLink: function() {
-    if (NexT.CONFIG.hostname.startsWith('http')) return;
-    // Try to support mutli domain without base URL sets.
-    let href = window.location.href;
-    if (href.indexOf('#')>-1){
-      href = href.split('#')[0];
-    }
-    let postLink = document.getElementById('post-cr-link');
-    if (!postLink) return;
-    postLink.text = href;
-    postLink.href = href;
-  },*/
-
   /**
    * One-click copy code support.
    */
-  registerCopyCode: function() {
+  registerCopyCode: function () {
     if (!NexT.CONFIG.copybtn) return;
 
     let figure = document.querySelectorAll('.highlight pre');
@@ -409,7 +363,7 @@ NexT.utils = {
     });
   },
 
-  wrapTableWithBox: function() {
+  wrapTableWithBox: function () {
     document.querySelectorAll('table').forEach(element => {
       const box = document.createElement('div');
       box.className = 'table-container';
@@ -417,7 +371,7 @@ NexT.utils = {
     });
   },
 
-  registerVideoIframe: function() {
+  registerVideoIframe: function () {
     document.querySelectorAll('iframe').forEach(element => {
       const supported = [
         'www.youtube.com',
@@ -439,7 +393,7 @@ NexT.utils = {
     });
   },
 
-  registerScrollPercent: function() {
+  registerScrollPercent: function () {
     const backToTop = document.querySelector('.back-to-top');
     const readingProgressBar = document.querySelector('.reading-progress-bar');
     // For init back to top in sidebar if page was scrolled after page refresh.
@@ -449,7 +403,7 @@ NexT.utils = {
         const scrollPercent = contentHeight > 0 ? Math.min(100 * window.scrollY / contentHeight, 100) : 0;
         if (backToTop) {
           const scrollPercentRound = Math.round(scrollPercent)
-          const isShow = scrollPercentRound >= 5;          
+          const isShow = scrollPercentRound >= 5;
           backToTop.classList.toggle('back-to-top-on', isShow);
           backToTop.querySelector('span').innerText = scrollPercentRound + '%';
         }
@@ -468,21 +422,12 @@ NexT.utils = {
       }
       this.activateNavByIndex(index);
     }, { passive: true });
-
-    backToTop && backToTop.addEventListener('click', () => {
-      window.anime({
-        targets  : document.scrollingElement,
-        duration : 500,
-        easing   : 'linear',
-        scrollTop: 0
-      });
-    });
   },
 
   /**
    * Tabs tag listener (without twitter bootstrap).
    */
-  registerTabsTag: function() {
+  registerTabsTag: function () {
     // Binding `nav-tabs` & `tab-content` by real time permalink changing.
     document.querySelectorAll('.tabs ul.nav-tabs .tab').forEach(element => {
       element.addEventListener('click', event => {
@@ -497,7 +442,7 @@ NexT.utils = {
         // https://stackoverflow.com/questions/20306204/using-queryselector-with-ids-that-are-numbers
         const tActive = document.getElementById(element.querySelector('a').getAttribute('href').replace('#', ''));
         [...tActive.parentNode.children].forEach(target => {
-        // Array.prototype.slice.call(tActive.parentNode.children).forEach(target => {
+          // Array.prototype.slice.call(tActive.parentNode.children).forEach(target => {
           target.classList.toggle('active', target === tActive);
         });
         // Trigger event
@@ -507,9 +452,9 @@ NexT.utils = {
         if (!NexT.CONFIG.stickytabs) return;
         const offset = nav.parentNode.getBoundingClientRect().top + window.scrollY + 10;
         window.anime({
-          targets  : document.scrollingElement,
-          duration : 500,
-          easing   : 'linear',
+          targets: document.scrollingElement,
+          duration: 500,
+          easing: 'linear',
           scrollTop: offset
         });
       });
@@ -518,7 +463,7 @@ NexT.utils = {
     window.dispatchEvent(new Event('tabs:register'));
   },
 
-  registerCanIUseTag: function() {
+  registerCanIUseTag: function () {
     // Get responsive height passed from iframe.
     window.addEventListener('message', ({ data }) => {
       if (typeof data === 'string' && data.includes('ciu_embed')) {
@@ -536,7 +481,7 @@ NexT.utils = {
       target.classList.toggle('menu-item-active', target.hostname === location.hostname && (isSamePath || isSubPath));
     });
   },
-
+	
   registerLangSelect: function() {
     const selects = document.querySelectorAll('.lang-select');
     selects.forEach(sel => {
@@ -552,7 +497,7 @@ NexT.utils = {
     });
   },*/
 
-  registerSidebarTOC: function() {
+  registerSidebarTOC: function () {
     const toc = document.getElementById('TableOfContents');
     if (!toc.hasChildNodes()) {
       const tocActive = document.querySelector('.sidebar-inner');
@@ -566,11 +511,11 @@ NexT.utils = {
         event.preventDefault();
         const offset = target.getBoundingClientRect().top + window.scrollY;
         window.anime({
-          targets  : document.scrollingElement,
-          duration : 500,
-          easing   : 'linear',
+          targets: document.scrollingElement,
+          duration: 500,
+          easing: 'linear',
           scrollTop: offset,
-          complete : () => {
+          complete: () => {
             history.pushState(null, document.title, element.href);
           }
         });
@@ -579,7 +524,7 @@ NexT.utils = {
     });
   },
 
-  registerPostReward: function() {
+  registerPostReward: function () {
     const button = document.querySelector('.reward-container button');
     if (!button) return;
     button.addEventListener('click', () => {
@@ -587,22 +532,22 @@ NexT.utils = {
     });
   },
 
-  initCommontesDispaly: function(){   
+  initCommontesDispaly: function () {
     const comms = document.querySelectorAll('.comment-wrap > div');
-    if (comms.length<=1) return;
-    comms.forEach(function(item){
+    if (comms.length <= 1) return;
+    comms.forEach(function (item) {
       var dis = window.getComputedStyle(item, null).display;
       item.style.display = dis;
     });
   },
 
-  registerCommonSwitch: function() {
+  registerCommonSwitch: function () {
     const button = document.querySelector('.comment-switch .switch-btn');
     if (!button) return;
     const comms = document.querySelectorAll('.comment-wrap > div');
     button.addEventListener('click', () => {
       button.classList.toggle('move');
-      comms.forEach(function(item){        
+      comms.forEach(function (item) {
         if (item.style.display === 'none') {
           item.style.cssText = "display: block; animation: tabshow .8s";
         } else {
@@ -612,16 +557,16 @@ NexT.utils = {
     });
   },
 
-  hideCommontes:function() {
+  hideCommontes: function () {
     document.querySelector('.post-comments').style.display = 'none';
   },
 
-  hiddeLodingCmp: function(selector) {
+  hiddeLodingCmp: function (selector) {
     const loadding = document.querySelector(selector).previousElementSibling;
     loadding.style.display = 'none';
   },
 
-  activateNavByIndex: function(index) {
+  activateNavByIndex: function (index) {
     const target = document.querySelectorAll('.post-toc li a')[index];
     if (!target || target.classList.contains('active-current')) return;
 
@@ -638,14 +583,14 @@ NexT.utils = {
     const tocElement = document.querySelector('.sidebar-panel-container');
     if (!tocElement.parentNode.classList.contains('sidebar-toc-active')) return;
     window.anime({
-      targets  : tocElement,
-      duration : 200,
-      easing   : 'linear',
+      targets: tocElement,
+      duration: 200,
+      easing: 'linear',
       scrollTop: tocElement.scrollTop - (tocElement.offsetHeight / 2) + target.getBoundingClientRect().top - tocElement.getBoundingClientRect().top
     });
   },
 
-  updateSidebarPosition: function() {
+  updateSidebarPosition: function () {
     if (window.innerWidth < 992 || NexT.CONFIG.scheme === 'Pisces' || NexT.CONFIG.scheme === 'Gemini') return;
     // Expand sidebar on post detail page by default, when post has a toc.
     const hasTOC = document.querySelector('.post-toc');
@@ -659,7 +604,7 @@ NexT.utils = {
     }
   },
 
-  activateSidebarPanel: function(index) {
+  activateSidebarPanel: function (index) {
     const duration = 200;
     const sidebar = document.querySelector('.sidebar-inner');
     const panel = document.querySelector('.sidebar-panel-container');
@@ -669,34 +614,39 @@ NexT.utils = {
 
     window.anime({
       duration,
-      targets   : panel,
-      easing    : 'linear',
-      opacity   : 0,
+      targets: panel,
+      easing: 'linear',
+      opacity: 0,
       translateY: [0, -20],
-      complete  : () => {
+      complete: () => {
         // Prevent adding TOC to Overview if Overview was selected when close & open sidebar.
         sidebar.classList.replace(activeClassName[1 - index], activeClassName[index]);
         window.anime({
           duration,
-          targets   : panel,
-          easing    : 'linear',
-          opacity   : [0, 1],
+          targets: panel,
+          easing: 'linear',
+          opacity: [0, 1],
           translateY: [-20, 0]
         });
       }
     });
   },
 
-  getStyle: function(src, parent) {    
+  getStyle: function (src, position='after', parent) {
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('type', 'text/css');
     link.setAttribute('href', src);
 
-    (parent || document.head).appendChild(link);
+    const head = (parent || document.head);
+    if (position === 'before') {
+      head.prepend(link);
+    } else {
+      head.append(link);
+    }
   },
 
-  getScript: function(src, options = {}, legacyCondition) {
+  getScript: function (src, options = {}, legacyCondition) {
     if (typeof options === 'function') {
       return this.getScript(src, {
         condition: legacyCondition
@@ -714,7 +664,7 @@ NexT.utils = {
       } = {},
       parentNode = null
     } = options;
-    
+
     return new Promise((resolve, reject) => {
       if (condition) {
         resolve();
@@ -748,9 +698,9 @@ NexT.utils = {
     });
   },
 
-  loadComments: function(selector, legacyCallback) {
+  lazyLoadComponent: function(selector, legacyCallback) {
     if (legacyCallback) {
-      return this.loadComments(selector).then(legacyCallback);
+      return this.lazyLoadComponent(selector).then(legacyCallback);
     }
     return new Promise(resolve => {
       const element = document.querySelector(selector);
@@ -769,23 +719,31 @@ NexT.utils = {
     });
   }
 };
-
 ;
-/* global NexT, CONFIG */
+/* boot starup */
 
-NexT.boot = {};
+(function () {
+  const onPageLoaded = () => document.dispatchEvent(
+    new Event('page:loaded', {
+      bubbles: true
+    })
+  );
 
-NexT.boot.activeThemeMode = function(){
-  NexT.utils.activeThemeMode();
-};
+  if (document.readyState === 'loading') {
+    document.addEventListener('readystatechange', onPageLoaded, { once: true });
+  } else {
+    onPageLoaded();
+  }
+  document.addEventListener('pjax:success', onPageLoaded);
+})();
 
 NexT.boot.registerEvents = function() {
 
   NexT.utils.registerScrollPercent();
   // NexT.utils.registerCanIUseTag();
-  if (NexT.CONFIG.page.isPage) {
-    NexT.utils.registerToolButtons();
-  }
+  NexT.utils.registerToolButtons();
+  // Register comment's components
+  NexT.plugins.register();
 
   // Mobile top menu bar.
   document.querySelector('.site-nav-toggle .toggle').addEventListener('click', event => {
@@ -814,13 +772,10 @@ NexT.boot.registerEvents = function() {
 NexT.boot.refresh = function() {
 
   NexT.utils.calSiteInfo();
-  NexT.utils.regSwitchThemeBtn();
 
   if (!NexT.CONFIG.page.isPage) return;
  
   NexT.utils.registerSidebarTOC();
-
-  //NexT.utils.replacePostCRLink();
   NexT.utils.registerCopyCode();
   NexT.utils.registerPostReward();
   if(NexT.CONFIG.page.comments) {    
@@ -864,7 +819,6 @@ NexT.boot.motion = function() {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  NexT.boot.activeThemeMode();
   NexT.boot.registerEvents();
   NexT.boot.motion();
   NexT.boot.refresh();
@@ -1056,28 +1010,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 ;
-document.addEventListener('DOMContentLoaded', () => {
-
+/* AddThis share plugin */
+NexT.plugins.share.addthis = function() {
   const element = '.addthis_inline_share_toolbox';
   if (!NexT.CONFIG.addthis || !NexT.utils.checkDOMExist(element)) return; 
 
   const addthis_js = NexT.CONFIG.addthis.js + '?pubid=' + NexT.CONFIG.addthis.cfg.pubid;
 
-  NexT.utils.loadComments(element).then(() => {
+  NexT.utils.lazyLoadComponent(element, function() {
     NexT.utils.getScript(addthis_js, {
       attributes: {
-        async: true
+        async: false
       },
       parentNode: document.querySelector(element)
     });
   });
-});
+}
 ;
-document.addEventListener('DOMContentLoaded', () => {
-
+/* Waline comment plugin */
+NexT.plugins.comments.waline = function() {
   const element = '.waline-container';
-  if (!NexT.CONFIG.page.comments 
-    || !NexT.CONFIG.waline
+  if (!NexT.CONFIG.waline
     || !NexT.utils.checkDOMExist(element)) return; 
   
   const {
@@ -1094,10 +1047,6 @@ document.addEventListener('DOMContentLoaded', () => {
     reactiontitle
   } = NexT.CONFIG.waline.cfg;
 
-
-  const waline_css = NexT.utils.getCDNResource(NexT.CONFIG.waline.css);
-  NexT.utils.getStyle(waline_css, null);
-
   const waline_js = NexT.utils.getCDNResource(NexT.CONFIG.waline.js);
 
   let locale = {
@@ -1110,10 +1059,10 @@ document.addEventListener('DOMContentLoaded', () => {
     locale['reaction'+index] = value;
   });
 
-  NexT.utils.loadComments(element)
-    .then(() => NexT.utils.getScript(waline_js, {
-    }))
-    .then(() => {
+  NexT.utils.lazyLoadComponent(element, function () {    
+    NexT.utils.getScript(waline_js, function(){
+      const waline_css = NexT.utils.getCDNResource(NexT.CONFIG.waline.css);
+      NexT.utils.getStyle(waline_css, 'before');
 
       Waline.init({
         locale,
@@ -1130,11 +1079,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       NexT.utils.hiddeLodingCmp(element);
+    })
   });
-});
+}
 ;
-document.addEventListener('DOMContentLoaded', () => {
-
+/* Giscus comment plugin */
+NexT.plugins.comments.giscus = function() {
   const element = '.giscus-container';
   if (!NexT.CONFIG.page.comments 
     || !NexT.CONFIG.giscus
@@ -1152,8 +1102,8 @@ document.addEventListener('DOMContentLoaded', () => {
     theme } = NexT.CONFIG.giscus.cfg;
 
 
-  NexT.utils.loadComments(element)
-    .then(() => NexT.utils.getScript(NexT.CONFIG.giscus.js, {
+  NexT.utils.lazyLoadComponent(element, function() {
+    NexT.utils.getScript(NexT.CONFIG.giscus.js, {
       attributes: {
         'async'                  : true,
         'crossorigin'            : 'anonymous',
@@ -1170,20 +1120,20 @@ document.addEventListener('DOMContentLoaded', () => {
         'data-loading'           : 'lazy'
       },
       parentNode: document.querySelector(element)
-    }));
-
+    });   
+    
     NexT.utils.hiddeLodingCmp(element);
-});
+  });      
+}
 ;
-/* global instantsearch, algoliasearch, CONFIG, pjax */
+/* Algolia search engine */
+NexT.plugins.search.algolia = function() {
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  const algoiajs = NexT.utils.getCDNResource(NexT.CONFIG.algolia.js);
+  const algoliajs = NexT.utils.getCDNResource(NexT.CONFIG.algolia.js);
   const instantschjs = NexT.utils.getCDNResource(NexT.CONFIG.algolia.instantjs);
 
-  NexT.utils.getScript(algoiajs, {});
-  NexT.utils.getScript(instantschjs, {}).then(() => {
+  NexT.utils.getScript(algoliajs);
+  NexT.utils.getScript(instantschjs, function() {
     
     const { indexname, appid, apikey, hits } = NexT.CONFIG.algolia.cfg;
     const indexName = indexname;
@@ -1315,181 +1265,33 @@ document.addEventListener('DOMContentLoaded', () => {
         onPopupClose();
       }
     });
-  });;
+  });
 
-
-});
+}
 ;
-(function () {
-    var gtConstEvalStartTime = new Date();
-    var h = this || self,
-        l = /^[\w+/_-]+[=]{0,2}$/,
-        m = null;
-    function n(a) {
-        return (a = a.querySelector && a.querySelector("script[nonce]")) && (a = a.nonce || a.getAttribute("nonce")) &&
-            l.test(a) ? a : ""
-    }
-    function p(a, b) {
-        function c() {}
-        c.prototype = b.prototype;
-        a.i = b.prototype;
-        a.prototype = new c;
-        a.prototype.constructor = a;
-        a.h = function (g, f, k) {
-            for (var e = Array(arguments.length - 2), d = 2; d < arguments.length; d++) e[d - 2] = arguments[d];
-            return b.prototype[f].apply(g, e)
-        }
-    }
-    function q(a) {
-        return a
-    };
-    function r(a) {
-        if (Error.captureStackTrace) Error.captureStackTrace(this, r);
-        else {
-            var b = Error().stack;
-            b && (this.stack = b)
-        }
-        a && (this.message = String(a))
-    }
-    p(r, Error);
-    r.prototype.name = "CustomError";
-    function u(a, b) {
-        a = a.split("%s");
-        for (var c = "", g = a.length - 1, f = 0; f < g; f++) c += a[f] + (f < b.length ? b[f] : "%s");
-        r.call(this, c + a[g])
-    }
-    p(u, r);
-    u.prototype.name = "AssertionError";
-    function v(a, b) {
-        throw new u("Failure" + (a ? ": " + a : ""), Array.prototype.slice.call(arguments, 1));
-    };
-    var w;
-    function x(a, b) {
-        this.g = b === y ? a : ""
-    }
-    x.prototype.toString = function () {
-        return this.g + ""
-    };
-    var y = {};
-    function z(a) {
-        var b = document.getElementsByTagName("head")[0];
-        b || (b = document.body.parentNode.appendChild(document.createElement("head")));
-        b.appendChild(a)
-    }
-    function _loadJs(a) {
-        var b = document;
-        var c = "SCRIPT";
-        "application/xhtml+xml" === b.contentType && (c = c.toLowerCase());
-        c = b.createElement(c);
-        c.type = "text/javascript";
-        c.charset = "UTF-8";
-        if (void 0 === w) {
-            b = null;
-            var g = h.trustedTypes;
-            if (g && g.createPolicy) {
-                try {
-                    b = g.createPolicy("goog#html", {
-                        createHTML: q,
-                        createScript: q,
-                        createScriptURL: q
-                    })
-                } catch (t) {
-                    h.console && h.console.error(t.message)
-                }
-                w = b
-            } else w = b
-        }
-        a = (b = w) ? b.createScriptURL(a) : a;
-        a = new x(a, y);
-        a: {
-            try {
-                var f = c && c.ownerDocument,
-                    k = f && (f.defaultView || f.parentWindow);
-                k = k || h;
-                if (k.Element && k.Location) {
-                    var e = k;
-                    break a
-                }
-            } catch (t) {}
-            e = null
-        }
-        if (e && "undefined" != typeof e.HTMLScriptElement && (!c || !(c instanceof e.HTMLScriptElement) && (c instanceof e
-                .Location || c instanceof e.Element))) {
-            e = typeof c;
-            if ("object" == e && null != c || "function" == e) try {
-                var d = c.constructor.displayName || c.constructor.name || Object.prototype.toString.call(c)
-            } catch (t) {
-                d = "<object could not be stringified>"
-            } else d = void 0 === c ? "undefined" : null === c ? "null" : typeof c;
-            v("Argument is not a %s (or a non-Element, non-Location mock); got: %s",
-                "HTMLScriptElement", d)
-        }
-        a instanceof x && a.constructor === x ? d = a.g : (d = typeof a, v(
-            "expected object of type TrustedResourceUrl, got '" + a + "' of type " + ("object" != d ? d : a ?
-                Array.isArray(a) ? "array" : d : "null")), d = "type_error:TrustedResourceUrl");
-        c.src = d;
-        (d = c.ownerDocument && c.ownerDocument.defaultView) && d != h ? d = n(d.document) : (null === m && (m = n(
-            h.document)), d = m);
-        d && c.setAttribute("nonce", d);
-        z(c)
-    }
-    function _loadCss(a) {
-        var b = document.createElement("link");
-        b.type = "text/css";
-        b.rel = "stylesheet";
-        b.charset = "UTF-8";
-        b.href = a;
-        z(b)
-    }
-    function _isNS(a) {
-        a = a.split(".");
-        for (var b = window, c = 0; c < a.length; ++c)
-            if (!(b = b[a[c]])) return !1;
-        return !0
-    }
-    function _setupNS(a) {
-        a = a.split(".");
-        for (var b = window, c = 0; c < a.length; ++c) b.hasOwnProperty ? b.hasOwnProperty(a[c]) ? b = b[a[c]] : b =
-            b[a[c]] = {} : b = b[a[c]] || (b[a[c]] = {});
-        return b
-    }
-    window.addEventListener && "undefined" == typeof document.readyState && window.addEventListener(
-        "DOMContentLoaded",
-        function () {
-            document.readyState = "complete"
-        }, !1);
-    if (_isNS('google.translate.Element')) {
-        return
-    }(function () {
-        var c = _setupNS('google.translate._const');
-        c._cest = gtConstEvalStartTime;
-        gtConstEvalStartTime = undefined;
-        c._cl = navigator.language || navigator.userLanguage;
-        c._cuc = 'googleTranslateElementInit';
-        c._cac = '';
-        c._cam = '';
-        c._ctkk = '449649.3822363247';
-        var h = 'translate.googleapis.com';
-        var s = (true ? 'https' : window.location.protocol == 'https:' ? 'https' : 'http') + '://';
-        var b = s + h;
-        c._pah = h;
-        c._pas = s;
-        // c._pbi = b + '/translate_static/img/te_bk.gif';
-        c._pbi = '';
-        c._pci = b + '/translate_static/img/te_ctrl3.gif';
-        c._pli = b + '/translate_static/img/loading.gif';
-        c._plla = h + '/translate_a/l';
-        c._pmi = b + '/translate_static/img/mini_google.png';
-        c._ps = window.translateelement_styles;
-        c._puh = 'translate.google.cn';
-        _loadCss(c._ps);
-        _loadJs(b + `/translate_static/js/element/main_${navigator.language || navigator.userLanguage}.js`);
-    })();
-})();
-
-function googleTranslateElementInit(){
-  new google.translate.TranslateElement({
-    includedLanguages: 'zh-CN,zh-TW,en,ru',
-    autoDisplay:false
-  },'google_translate_element');
+/* 51La sidebar data widget */
+NexT.plugins.others.lawidget = function() {
+  const element = '#siteinfo-card-widget';
+  const lawt_js = NexT.CONFIG.lawidget.js.replace('laId', NexT.CONFIG.lawidget.id);
+  
+  NexT.utils.lazyLoadComponent(element, function () {    
+    NexT.utils.getScript(lawt_js,{
+      attributes: {
+        id: 'LA-DATA-WIDGET',
+        crossorigin: 'anonymous',
+        charset: 'UTF-8',
+        defer: true
+      }
+    });
+  });
+}
+;
+/* Google translate plugin */
+NexT.plugins.others.translate = function() {
+  const element = '#gtranslate';
+  if (!NexT.utils.checkDOMExist(element)) return;
+  NexT.utils.lazyLoadComponent(element, function() { 
+    window.translateelement_styles='/css/google-translate.min.css'; 
+    NexT.utils.getScript('/js/third-party/google-translate.min.js');
+  });
 }
