@@ -3775,7 +3775,7 @@ ul.breadcrumb li:last-child {
 .search-popup {
   background: var(--card-bg-color);
   border-radius: 5px;
-  height: 60%;
+  height: 65%;
   margin: auto;
   transform: scale(0);
   transition: transform .4s;
@@ -3829,10 +3829,7 @@ ul.breadcrumb li:last-child {
 }
 
 .search-popup .search-result-container {
-  /*  height: calc(100% - 65px);
-      @include mobile() {
-        height: calc(100% - 105px); 
-      } */
+  height: calc(100% - 55px);
   overflow: auto;
   padding: 0px 25px;
 }
@@ -3847,26 +3844,21 @@ ul.breadcrumb li:last-child {
 
 .search-popup .search-footer .search-meta-info {
   height: 26px;
+  display: flex;
   padding: 5px 0;
 }
 
 .search-popup .search-footer .search-meta-info .search-hit-stats {
   font-size: 0.8125em;
+  width: 65%;
   padding: 2px 8px;
-  float: left;
 }
 
 .search-popup .search-footer .search-meta-info .search-vendor {
+  width: 34%;
   text-align: right;
   font-size: 0.875em;
   font-weight: bold;
-  float: right;
-}
-
-@media (max-width: 767px) {
-  .search-popup .search-footer .search-meta-info .search-vendor {
-    font-size: 0.8125em;
-  }
 }
 
 .search-popup .search-footer .search-meta-info .search-vendor img {
@@ -3874,12 +3866,6 @@ ul.breadcrumb li:last-child {
   margin: 5px;
   vertical-align: middle;
   display: inline;
-}
-
-@media (max-width: 767px) {
-  .search-popup .search-footer .search-meta-info .search-vendor img {
-    width: 48px;
-  }
 }
 
 .search-popup .search-footer .search-meta-info .search-vendor a {
@@ -4168,7 +4154,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #7dabfb;
+  background: #fa6747;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
