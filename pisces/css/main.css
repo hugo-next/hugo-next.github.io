@@ -1945,11 +1945,14 @@ header.header {
 
 .cc-license img {
   display: inline-block;
+  max-width: 120px;
+  max-height: 42px;
 }
 
 .site-author-image {
   border: 1px solid #eee;
-  max-width: 120px;
+  width: 120px;
+  height: 120px;
   padding: 2px;
   border-radius: 50%;
   transition: transform 1s ease-out;
@@ -3953,8 +3956,8 @@ mark.search-keyword {
 
 @media (max-width: 767px) {
   .wl-reaction-img {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
   .wl-reaction-votes {
     padding: 0.85px;

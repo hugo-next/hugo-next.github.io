@@ -123,6 +123,37 @@ HTMLElement.prototype.wrap = function (wrapper) {
 };
 
 NexT.utils = {
+  registerImageLoadEvent: function() {
+    var images = document.querySelectorAll('.sidebar img, .post-block img, .vendors-list img');
+			
+    var callback = (entries) => {
+      entries.forEach(item => {
+        if (item.intersectionRatio > 0) {
+          var ele = item.target;
+          var imgSrc = ele.getAttribute('data-src');
+          if (imgSrc) {
+            var img = new Image();
+            img.addEventListener('load', function() {
+              ele.src = imgSrc;
+            }, false);
+            ele.src = imgSrc;
+            // Prevent load image again
+            ele.removeAttribute('data-src');
+          }
+        }
+      })
+    };
+      
+    var observer = new IntersectionObserver(callback);
+    images.forEach(img => {
+      observer.observe(img);
+    });
+  },
+
+  registerImageViewer: function() {
+    new Viewer(document.querySelector('.post-body'),{ navbar:2, toolbar:2 });
+  },
+
   registerToolButtons: function () {
     const buttons = document.querySelector('.tool-buttons');
     
@@ -743,6 +774,7 @@ NexT.utils = {
 
 NexT.boot.registerEvents = function() {
 
+  NexT.utils.registerImageLoadEvent();
   NexT.utils.registerScrollPercent();
   // NexT.utils.registerCanIUseTag();
   NexT.utils.registerToolButtons();
@@ -789,6 +821,7 @@ NexT.boot.refresh = function() {
   } else {
     NexT.utils.hideCommontes();
   }
+  NexT.utils.registerImageViewer();
 
   //TODO
    /**
