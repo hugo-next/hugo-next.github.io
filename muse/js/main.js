@@ -124,15 +124,15 @@ HTMLElement.prototype.wrap = function (wrapper) {
 
 NexT.utils = {
   registerImageLoadEvent: function() {
-    var images = document.querySelectorAll('.sidebar img, .post-block img, .vendors-list img');
+    const images = document.querySelectorAll('.sidebar img, .post-block img, .vendors-list img');
 			
-    var callback = (entries) => {
+    const callback = (entries) => {
       entries.forEach(item => {
         if (item.intersectionRatio > 0) {
-          var ele = item.target;
-          var imgSrc = ele.getAttribute('data-src');
+          let ele = item.target;
+          let imgSrc = ele.getAttribute('data-src');
           if (imgSrc) {
-            var img = new Image();
+            let img = new Image();
             img.addEventListener('load', function() {
               ele.src = imgSrc;
             }, false);
@@ -144,7 +144,7 @@ NexT.utils = {
       })
     };
       
-    var observer = new IntersectionObserver(callback);
+    const observer = new IntersectionObserver(callback);
     images.forEach(img => {
       observer.observe(img);
     });
@@ -241,7 +241,7 @@ NexT.utils = {
       if (laWidget.length > 0) {
         const valIds = [0, 2, 4, 6];
         const domIds = ['today_site_pv', 'yesterday_site_pv', 'month_site_pv', 'total_site_pv']
-        for (var i in valIds) {
+        for (let i in valIds) {
           let pv = NexT.utils.numberFormat(laWidget[valIds[i]].innerText);
           document.getElementById(domIds[i]).innerText = pv;
         }
@@ -571,7 +571,7 @@ NexT.utils = {
     const comms = document.querySelectorAll('.comment-wrap > div');
     if (comms.length <= 1) return;
     comms.forEach(function (item) {
-      var dis = window.getComputedStyle(item, null).display;
+      let dis = window.getComputedStyle(item, null).display;
       item.style.display = dis;
     });
   },
@@ -1071,6 +1071,7 @@ NexT.plugins.comments.waline = function() {
     || !NexT.utils.checkDOMExist(element)) return; 
   
   const {
+    comment,
     emoji, 
     imguploader, 
     pageview, 
@@ -1105,6 +1106,7 @@ NexT.plugins.comments.waline = function() {
         locale,
         el            : element,
         pageview      : pageview,
+        comment       : comment,
         emoji         : emoji,
         imageUploader : imguploader,
         wordLimit     : wordlimit,
@@ -1120,26 +1122,40 @@ NexT.plugins.comments.waline = function() {
   });
 }
 ;
-/* Waline pageview plugin */
-NexT.plugins.others.pageview = function() {
+/* Page's view & comment counter plugin */
+NexT.plugins.others.counter = function() {
+    let busz_postview = false;
+    let pageview_js = undefined;
+    let comment_js = undefined;
+
   const busz = NexT.CONFIG.busuanzi;
-  if (busz != undefined && busz.pageview) return;
-
-  let pageview_js = undefined;
-
-  // Here can append others pageview plugin
-  const waline = NexT.CONFIG.waline;
-  if (waline != undefined && waline.cfg.pageview) {
-    pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.pageview.js);
+  if (busz != undefined && busz.pageview) {
+    busz_postview = true;
   }
 
-  if (pageview_js == undefined) return;
+  // Here can append others pageview & comment plugin
+  const waline = NexT.CONFIG.waline;
+  if (waline != undefined){
+    if(!busz_postview && waline.cfg.pageview) {
+      pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.js[0]);
+      NexT.utils.getScript(pageview_js, function(){
+        Waline.pageviewCount({
+          serverURL: waline.cfg.serverurl
+        });
+      });
+    }
 
-  NexT.utils.getScript(pageview_js, function(){
-    Waline.pageviewCount({
-      serverURL: waline.cfg.serverurl
-    });
-  });
+    if (waline.cfg.comment) {
+      comment_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.js[1]);
+      NexT.utils.getScript(comment_js, function(){
+        Waline.commentCount({
+          serverURL: waline.cfg.serverurl
+        });
+      });
+    }
+  }
+
+ 
 }
 ;
 /* Giscus comment plugin */
