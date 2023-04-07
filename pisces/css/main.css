@@ -3164,6 +3164,10 @@ header.header {
   background: none;
 }
 
+.post-copyright ul li {
+  word-break: break-all;
+}
+
 .post-tags {
   margin-bottom: 20px;
   text-align: center;

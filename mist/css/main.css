@@ -3164,6 +3164,10 @@ header.header {
   background: none;
 }
 
+.post-copyright ul li {
+  word-break: break-all;
+}
+
 .post-tags {
   margin-bottom: 20px;
   text-align: center;
@@ -4293,7 +4297,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #a9b812;
+  background: #331dbb;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
