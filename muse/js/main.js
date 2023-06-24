@@ -175,11 +175,13 @@ NexT.utils = {
   },
 
   slidScrollBarAnime: function (targetId, easing = 'linear', duration = 500) {
+    const targetObj = document.getElementById(targetId);
+   
     window.anime({
       targets: document.scrollingElement,
       duration: duration,
       easing: easing,
-      scrollTop: targetId == '' ? 0 : document.getElementById(targetId).getBoundingClientRect().top + window.scrollY
+      scrollTop:  targetId == '' || !targetObj ? 0 : targetObj.getBoundingClientRect().top + window.scrollY
     });
   },
 
@@ -789,6 +791,14 @@ NexT.boot.registerEvents = function() {
   // Register comment's components
   NexT.plugins.register();
 
+  // Register comment counter click event
+  const commentCnt = document.querySelector('#comments-count');
+  if (commentCnt && NexT.CONFIG.page.isPage) {
+    commentCnt.addEventListener('click',  event => {
+      NexT.utils.slidScrollBarAnime('comments');
+    });
+  }
+
   // Mobile top menu bar.
   document.querySelector('.site-nav-toggle .toggle').addEventListener('click', event => {
     event.currentTarget.classList.toggle('toggle-close');
@@ -1128,6 +1138,38 @@ NexT.plugins.comments.waline = function() {
       NexT.utils.hiddeLodingCmp(element);
     })
   });
+}
+;
+/* Page's view & comment counter plugin */
+NexT.plugins.others.counter = function() {
+    let pageview_js = undefined;
+    let comment_js = undefined;
+
+    const post_meta = NexT.CONFIG.postmeta;
+
+    const views = post_meta.views;
+    if(views != undefined && views.enable) {
+      if (views.plugin == 'waline') {
+        pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.js[0]);
+        NexT.utils.getScript(pageview_js, function(){
+          Waline.pageviewCount({
+            serverURL: NexT.CONFIG.waline.cfg.serverurl
+          });
+        });
+      }
+    }
+
+    const comments = post_meta.comments;
+    if (comments != undefined && comments.enable) {
+      if (comments.plugin == 'waline') {
+        comment_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.js[1]);
+        NexT.utils.getScript(comment_js, function(){
+          Waline.commentCount({
+            serverURL: NexT.CONFIG.waline.cfg.serverurl
+          });
+        });
+      }
+    }
 }
 ;
 /* Giscus comment plugin */
