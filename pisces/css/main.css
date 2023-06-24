@@ -3064,6 +3064,11 @@ header.header {
   height: 0;
 }
 
+#comments-count {
+  cursor: pointer;
+  border-bottom: 1px solid #999;
+}
+
 .post-nav {
   border-top: 1px solid #eee;
   display: flex;
@@ -3162,6 +3167,10 @@ header.header {
   margin: 1em 0;
   border: none;
   background: none;
+}
+
+.post-copyright ul li {
+  word-break: break-all;
 }
 
 .post-tags {
@@ -3338,12 +3347,21 @@ header.header {
   padding: 0;
 }
 
-.category-all-page .category-list-item {
+.category-all-page .category-list .category-list-item:before {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
+  content: "\f07c";
+  margin-right: 5px;
+}
+
+.category-all-page .category-list .category-list-item {
   margin: 5px 10px;
+  font-weight: bold;
 }
 
 .category-all-page .category-list-count {
   color: #bbb;
+  padding: 0 2px;
 }
 
 .category-all-page .category-list-count::before {
@@ -3354,8 +3372,20 @@ header.header {
   content: ') ';
 }
 
-.category-all-page .category-list-child {
-  padding-left: 10px;
+.category-all-page .category-children-list {
+  padding-left: 38px;
+  list-style: none;
+}
+
+.category-all-page .category-children-list .category-children-list-item:before {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
+  content: "\f0ae";
+  margin-right: 5px;
+}
+
+.category-all-page .category-children-list .category-children-list-item {
+  font-size: 0.925em;
 }
 
 @keyframes dot-flash {
