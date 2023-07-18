@@ -1785,46 +1785,58 @@ header.header {
   }
 }
 
-.menu {
+.menu, .menu-children {
   margin: 0;
   padding: 1em 0;
   text-align: center;
 }
 
-.menu-item {
+.menu-children {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 1.5s ease-out;
+}
+
+.menu-children.expand {
+  max-height: 400px;
+  transition: max-height 1.5s ease-in;
+}
+
+.menu-item, .menu-child-item {
   display: inline-block;
   list-style: none;
   margin: 0 10px;
 }
 
 @media (max-width: 767px) {
-  .menu-item {
+  .menu-item, .menu-child-item {
     display: block;
     margin-top: 10px;
   }
-  .menu-item.menu-item-search {
+  .menu-item.menu-item-search, .menu-child-item.menu-item-search {
     display: none;
   }
 }
 
-.menu-item a {
+.menu-item a, .menu-child-item a {
   border-bottom: 0;
   display: block;
   font-size: 0.8125em;
   transition: border-color 0.2s ease-in-out;
 }
 
-.menu-item a:hover, .menu-item a.menu-item-active {
+.menu-item a:hover, .menu-item a.menu-item-active, .menu-child-item a:hover, .menu-child-item a.menu-item-active {
   background: var(--menu-item-bg-color);
 }
 
-.menu-item .fa, .menu-item .fab, .menu-item .far, .menu-item .fas {
+.menu-item .fa, .menu-item .fab, .menu-item .far, .menu-item .fas, .menu-child-item .fa, .menu-child-item .fab, .menu-child-item .far, .menu-child-item .fas {
   margin-right: 8px;
   width: 16px;
   text-align: center;
 }
 
-.menu-item .badge {
+.menu-item .badge, .menu-child-item .badge {
   display: inline-block;
   font-weight: bold;
   line-height: 1;
@@ -1835,10 +1847,19 @@ header.header {
 }
 
 @media (max-width: 767px) {
-  .menu-item .badge {
+  .menu-item .badge, .menu-child-item .badge {
     float: right;
     margin-left: 0;
   }
+}
+
+.menu-item .menu-item-shrink-icon, .menu-child-item .menu-item-shrink-icon {
+  float: right;
+}
+
+.menu-child-item {
+  display: block;
+  margin: 0;
 }
 
 .use-motion .menu-item {
