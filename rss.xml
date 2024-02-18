@@ -1,39 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo NexT</title><link>/</link><description>Recent content on Hugo NexT</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Jul 2023 12:07:21 +0800</lastBuildDate><atom:link href="/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/hugo-next-organization.html</guid><description>欢迎来到 Hugo NexT 文档站点！ 它是从 Hexo NexT 主题中移植过来的，专门为 Hugo 而打造的高品质优雅主题，保持原有简单易用的特性和强大的功能。 路线图 目前 Hugo NexT 主题还在</description></item><item><title>Hugo NexT V4 介绍</title><link>/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo NexT</title><link>/</link><description>Recent content on Hugo NexT</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Jul 2023 12:07:21 +0800</lastBuildDate><atom:link href="/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/hugo-next-organization.html</guid><description>欢迎来到 Hugo NexT 文档站点！ 它是从 Hexo NexT 主题中移植过来的，专门为 Hugo 而打造的高品质优雅主题，保持原有简单易用的特性和强大的功能。 路线图 目前 Hugo NexT 主题还在</description></item><item><title>Hugo NexT V4 介绍</title><link>/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自 
 &lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-Hexo NexT
-&lt;i class="fa fa-external-link-alt">&lt;/i>
-&lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 ❤️ 重新出发，愿你同样会喜欢，也欢迎加入共建！ 😄&lt;/p></description></item><item><title>感谢网友打赏</title><link>/donation.html</link><pubDate>Fri, 30 Sep 2022 20:07:37 +0800</pubDate><guid>/donation.html</guid><description>致谢 开发 Hugo NexT 主题原本是个人的业余爱好，但没想到网友们这么的热情，感谢有你们的支持，让我们大家一起来见证它的成长。 打赏名单 以下是打赏名单列表（</description></item><item><title>Hugo Next 4.5.3 Release(HotFixed)</title><link>/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/hugo-next-4-5-3-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 修复左侧51la统计页板不显示数据问题 受配置文件参数名称变更所影响 欢迎大家使用和反馈，祝你好运！！！</description></item><item><title>Hugo Next 4.5.2 Release(HotFixed)</title><link>/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/hugo-next-4-5-2-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 增加生成索引内容时可指定长度（默认为1000个字） #101 关于algolia索引大小限制 欢迎大家使用和反馈</description></item><item><title>Hugo Next 4.5.1 Release(HotFixed)</title><link>/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/hugo-next-4-5-1-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 分类名称中包含英文时，英文会被小写转换 欢迎大家使用和反馈，祝你好运！！！🎉 🎉 🎉</description></item><item><title>Hugo Next 4.5.0 Release</title><link>/hugo-next-4-5-0-release.html</link><pubDate>Sat, 24 Jun 2023 16:27:21 +0800</pubDate><guid>/hugo-next-4-5-0-release.html</guid><description>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 重新调整多语言支持的配置方式，更加易读和扩展 修复文章统计和评论</description></item><item><title>Hugo Next 4.4.0 Release</title><link>/hugo-next-4-4-0-release.html</link><pubDate>Sun, 30 Oct 2022 21:51:40 +0800</pubDate><guid>/hugo-next-4-4-0-release.html</guid><description>此次版本发布共提交 40 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 实现全站图片懒加载，并添加图片查看器功能 实现全站JS库（非必要</description></item><item><title>没有H1-6标题头的文章</title><link>/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
+ Hexo NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 &amp;#x2764;&amp;#xfe0f; 重新出发，愿你同样会喜欢，也欢迎加入共建！ &amp;#x1f604;&lt;/p></description></item><item><title>感谢网友打赏</title><link>/donation.html</link><pubDate>Fri, 30 Sep 2022 20:07:37 +0800</pubDate><guid>/donation.html</guid><description>致谢 开发 Hugo NexT 主题原本是个人的业余爱好，但没想到网友们这么的热情，感谢有你们的支持，让我们大家一起来见证它的成长。 打赏名单 以下是打赏名单列表（</description></item><item><title>Hugo Next 4.5.3 Release(HotFixed)</title><link>/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/hugo-next-4-5-3-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 修复左侧51la统计页板不显示数据问题 受配置文件参数名称变更所影响 欢迎大家使用和反馈，祝你好运！！！</description></item><item><title>Hugo Next 4.5.2 Release(HotFixed)</title><link>/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/hugo-next-4-5-2-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 增加生成索引内容时可指定长度（默认为1000个字） #101 关于algolia索引大小限制 欢迎大家使用和反馈</description></item><item><title>Hugo Next 4.5.1 Release(HotFixed)</title><link>/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/hugo-next-4-5-1-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 分类名称中包含英文时，英文会被小写转换 欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;</description></item><item><title>Hugo Next 4.5.0 Release</title><link>/hugo-next-4-5-0-release.html</link><pubDate>Sat, 24 Jun 2023 16:27:21 +0800</pubDate><guid>/hugo-next-4-5-0-release.html</guid><description>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 重新调整多语言支持的配置方式，更加易读和扩展 修复文章统计和评论</description></item><item><title>Hugo Next 4.4.0 Release</title><link>/hugo-next-4-4-0-release.html</link><pubDate>Sun, 30 Oct 2022 21:51:40 +0800</pubDate><guid>/hugo-next-4-4-0-release.html</guid><description>此次版本发布共提交 40 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 实现全站图片懒加载，并添加图片查看器功能 实现全站JS库（非必要</description></item><item><title>没有H1-6标题头的文章</title><link>/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
 &lt;blockquote>
 &lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭。&lt;/p>
 &lt;/blockquote></description></item><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/hugo-next-4-3-1-release.html</guid><description>此次修补版本发布主要是做了少许的优化，参考如下： 升级 Waline 至最新版本支持文章表情互动（点赞功能） 与配置文件联动，优化深浅色主题的切换逻辑 给文章导</description></item><item><title>Hugo Next 4.3.0 Release</title><link>/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/hugo-next-4-3-0-release.html</guid><description>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 增加百度，谷歌、不蒜子统计支持 #19 增加对数学公式的渲染支持 #27 增加</description></item><item><title>Mermaid支持流程图</title><link>/demo/mermaid-charts.html</link><pubDate>Sun, 18 Sep 2022 20:58:13 +0800</pubDate><guid>/demo/mermaid-charts.html</guid><description>&lt;p>本主题已支持 &lt;code>Mermaid&lt;/code> 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 &lt;code>Mermaid&lt;/code> 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站：
 &lt;a href="https://mermaid-js.github.io/" title="https://mermaid-js.github.io/" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-https://mermaid-js.github.io/
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ https://mermaid-js.github.io/
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>。&lt;/p></description></item><item><title>数学公式渲染</title><link>/demo/math-formula.html</link><pubDate>Sun, 11 Sep 2022 10:16:02 +0800</pubDate><guid>/demo/math-formula.html</guid><description>&lt;p>本主题支持 &lt;code>mathjax&lt;/code> 和 &lt;code>katex&lt;/code> 两种不的方案支持数学公式的渲染，可根据自已的需求进行选择。&lt;/p></description></item><item><title>支持用户自定义设计</title><link>/demo/custom-files.html</link><pubDate>Sat, 10 Sep 2022 21:02:32 +0800</pubDate><guid>/demo/custom-files.html</guid><description>&lt;p>对于熟悉前端开发的用户来说，可以通过自定义文件配置，实现对站点的样式和布局进行个性化的调整。其中布局方面主要是支持左侧边栏的站点概览部分，以及站点底部2个位置，但样式的重置可以是整个站点的任意位置。&lt;/p></description></item><item><title>Hugo Next 4.2.0 Release</title><link>/hugo-next-4-2-0-release.html</link><pubDate>Mon, 15 Aug 2022 22:33:15 +0800</pubDate><guid>/hugo-next-4-2-0-release.html</guid><description>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 文章搜索功能，本地搜索和Algolia在线搜索 #18 注意： 本地搜索</description></item><item><title>自定义短语示例</title><link>/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为此设计了一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>Hugo Next 4.1.0 Release</title><link>/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/hugo-next-4-1-0-release.html</guid><description>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下： 使用较低的 Hugo 版本生成站点报错（增加版本识别提示） #21 实现全站动态加载外</description></item><item><title>Hugo Next 4.0.1 Release(HotFixed)</title><link>/hugo-next-4-0-1-release.html</link><pubDate>Tue, 05 Jul 2022 16:49:19 +0800</pubDate><guid>/hugo-next-4-0-1-release.html</guid><description>此次发布是个 hotfix 版本，修复了些较为紧急的 BUG，参考如下： 使用 Hugo v0.92.2 版本编译运行主题失败 #14 点击标签跳转 404 页面 #15 删除之前不用的旧代码文件 移出评论插</description></item><item><title>Hugo Next 4.0.0 Release</title><link>/hugo-next-4-0-0-release.html</link><pubDate>Mon, 04 Jul 2022 14:03:34 +0800</pubDate><guid>/hugo-next-4-0-0-release.html</guid><description>全新设计的 Hugo NexT 主题 4.0.0 正式发布，移植自 NexT 的最新版本，已经实现的功能如下： 保留 4 种不同页面布局模式，完成所有设计迁移 实现 SCSS 动态样式迁移及语法和显</description></item><item><title>关于 Hugo NexT 组织</title><link>/about.html</link><pubDate>Thu, 09 Jun 2022 20:12:52 +0800</pubDate><guid>/about.html</guid><description>Hugo NexT 组织是由众多喜爱 NexT 主题及风格的世界各地友人共同组建而成，为的就是让这个主题继续在 Hugo 引擎中也能得到发扬光大，在此也欢迎你的加入！ 我们的愿景</description></item><item><title>文章目录导航</title><link>/demo/table-of-content.html</link><pubDate>Wed, 08 Jun 2022 21:12:52 +0800</pubDate><guid>/demo/table-of-content.html</guid><description>&lt;p>巴顿将军说过：“衡量一个人是否成功，不是看他站到顶峰，而是从顶峰跌落之后的反弹力”，褚时健的人生便是如此，中年发家致富，名利双收，之后又跌落到谷底，等到74岁再创业，10年后带着褚橙归来，东山再起收获亿万财富，他的发展轨迹就是反弹的过程。&lt;/p></description></item><item><title>Hugo 内置的 Chroma 语法高亮</title><link>/demo/syntax-highlighting.html</link><pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate><guid>/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p>
-&lt;p>以下通过 Hugo 内置短代码 &lt;code>highlight&lt;/code> 和 &lt;code>Markdown&lt;/code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅
+&lt;p>以下通过 Hugo 内置短代码 &lt;code>highlight&lt;/code> 和 &lt;code>Markdown&lt;/code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
 &lt;a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo 文档" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-Hugo 文档
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ Hugo 文档
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>。&lt;/p></description></item><item><title>支持 Emoji 表情</title><link>/demo/emoji-support.html</link><pubDate>Sat, 04 Jun 2022 19:46:45 +0800</pubDate><guid>/demo/emoji-support.html</guid><description>&lt;p>Emoji 可以通过多种方式在 Hugo 项目中启用。&lt;/p>
 &lt;p>
 &lt;a href="https://gohugo.io/functions/emojify/" title="&amp;lt;code&amp;gt;emojify&amp;lt;/code&amp;gt;" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-&lt;code>emojify&lt;/code>
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ &lt;code>emojify&lt;/code>
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a> 方法可以直接在模板中调用, 或者使用
 &lt;a href="https://gohugo.io/templates/shortcode-templates#inline-shortcodes" title="行内 Shortcodes" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-行内 Shortcodes
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ 行内 Shortcodes
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>.&lt;/p>
 &lt;p>要全局使用 emoji, 需要在你的
 &lt;a href="https://gohugo.io/getting-started/configuration/" title="网站配置" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-网站配置
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ 网站配置
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>中设置 &lt;code>enableEmoji&lt;/code> 为 &lt;code>true&lt;/code>，
 然后你就可以直接在文章中输入 emoji 的代码。&lt;/p></description></item><item><title>Markdown 语法支持</title><link>/demo/markdown-syntax.html</link><pubDate>Fri, 03 Jun 2022 11:52:18 +0800</pubDate><guid>/demo/markdown-syntax.html</guid><description>&lt;p>仅以此篇文章来测试下在 &lt;code>NexT&lt;/code> 主题中在通过 &lt;code>Hugo&lt;/code> 引擎来建站时，是否支持 &lt;code>Markdown&lt;/code> 文件内容中所写的各种语法，并展示下实际的效果。&lt;/p></description></item><item><title>世界，你好！</title><link>/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/demo/hello-world.html</guid><description>&lt;blockquote>
 &lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
 &lt;/blockquote>
 &lt;p>
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-Hugo
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item><item><title>站点示例</title><link>/flinks.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/flinks.html</guid><description>如你也正在使用 Hugo NexT 主题，欢迎在 flinks.yaml 文件底部提交贵站的名称，描述，头像，链接等信息，具体格式内容参考如下： 1 2 3 4 - name: NexT 主题 desc: 保持简单的易用性和</description></item></channel></rss>

@@ -1,12 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Hugo NexT</title><link>/mist/tags/hugo/</link><description>Recent content in Hugo on Hugo NexT</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 04 Jul 2022 11:30:02 +0800</lastBuildDate><atom:link href="/mist/tags/hugo/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/mist/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/mist/hugo-next-organization.html</guid><description>欢迎来到 Hugo NexT 文档站点！ 它是从 Hexo NexT 主题中移植过来的，专门为 Hugo 而打造的高品质优雅主题，保持原有简单易用的特性和强大的功能。 路线图 目前 Hugo NexT 主题还在</description></item><item><title>Hugo NexT V4 介绍</title><link>/mist/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/mist/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Hugo NexT</title><link>/mist/tags/hugo/</link><description>Recent content in Hugo on Hugo NexT</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Aug 2022 22:36:26 +0800</lastBuildDate><atom:link href="/mist/tags/hugo/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/mist/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/mist/hugo-next-organization.html</guid><description>欢迎来到 Hugo NexT 文档站点！ 它是从 Hexo NexT 主题中移植过来的，专门为 Hugo 而打造的高品质优雅主题，保持原有简单易用的特性和强大的功能。 路线图 目前 Hugo NexT 主题还在</description></item><item><title>Hugo NexT V4 介绍</title><link>/mist/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/mist/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自 
 &lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-Hexo NexT
-&lt;i class="fa fa-external-link-alt">&lt;/i>
-&lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 ❤️ 重新出发，愿你同样会喜欢，也欢迎加入共建！ 😄&lt;/p></description></item><item><title>世界，你好！</title><link>/mist/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/mist/demo/hello-world.html</guid><description>&lt;blockquote>
+ Hexo NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 &amp;#x2764;&amp;#xfe0f; 重新出发，愿你同样会喜欢，也欢迎加入共建！ &amp;#x1f604;&lt;/p></description></item><item><title>世界，你好！</title><link>/mist/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/mist/demo/hello-world.html</guid><description>&lt;blockquote>
 &lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
 &lt;/blockquote>
 &lt;p>
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-Hugo
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item></channel></rss>

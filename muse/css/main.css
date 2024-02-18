@@ -718,7 +718,7 @@ kbd {
   text-align: left;
   top: -20px;
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
 
@@ -727,7 +727,7 @@ kbd {
   bottom: -20px;
   text-align: right;
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
 
@@ -950,7 +950,7 @@ kbd {
 
 .main .note.default:not(.no-icon)::before {
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   color: #777;
 }
@@ -972,7 +972,7 @@ kbd {
 
 .main .note.primary:not(.no-icon)::before {
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   color: #6f42c1;
 }
@@ -994,7 +994,7 @@ kbd {
 
 .main .note.info:not(.no-icon)::before {
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   color: #428bca;
 }
@@ -1016,7 +1016,7 @@ kbd {
 
 .main .note.success:not(.no-icon)::before {
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   color: #5cb85c;
 }
@@ -1038,7 +1038,7 @@ kbd {
 
 .main .note.warning:not(.no-icon)::before {
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   color: #f0ad4e;
 }
@@ -1060,7 +1060,7 @@ kbd {
 
 .main .note.danger:not(.no-icon)::before {
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   color: #d9534f;
 }
@@ -1888,7 +1888,7 @@ header.header {
   font-size: 32px;
   line-height: 1;
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
 
@@ -2886,7 +2886,7 @@ header.header {
 
 .post-body h1 .header-anchor::before, .post-body h1 .headerlink::before, .post-body h2 .header-anchor::before, .post-body h2 .headerlink::before, .post-body h3 .header-anchor::before, .post-body h3 .headerlink::before, .post-body h4 .header-anchor::before, .post-body h4 .headerlink::before, .post-body h5 .header-anchor::before, .post-body h5 .headerlink::before, .post-body h6 .header-anchor::before, .post-body h6 .headerlink::before {
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
 
@@ -3486,7 +3486,7 @@ header.header {
   margin-right: 9px;
   width: 14px;
   content: "";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
 
@@ -4208,7 +4208,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #979142;
+  background: #36c417;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
