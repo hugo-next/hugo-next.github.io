@@ -174,7 +174,10 @@ NexT.utils = {
   },
 
   registerImageViewer: function() {
-    new Viewer(document.querySelector('.post-body'),{ navbar:2, toolbar:2 });
+    const post_body = document.querySelector('.post-body');
+    if (post_body) {
+      new Viewer(post_body,{ navbar:2, toolbar:2 });
+    }
   },
 
   registerToolButtons: function () {
@@ -354,25 +357,25 @@ NexT.utils = {
   },
 
   getCDNResource: function (res) {
-    let { plugins, router } = NexT.CONFIG.vendor;
-    let { name, version, file, alias, alias_name } = res;
 
-    let npm_name = name;
-    if (alias_name) npm_name = alias_name;
+    let router = NexT.CONFIG.vendor.router;
+    let { name, version, file, alias, alias_name } = res;
+   
     let res_src = '';
-    switch (plugins) {
-      case 'cdnjs':
-      case 'bootcdn':
-      case 'qiniu':
-        let cdnjs_name = alias || name;
-        let cdnjs_file = file.replace(/^(dist|lib|source|\/js|)\/(browser\/|)/, '');
-        if (cdnjs_file.indexOf('min') == -1) {          
-          cdnjs_file = cdnjs_file.replace(/\.js$/, '.min.js');
+  
+    switch (router.type) {
+      case "modern":
+        if (alias_name) name = alias_name;
+        let alias_file = file.replace(/^(dist|lib|source|\/js|)\/(browser\/|)/, '');
+        if (alias_file.indexOf('min') == -1) {          
+          alias_file = alias_file.replace(/\.js$/, '.min.js');
         }
-        res_src = `${router}/${cdnjs_name}/${version}/${cdnjs_file}`
+        res_src = `${router.url}/${name}/${version}/${alias_file}`;
         break;
       default:
-        res_src = `${router}/${npm_name}@${version}/${file}`
+        if (alias) name = alias;
+        res_src = `${router.url}/${name}@${version}/${file}`;
+        break;
     }
 
     return res_src;
@@ -1398,15 +1401,5 @@ NexT.plugins.others.lawidget = function() {
       },
       parentNode: document.getElementById('la-siteinfo-widget')
     }, NexT.utils.fmtLaWidget());
-  });
-}
-;
-/* Google translate plugin */
-NexT.plugins.others.translate = function() {
-  const element = '#gtranslate';
-  if (!NexT.utils.checkDOMExist(element)) return;
-  NexT.utils.lazyLoadComponent(element, function() { 
-    window.translateelement_styles='/css/google-translate.min.css'; 
-    NexT.utils.getScript('/js/third-party/google-translate.min.js');
   });
 }

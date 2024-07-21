@@ -2429,6 +2429,17 @@ header.header {
 
 .footer-inner .vendors-list img {
   display: inline-block;
+  max-width: 50px;
+}
+
+@media (max-width: 767px) {
+  .footer-inner .vendors-list img {
+    max-width: 40px;
+  }
+}
+
+.footer-inner .vendors-list img:last-child {
+  max-height: 18px;
 }
 
 .footer-inner .vendors-list a:nth-child(1) img {
@@ -4361,7 +4372,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #ef0b08;
+  background: #5abbe2;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
