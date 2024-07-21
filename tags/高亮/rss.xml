@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>高亮 on Hugo NexT</title><link>/tags/%E9%AB%98%E4%BA%AE/</link><description>Recent content in 高亮 on Hugo NexT</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 07 Jun 2022 19:09:52 +0800</lastBuildDate><atom:link href="/tags/%E9%AB%98%E4%BA%AE/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 内置的 Chroma 语法高亮</title><link>/demo/syntax-highlighting.html</link><pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate><guid>/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p>
-&lt;p>以下通过 Hugo 内置短代码 &lt;code>highlight&lt;/code> 和 &lt;code>Markdown&lt;/code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>高亮 on Hugo NexT</title><link>/tags/%E9%AB%98%E4%BA%AE/</link><description>Recent content in 高亮 on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 07 Jun 2022 19:09:52 +0800</lastBuildDate><atom:link href="/tags/%E9%AB%98%E4%BA%AE/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 内置的 Chroma 语法高亮</title><link>/demo/syntax-highlighting.html</link><pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate><guid>/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p>
+&lt;p>以下通过 Hugo 内置短代码 &lt;code>highlight&lt;/code> 和 &lt;code>Markdown&lt;/code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
 &lt;a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo 文档" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-Hugo 文档
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ Hugo 文档
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>。&lt;/p></description></item></channel></rss>

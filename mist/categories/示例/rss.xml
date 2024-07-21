@@ -1,35 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>示例 on Hugo NexT</title><link>/mist/categories/%E7%A4%BA%E4%BE%8B/</link><description>Recent content in 示例 on Hugo NexT</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 06 Oct 2022 09:02:26 +0800</lastBuildDate><atom:link href="/mist/categories/%E7%A4%BA%E4%BE%8B/rss.xml" rel="self" type="application/rss+xml"/><item><title>没有H1-6标题头的文章</title><link>/mist/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>/mist/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>示例 on Hugo NexT</title><link>/mist/categories/%E7%A4%BA%E4%BE%8B/</link><description>Recent content in 示例 on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 21 Jul 2024 10:28:12 +0800</lastBuildDate><atom:link href="/mist/categories/%E7%A4%BA%E4%BE%8B/rss.xml" rel="self" type="application/rss+xml"/><item><title>图像浏览工具</title><link>/mist/demo/image-viewer.html</link><pubDate>Sun, 21 Jul 2024 10:28:12 +0800</pubDate><guid>/mist/demo/image-viewer.html</guid><description>&lt;p>本主题自带图像浏览器功能，支持对文章区域内出现的图片进行浏览，点击图片可以查看大图，点击空白处可以关闭。不需要配置任何参数，只要在文章里面相应的位置添加图片信息即可 。&lt;/p></description></item><item><title>没有H1-6标题头的文章</title><link>/mist/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>/mist/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
 &lt;blockquote>
 &lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭。&lt;/p>
 &lt;/blockquote></description></item><item><title>Mermaid支持流程图</title><link>/mist/demo/mermaid-charts.html</link><pubDate>Sun, 18 Sep 2022 20:58:13 +0800</pubDate><guid>/mist/demo/mermaid-charts.html</guid><description>&lt;p>本主题已支持 &lt;code>Mermaid&lt;/code> 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 &lt;code>Mermaid&lt;/code> 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站：
 &lt;a href="https://mermaid-js.github.io/" title="https://mermaid-js.github.io/" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-https://mermaid-js.github.io/
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ https://mermaid-js.github.io/
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>。&lt;/p></description></item><item><title>数学公式渲染</title><link>/mist/demo/math-formula.html</link><pubDate>Sun, 11 Sep 2022 10:16:02 +0800</pubDate><guid>/mist/demo/math-formula.html</guid><description>&lt;p>本主题支持 &lt;code>mathjax&lt;/code> 和 &lt;code>katex&lt;/code> 两种不的方案支持数学公式的渲染，可根据自已的需求进行选择。&lt;/p></description></item><item><title>支持用户自定义设计</title><link>/mist/demo/custom-files.html</link><pubDate>Sat, 10 Sep 2022 21:02:32 +0800</pubDate><guid>/mist/demo/custom-files.html</guid><description>&lt;p>对于熟悉前端开发的用户来说，可以通过自定义文件配置，实现对站点的样式和布局进行个性化的调整。其中布局方面主要是支持左侧边栏的站点概览部分，以及站点底部2个位置，但样式的重置可以是整个站点的任意位置。&lt;/p></description></item><item><title>自定义短语示例</title><link>/mist/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>/mist/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为此设计了一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>文章目录导航</title><link>/mist/demo/table-of-content.html</link><pubDate>Wed, 08 Jun 2022 21:12:52 +0800</pubDate><guid>/mist/demo/table-of-content.html</guid><description>&lt;p>巴顿将军说过：“衡量一个人是否成功，不是看他站到顶峰，而是从顶峰跌落之后的反弹力”，褚时健的人生便是如此，中年发家致富，名利双收，之后又跌落到谷底，等到74岁再创业，10年后带着褚橙归来，东山再起收获亿万财富，他的发展轨迹就是反弹的过程。&lt;/p></description></item><item><title>Hugo 内置的 Chroma 语法高亮</title><link>/mist/demo/syntax-highlighting.html</link><pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate><guid>/mist/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p>
-&lt;p>以下通过 Hugo 内置短代码 &lt;code>highlight&lt;/code> 和 &lt;code>Markdown&lt;/code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅
+&lt;p>以下通过 Hugo 内置短代码 &lt;code>highlight&lt;/code> 和 &lt;code>Markdown&lt;/code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
 &lt;a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo 文档" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-Hugo 文档
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ Hugo 文档
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>。&lt;/p></description></item><item><title>支持 Emoji 表情</title><link>/mist/demo/emoji-support.html</link><pubDate>Sat, 04 Jun 2022 19:46:45 +0800</pubDate><guid>/mist/demo/emoji-support.html</guid><description>&lt;p>Emoji 可以通过多种方式在 Hugo 项目中启用。&lt;/p>
 &lt;p>
 &lt;a href="https://gohugo.io/functions/emojify/" title="&amp;lt;code&amp;gt;emojify&amp;lt;/code&amp;gt;" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-&lt;code>emojify&lt;/code>
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ &lt;code>emojify&lt;/code>
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a> 方法可以直接在模板中调用, 或者使用
 &lt;a href="https://gohugo.io/templates/shortcode-templates#inline-shortcodes" title="行内 Shortcodes" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-行内 Shortcodes
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ 行内 Shortcodes
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>.&lt;/p>
 &lt;p>要全局使用 emoji, 需要在你的
 &lt;a href="https://gohugo.io/getting-started/configuration/" title="网站配置" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-网站配置
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ 网站配置
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a>中设置 &lt;code>enableEmoji&lt;/code> 为 &lt;code>true&lt;/code>，
 然后你就可以直接在文章中输入 emoji 的代码。&lt;/p></description></item><item><title>Markdown 语法支持</title><link>/mist/demo/markdown-syntax.html</link><pubDate>Fri, 03 Jun 2022 11:52:18 +0800</pubDate><guid>/mist/demo/markdown-syntax.html</guid><description>&lt;p>仅以此篇文章来测试下在 &lt;code>NexT&lt;/code> 主题中在通过 &lt;code>Hugo&lt;/code> 引擎来建站时，是否支持 &lt;code>Markdown&lt;/code> 文件内容中所写的各种语法，并展示下实际的效果。&lt;/p></description></item><item><title>世界，你好！</title><link>/mist/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/mist/demo/hello-world.html</guid><description>&lt;blockquote>
 &lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
 &lt;/blockquote>
 &lt;p>
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-Hugo
-&lt;i class="fa fa-external-link-alt">&lt;/i>
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
 &lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item></channel></rss>
