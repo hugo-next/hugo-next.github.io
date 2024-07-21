@@ -4219,7 +4219,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #93b17f;
+  background: #145c9d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
