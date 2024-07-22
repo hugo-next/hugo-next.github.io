@@ -4233,7 +4233,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #13c8d7;
+  background: #54338a;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
