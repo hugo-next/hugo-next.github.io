@@ -123,15 +123,15 @@ HTMLElement.prototype.wrap = function (wrapper) {
 };
 
 NexT.utils = {
-  registerMenuClick: function() {
+  registerMenuClick: function () {
     const pMenus = document.querySelectorAll('.main-menu > li > a.menus-parent');
-    pMenus.forEach(function(item) {
+    pMenus.forEach(function (item) {
       const icon = item.querySelector('span > i');
-      var ul = item.nextElementSibling;  
-      
-      item.addEventListener('click', function(e) {
+      var ul = item.nextElementSibling;
+
+      item.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         ul.classList.toggle('expand');
         if (ul.classList.contains('expand')) {
           icon.className = 'fa fa-angle-down';
@@ -146,9 +146,9 @@ NexT.utils = {
       }
     });
   },
-  registerImageLoadEvent: function() {
+  registerImageLoadEvent: function () {
     const images = document.querySelectorAll('.sidebar img, .post-block img, .vendors-list img');
-			
+
     const callback = (entries) => {
       entries.forEach(item => {
         if (item.intersectionRatio > 0) {
@@ -156,7 +156,7 @@ NexT.utils = {
           let imgSrc = ele.getAttribute('data-src');
           if (imgSrc) {
             let img = new Image();
-            img.addEventListener('load', function() {
+            img.addEventListener('load', function () {
               ele.src = imgSrc;
             }, false);
             ele.src = imgSrc;
@@ -166,23 +166,23 @@ NexT.utils = {
         }
       })
     };
-      
+
     const observer = new IntersectionObserver(callback);
     images.forEach(img => {
       observer.observe(img);
     });
   },
 
-  registerImageViewer: function() {
+  registerImageViewer: function () {
     const post_body = document.querySelector('.post-body');
     if (post_body) {
-      new Viewer(post_body,{ navbar:2, toolbar:2 });
+      new Viewer(post_body, { navbar: 2, toolbar: 2 });
     }
   },
 
   registerToolButtons: function () {
     const buttons = document.querySelector('.tool-buttons');
-    
+
     const scrollbar_buttons = buttons.querySelectorAll('div:not(#toggle-theme)');
     scrollbar_buttons.forEach(button => {
       let targetId = button.id;
@@ -202,12 +202,12 @@ NexT.utils = {
 
   slidScrollBarAnime: function (targetId, easing = 'linear', duration = 500) {
     const targetObj = document.getElementById(targetId);
-   
+
     window.anime({
       targets: document.scrollingElement,
       duration: duration,
       easing: easing,
-      scrollTop:  targetId == '' || !targetObj ? 0 : targetObj.getBoundingClientRect().top + window.scrollY
+      scrollTop: targetId == '' || !targetObj ? 0 : targetObj.getBoundingClientRect().top + window.scrollY
     });
   },
 
@@ -263,8 +263,8 @@ NexT.utils = {
     }
   },
 
-  fmtLaWidget: function(){
-    setTimeout(function(){
+  fmtLaWidget: function () {
+    setTimeout(function () {
       const laWidget = document.querySelectorAll('#la-siteinfo-widget span');
       if (laWidget.length > 0) {
         const valIds = [0, 2, 4, 6];
@@ -278,8 +278,8 @@ NexT.utils = {
   },
 
   fmtBusuanzi: function () {
-    setTimeout(function(){
-      const bszUV = document.getElementById('busuanzi_value_site_uv');    
+    setTimeout(function () {
+      const bszUV = document.getElementById('busuanzi_value_site_uv');
       if (bszUV) {
         bszUV.innerText = NexT.utils.numberFormat(bszUV.innerText);
       }
@@ -287,7 +287,7 @@ NexT.utils = {
       if (bszPV) {
         bszPV.innerText = NexT.utils.numberFormat(bszPV.innerText);
       }
-    }, 800);  
+    }, 800);
   },
 
   numberFormat: function (number) {
@@ -360,14 +360,14 @@ NexT.utils = {
 
     let router = NexT.CONFIG.vendor.router;
     let { name, version, file, alias, alias_name } = res;
-   
+
     let res_src = '';
-  
+
     switch (router.type) {
       case "modern":
         if (alias_name) name = alias_name;
         let alias_file = file.replace(/^(dist|lib|source|\/js|)\/(browser\/|)/, '');
-        if (alias_file.indexOf('min') == -1) {          
+        if (alias_file.indexOf('min') == -1) {
           alias_file = alias_file.replace(/\.js$/, '.min.js');
         }
         res_src = `${router.url}/${name}/${version}/${alias_file}`;
@@ -628,7 +628,7 @@ NexT.utils = {
   hideComments: function () {
     let postComments = document.querySelector('.post-comments');
     if (postComments !== null) {
-        postComments.style.display = 'none';
+      postComments.style.display = 'none';
     }
   },
 
@@ -703,7 +703,7 @@ NexT.utils = {
     });
   },
 
-  getStyle: function (src, position='after', parent) {
+  getStyle: function (src, position = 'after', parent) {
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('type', 'text/css');
@@ -723,8 +723,11 @@ NexT.utils = {
         condition: legacyCondition
       }).then(options);
     }
+
     const {
       condition = false,
+      module = false,
+      textContent = undefined,
       attributes: {
         id = '',
         async = false,
@@ -744,6 +747,8 @@ NexT.utils = {
 
         if (id) script.id = id;
         if (crossOrigin) script.crossOrigin = crossOrigin;
+        if (module) script.type = 'module';
+        if (textContent != undefined) script.textContent = textContent;
         script.async = async;
         script.defer = defer;
         Object.assign(script.dataset, dataset);
@@ -754,22 +759,25 @@ NexT.utils = {
         script.onload = resolve;
         script.onerror = reject;
 
-        if (typeof src === 'object') {
-          const { url, integrity } = src;
-          script.src = url;
-          if (integrity) {
-            script.integrity = integrity;
-            script.crossOrigin = 'anonymous';
+        if (src != null && src != undefined) {
+          if (typeof src === 'object') {
+            const { url, integrity } = src;
+            script.src = url;
+            if (integrity) {
+              script.integrity = integrity;
+              script.crossOrigin = 'anonymous';
+            }
+          } else {
+            script.src = src;
           }
-        } else {
-          script.src = src;
         }
+
         (parentNode || document.head).appendChild(script);
       }
     });
   },
 
-  lazyLoadComponent: function(selector, legacyCallback) {
+  lazyLoadComponent: function (selector, legacyCallback) {
     if (legacyCallback) {
       return this.lazyLoadComponent(selector).then(legacyCallback);
     }
@@ -1093,111 +1101,132 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 ;
-/* AddThis share plugin */
-NexT.plugins.share.addthis = function() {
-  const element = '.addthis_inline_share_toolbox';
-  if (!NexT.CONFIG.addthis || !NexT.utils.checkDOMExist(element)) return; 
-
-  const addthis_js = NexT.CONFIG.addthis.js + '?pubid=' + NexT.CONFIG.addthis.cfg.pubid;
-
-  NexT.utils.lazyLoadComponent(element, function() {
-    NexT.utils.getScript(addthis_js, {
-      attributes: {
-        async: false
-      },
-      parentNode: document.querySelector(element)
-    });
-  });
-}
-;
-/* Waline comment plugin */
-NexT.plugins.comments.waline = function() {
-  const element = '.waline-container';
-  if (!NexT.CONFIG.waline
-    || !NexT.utils.checkDOMExist(element)) return; 
-  
+/* Waline3 comment plugin */
+NexT.plugins.comments.waline3 = function () {
+  const element = '.waline3-container';
+  if (!NexT.CONFIG.waline3
+    || !NexT.utils.checkDOMExist(element)) return;
+    
   const {
-    comment,
-    emoji, 
-    imguploader, 
-    pageview, 
-    placeholder, 
+    emoji,
+    search,
+    imguploader,
+    placeholder,
     sofa,
-    requiredmeta, 
-    serverurl, 
+    requiredmeta,
+    serverurl,
     wordlimit,
     reaction,
     reactiontext,
     reactiontitle
-  } = NexT.CONFIG.waline.cfg;
+  } = NexT.CONFIG.waline3.cfg;
 
-  const waline_js = NexT.utils.getCDNResource(NexT.CONFIG.waline.js);
+  const waline_js = NexT.utils.getCDNResource(NexT.CONFIG.waline3.js);
 
-  let locale = {
-    placeholder   : placeholder,
-    sofa          : sofa,
-    reactionTitle : reactiontitle
-  };
+  NexT.utils.lazyLoadComponent(element, () => {
+    
+    const waline_css = NexT.utils.getCDNResource(NexT.CONFIG.waline3.css);
+    NexT.utils.getStyle(waline_css, 'before');
+   
+    let waline_script = `
+      let locale = {
+        placeholder   : '${placeholder}',
+        sofa          : '${sofa}',
+        reactionTitle : '${reactiontitle}'
+      };
 
-  reactiontext.forEach(function(value, index){
-    locale['reaction'+index] = value;
-  });
-
-  NexT.utils.lazyLoadComponent(element, function () {    
-    NexT.utils.getScript(waline_js, function(){
-      const waline_css = NexT.utils.getCDNResource(NexT.CONFIG.waline.css);
-      NexT.utils.getStyle(waline_css, 'before');
-
-      Waline.init({
-        locale,
-        el            : element,
-        pageview      : pageview,
-        comment       : comment,
-        emoji         : emoji,
-        imageUploader : imguploader,
-        wordLimit     : wordlimit,
-        requiredMeta  : requiredmeta,
-        reaction      : reaction,
-        serverURL     : serverurl,
-        lang          : NexT.CONFIG.lang,
-        dark          : 'html[data-theme="dark"]'
+      let recatt = ${JSON.stringify(reactiontext)}
+      recatt.forEach(function(value, index){
+        locale['reaction'+index] = value;
       });
+    
+      import('${waline_js}').then((Waline) => {
+        Waline.init({
+          locale,
+          el            : '${element}',
+          emoji         : ${emoji},
+          search        : ${search},
+          imageUploader : ${imguploader},
+          wordLimit     : ${wordlimit},
+          requiredMeta  : ${JSON.stringify(requiredmeta)},
+          reaction      : ${reaction},
+          serverURL     : '${serverurl}',
+          dark          : 'html[data-theme="dark"]'
+        });
 
-      NexT.utils.hiddeLodingCmp(element);
-    })
+        NexT.utils.hiddeLodingCmp('${element}');
+      });
+    `;
+    
+    NexT.utils.getScript(null, { module: true, textContent: waline_script });
   });
 }
 ;
 /* Page's view & comment counter plugin */
-NexT.plugins.others.counter = function() {
-    let pageview_js = undefined;
-    let comment_js = undefined;
+NexT.plugins.others.counter = function () {
+  let pageview_js = undefined;
+  let comment_js = undefined;
 
-    const post_meta = NexT.CONFIG.postmeta;
+  const post_meta = NexT.CONFIG.postmeta;
 
-    const views = post_meta.views;
-    if(views != undefined && views.enable) {
-      if (views.plugin == 'waline') {
-        pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.js[0]);
-        NexT.utils.getScript(pageview_js, function(){
+  const views = post_meta.views;
+  if (views != undefined && views.enable) {
+    let pageview_el = '#pageview-count';
+
+    switch (views.plugin) {
+      case 'waline':
+        pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.pagecnt);
+        NexT.utils.getScript(pageview_js, function () {
           Waline.pageviewCount({
+            selector : pageview_el,
             serverURL: NexT.CONFIG.waline.cfg.serverurl
           });
         });
-      }
+        break;
+      case 'waline3':
+        pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline3.pagecnt);
+
+        let pageview_script = `
+          import('${pageview_js}').then((Waline) => {
+            Waline.pageviewCount({             
+              selector : '${pageview_el}',
+              serverURL: '${NexT.CONFIG.waline3.cfg.serverurl}'
+            })
+          });
+          `;
+        NexT.utils.getScript(null, { module: true, textContent: pageview_script });
+        break;
     }
 
-    const comments = post_meta.comments;
-    if (comments != undefined && comments.enable) {
-      if (comments.plugin == 'waline') {
-        comment_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.js[1]);
-        NexT.utils.getScript(comment_js, function(){
+  }
+
+  const comments = post_meta.comments;
+  if (comments != undefined && comments.enable) {
+    let comments_el = '#comments-count';
+    switch (comments.plugin) {
+      case 'waline':
+        comment_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.commentcnt);
+        NexT.utils.getScript(comment_js, function () {
           Waline.commentCount({
+            selector : comments_el,
             serverURL: NexT.CONFIG.waline.cfg.serverurl
           });
         });
-      }
+        break;
+      case 'waline3':
+        comment_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline3.commentcnt);
+        let comment_script = `
+          import('${comment_js}').then((Waline) => {
+            Waline.commentCount({             
+              selector : '${comments_el}',
+              serverURL: '${NexT.CONFIG.waline3.cfg.serverurl}'
+            })
+          });
+          `;
+        NexT.utils.getScript(null, { module: true, textContent: comment_script });
+        break;
     }
+  }
 }
 ;
 /* Giscus comment plugin */
