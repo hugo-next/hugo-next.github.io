@@ -3239,6 +3239,15 @@ header.header {
   margin-right: 10px;
 }
 
+.post-share-tools {
+  display: flex;
+  justify-content: center;
+}
+
+.post-share-tools a {
+  border: 0px;
+}
+
 .post-widgets {
   border-top: 1px solid #eee;
   margin-top: 15px;

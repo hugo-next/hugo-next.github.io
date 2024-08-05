@@ -3233,6 +3233,15 @@ header.header {
   margin-right: 10px;
 }
 
+.post-share-tools {
+  display: flex;
+  justify-content: center;
+}
+
+.post-share-tools a {
+  border: 0px;
+}
+
 .post-widgets {
   border-top: 1px solid #eee;
   margin-top: 15px;
@@ -4212,7 +4221,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #650931;
+  background: #c9db72;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
