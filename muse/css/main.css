@@ -624,6 +624,7 @@ td {
 .highlight pre {
   position: relative;
   overflow-x: auto;
+  padding: 4px;
 }
 
 .highlight table tbody tr {
@@ -2964,6 +2965,10 @@ header.header {
   max-width: 98%;
 }
 
+.post-body #more {
+  visibility: hidden;
+}
+
 .post-gallery {
   display: flex;
   min-height: 200px;
@@ -4221,7 +4226,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #c9db72;
+  background: #439e04;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

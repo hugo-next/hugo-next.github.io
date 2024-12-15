@@ -1,1 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.3.x on Hugo NexT</title><link>/tags/4.3.x/</link><description>Recent content in 4.3.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 02 Oct 2022 21:46:18 +0800</lastBuildDate><atom:link href="/tags/4.3.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/hugo-next-4-3-1-release.html</guid><description>此次修补版本发布主要是做了少许的优化，参考如下： 升级 Waline 至最新版本支持文章表情互动（点赞功能） 与配置文件联动，优化深浅色主题的切换逻辑 给文章导</description></item><item><title>Hugo Next 4.3.0 Release</title><link>/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/hugo-next-4-3-0-release.html</guid><description>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 增加百度，谷歌、不蒜子统计支持 #19 增加对数学公式的渲染支持 #27 增加</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.3.x on Hugo NexT</title><link>/tags/4.3.x/</link><description>Recent content in 4.3.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 02 Oct 2022 21:46:18 +0800</lastBuildDate><atom:link href="/tags/4.3.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
+&lt;ul>
+&lt;li>升级 Waline 至最新版本支持文章表情互动（点赞功能）&lt;/li>
+&lt;li>与配置文件联动，优化深浅色主题的切换逻辑&lt;/li>
+&lt;li>给文章导航样式增加树形连线效果&lt;/li>
+&lt;li>增加主题的模板功能，参考：
+&lt;a href="https://github.com/hugo-next/hugo-theme-next-starter" title="hugo-theme-next-starter" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ hugo-theme-next-starter
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.3.0 Release</title><link>/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/hugo-next-4-3-0-release.html</guid><description>&lt;p>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;ul>
+&lt;li>增加百度，谷歌、不蒜子统计支持 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/19" title="#19" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #19
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>增加对数学公式的渲染支持 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/27" title="#27" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #27
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>增加全站文章字数统计和阅读时间显示 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/30" title="#30" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #30
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>增加对用户自定义布局和样式的支持 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/33" title="#33" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #33
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>增加左侧导航栏站点资讯功能 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/34" title="#34" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #34
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复菜单选项和小图标的对齐 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/37" title="#37" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #37
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复Tag与Category显示为小写字母 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/46" title="#46" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #46
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持流程图，类图，时序图等展示 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/56" title="#56" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #56
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复代码高亮块宽度超长时显示x轴&lt;/li>
+&lt;li>增加右下角工具按钮功能&lt;/li>
+&lt;li>增加谷歌在线翻译支持&lt;/li>
+&lt;li>优化文章列表显示，增加数字序号（注意是从标题2开始，标题1已经被title使用了）&lt;/li>
+&lt;/ul>
+&lt;div class="note warning ">
+ 注意： 此次升级增删了些配置项目，建议使用对比工具检查与你本地配置文件的差异地方，手动调整一下，比如站点信息，数据公式，默认关闭文章目录等等。 😄
+&lt;/div>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item></channel></rss>

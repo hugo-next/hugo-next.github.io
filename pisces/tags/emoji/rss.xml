@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Emoji on Hugo NexT</title><link>/pisces/tags/emoji/</link><description>Recent content in Emoji on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 04 Jun 2022 19:46:45 +0800</lastBuildDate><atom:link href="/pisces/tags/emoji/rss.xml" rel="self" type="application/rss+xml"/><item><title>支持 Emoji 表情</title><link>/pisces/demo/emoji-support.html</link><pubDate>Sat, 04 Jun 2022 19:46:45 +0800</pubDate><guid>/pisces/demo/emoji-support.html</guid><description>&lt;p>Emoji 可以通过多种方式在 Hugo 项目中启用。&lt;/p>
 &lt;p>
-&lt;a href="https://gohugo.io/functions/emojify/" title="&amp;lt;code&amp;gt;emojify&amp;lt;/code&amp;gt;" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+&lt;a href="https://gohugo.io/functions/emojify/" title="emojify" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  &lt;code>emojify&lt;/code>
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>

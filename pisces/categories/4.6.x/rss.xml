@@ -1,1 +1,141 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.6.x on Hugo NexT</title><link>/pisces/categories/4.6.x/</link><description>Recent content in 4.6.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Jul 2024 22:34:21 +0800</lastBuildDate><atom:link href="/pisces/categories/4.6.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.6.3 Release(HotFixed)</title><link>/pisces/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/pisces/hugo-next-4-6-3-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 修改有关于配置文件中CDN供应商的名称缩进的错误，感谢 @zanxj 的及时反馈 移除底部无用供应商名称，增加Git</description></item><item><title>Hugo Next 4.6.2 Release</title><link>/pisces/hugo-next-4-6-2-release.html</link><pubDate>Sun, 21 Jul 2024 21:40:01 +0800</pubDate><guid>/pisces/hugo-next-4-6-2-release.html</guid><description>此次版本发布共提交 39 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：： 增加第三方插件引用本地依赖的支持，同时新增加了cdnjs、u</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.6.x on Hugo NexT</title><link>/pisces/categories/4.6.x/</link><description>Recent content in 4.6.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Jul 2024 22:34:21 +0800</lastBuildDate><atom:link href="/pisces/categories/4.6.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.6.3 Release(HotFixed)</title><link>/pisces/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/pisces/hugo-next-4-6-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;ul>
+&lt;li>修改有关于配置文件中CDN供应商的名称缩进的错误，感谢
+&lt;a href="https://github.com/zanxj" title="@zanxj" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @zanxj
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>的及时反馈&lt;/li>
+&lt;li>移除底部无用供应商名称，增加Github为云资源供应商标识&lt;/li>
+&lt;li>增加底部logo按黑白主题切换填充颜色的效果&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.6.2 Release</title><link>/pisces/hugo-next-4-6-2-release.html</link><pubDate>Sun, 21 Jul 2024 21:40:01 +0800</pubDate><guid>/pisces/hugo-next-4-6-2-release.html</guid><description>&lt;p>此次版本发布共提交 39 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：：&lt;/p>
+&lt;ul>
+&lt;li>增加第三方插件引用本地依赖的支持，同时新增加了cdnjs、unpkg、jsdelivr、staticfile、bootcdn、7ed、zstatic、zeyao等8个不同的CDN服务商，支持自定义CDN服务商配置，并在底部增加相应CDN服务的logo图示。默认使用本地资源加载&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ---------------------------------------------------------------&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CDN 服务&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CDN Settings&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ---------------------------------------------------------------&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">vendors&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># The CDN provider of NexT internal scripts.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Available values: local | cdn&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">internal&lt;/span>: &lt;span style="color:#ae81ff">local&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># The default CDN provider of third-party plugins.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Available values: local | cdnjs | unpkg | &lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># jsdelivr | staticfile | bootcdn | 7ed |&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># zstatic | zeyao | custom&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">plugins&lt;/span>: &lt;span style="color:#ae81ff">local &lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>修复有关于图像浏览器在非文章页面的加载失败错误&lt;/li>
+&lt;li>增加有关于图像浏览器的使用效果示例文章&lt;/li>
+&lt;li>尝试修复文章二级分类统计问题，感谢
+&lt;a href="https://github.com/hxhue" title="@hxhue" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @hxhue
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>贡献的代码&lt;/li>
+&lt;li>修复用户自定义文件的内容描述问题，感谢
+&lt;a href="https://github.com/X-Zero-L" title="@X-Zero-L" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @X-Zero-L
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>贡献的代码&lt;/li>
+&lt;li>强化SEO有关于文章描述内容的检索，感谢
+&lt;a href="https://github.com/YumiLee" title="@YumiLee" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @YumiLee
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>贡献的代码&lt;/li>
+&lt;li>增加Golang代码模块引入的支持，感谢
+&lt;a href="https://github.com/WaterLemons2k" title="@WaterLemons2k" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @WaterLemons2k
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>贡献的代码&lt;/li>
+&lt;li>修复文章分类与标签的相对路径访问缺失&amp;quot;/&amp;ldquo;问题，感谢
+&lt;a href="https://github.com/YumiLee" title="@YumiLee" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @YumiLee
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>贡献的代码&lt;/li>
+&lt;li>修复代码块复制产生多余空行的问题，感谢
+&lt;a href="https://github.com/sxz799" title="@sxz799" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @sxz799
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>贡献的代码&lt;/li>
+&lt;li>新增加了法语语言支持，感谢
+&lt;a href="https://github.com/ThomasL" title="@ThomasL" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @ThomasL
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>贡献的代码&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>因个人的时间原因此次发版直接跳过4.5.4，4.6.0，4.6.1的3个版本，同时此次也有不少新的小伙伴加入，感谢
+&lt;a href="https://github.com/WaterLemons2k" title="@WaterLemons2k" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @WaterLemons2k
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>，
+&lt;a href="https://github.com/YumiLee" title="@YumiLee" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @YumiLee
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>，
+&lt;a href="https://github.com/ThomasL" title="@ThomasL" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @ThomasL
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>，
+&lt;a href="https://github.com/X-Zero-L" title="@X-Zero-L" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @X-Zero-L
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>，
+&lt;a href="https://github.com/hxhue" title="@hxhue" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @hxhue
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>，
+&lt;a href="https://github.com/sxz799" title="@sxz799" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @sxz799
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>，在此非常感感谢他们贡献的代码，也期待更多小伙伴们的加入，谢谢。&lt;/p></description></item></channel></rss>

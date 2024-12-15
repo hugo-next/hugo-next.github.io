@@ -624,6 +624,7 @@ td {
 .highlight pre {
   position: relative;
   overflow-x: auto;
+  padding: 4px;
 }
 
 .highlight table tbody tr {
@@ -2968,6 +2969,10 @@ header.header {
 
 .post-body svg {
   max-width: 98%;
+}
+
+.post-body #more {
+  visibility: hidden;
 }
 
 .post-gallery {
