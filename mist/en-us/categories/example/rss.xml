@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Example on Hugo NexT</title><link>/mist/en-us/categories/example/</link><description>Recent content in Example on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 29 Jan 2025 21:24:02 +0800</lastBuildDate><atom:link href="/mist/en-us/categories/example/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/mist/en-us/demo/02-external-link/</link><pubDate>Sat, 25 Jan 2025 20:59:12 +0800</pubDate><guid>/mist/en-us/demo/02-external-link/</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
+&lt;a href="https://theme-next.js.org/" title="Theme NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Theme NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> The transplanted one is 
+&lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> The high-quality and elegant theme created maintains its easy-to-use features and powerful functionality.&lt;/p>
+&lt;h2 id="user-guide">User Guide
+&lt;a class="header-anchor" href="#user-guide">&lt;/a>
+&lt;/h2>&lt;p>Setting up a NexT theme is easy. Simply follow the documentation to quickly create your personal website!&lt;/p>
+&lt;h2 id="feedback">Feedback
+&lt;a class="header-anchor" href="#feedback">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>Visit the Awesome NexT list to share plugins and tutorials with other users.&lt;/li>
+&lt;li>Join our Gitter chat.&lt;/li>
+&lt;li>Add or improve translations within seconds.&lt;/li>
+&lt;li>Report one in GitHub Issues &amp;#x1f41b; .&lt;/li>
+&lt;li>Apply for a new feature on GitHub.&lt;/li>
+&lt;li>Request a vote for the most popular feature.&lt;/li>
+&lt;/ul></description></item><item><title>Support block information emphasis annotation in Markdown documents</title><link>/mist/en-us/demo/github-blockquote.html</link><pubDate>Wed, 29 Jan 2025 21:24:02 +0800</pubDate><guid>/mist/en-us/demo/github-blockquote.html</guid><description>&lt;p>In the past, the &lt;code>Hugo NexT&lt;/code> theme used to annotate block information through custom phrases. Recently, it has been discovered that &lt;code>Hugo&lt;/code> has been updated from 
+&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.134.0" title="v0.134.0" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ v0.134.0
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>. From the beginning of the version, it is possible to support rendering Blockquote styles in Markdown documents through hook mode (which needs to be implemented by oneself), achieving warning style styles similar to Github. So 7 different styles were added to the &lt;code>Hugo NexT&lt;/code> theme for users to choose from, and they could also customize icons and color configurations.&lt;/p></description></item><item><title>Custom shortcode example</title><link>/mist/en-us/demo/shortcodes.html</link><pubDate>Wed, 29 Jan 2025 21:08:50 +0800</pubDate><guid>/mist/en-us/demo/shortcodes.html</guid><description>&lt;p>Although the &lt;code>Markdown&lt;/code> syntax is already very rich and can meet the vast majority of our writing needs, in order to better layout the content of the article in a more friendly way, a set of custom phrases has been designed for citation, which can be quickly referenced when used.&lt;/p></description></item><item><title>Hugo's Built in Chroma Grammar Highlighting</title><link>/mist/en-us/demo/syntax-highlighting.html</link><pubDate>Wed, 29 Jan 2025 20:09:52 +0800</pubDate><guid>/mist/en-us/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo provides very fast syntax highlighting through Chroma, and now uses Chroma as code block highlighting support in Hugo. It is built into the Go language, and the speed is really, really fast. Most importantly, it is also compatible with the Pygments method we used before.&lt;/p>
+&lt;p>The following verifies the rendering effect of code blocks in different languages and their correct highlighting through Hugo&amp;rsquo;s built-in short code &amp;lsquo;highlight&amp;rsquo; and &amp;lsquo;Markodown&amp;rsquo; code blocks. For more information on optimizing syntax highlighting, please refer to the 
+&lt;a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo Documentation" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo Documentation
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>.&lt;/p></description></item><item><title>Articles without H1-6 header and comments</title><link>/mist/en-us/demo/no-header-title.html</link><pubDate>Wed, 29 Jan 2025 19:45:16 +0800</pubDate><guid>/mist/en-us/demo/no-header-title.html</guid><description>&lt;p>Liu Cixin&amp;rsquo;s acceptance speech for the 2018 Clark Prize (excerpt from some content).&lt;/p>
+
+
+
+ &lt;div class="post-alert-info">
+ &lt;div class="post-alert-title">
+ &lt;i class="fa-solid fa-circle-info">&lt;/i>
+ &lt;span>
+ 
+ Info
+ 
+ &lt;/span>
+ &lt;/div>
+ &lt;div class="post-alert-content">
+ &lt;p>Used to test whether the directory navigation of an article will be directly closed and the comment function will be disabled without the H1-6 title header.&lt;/p>
+
+ &lt;/div>
+ &lt;/div></description></item><item><title>Image Browsing Tool</title><link>/mist/en-us/demo/image-viewer.html</link><pubDate>Sat, 25 Jan 2025 21:28:12 +0800</pubDate><guid>/mist/en-us/demo/image-viewer.html</guid><description>&lt;p>This theme comes with an image browser function that supports browsing images that appear in the article area. Clicking on an image can view a larger image, while clicking on a blank space can close it. No need to configure any parameters, just add image information at the corresponding position in the article.&lt;/p></description></item><item><title>Support Emoji emojis</title><link>/mist/en-us/demo/emoji-support.html</link><pubDate>Sat, 25 Jan 2025 21:18:52 +0800</pubDate><guid>/mist/en-us/demo/emoji-support.html</guid><description>&lt;p>Emojis can be enabled in various ways in the Hugo project.&lt;/p>
+&lt;p>
+&lt;a href="https://gohugo.io/functions/emojify/" title="emojify" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ &lt;code>emojify&lt;/code>
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>The method can be called directly in the template, or use [Inline Shortcodes](
+&lt;a href="https://gohugo.io/templates/shortcode-templates#inline" title="https://gohugo.io/templates/shortcode-templates#inline" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ https://gohugo.io/templates/shortcode-templates#inline
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> -shortcodes).&lt;/p>
+&lt;p>To use emojis globally, you need to 
+&lt;a href="https://gohugo.io/getting-started/configuration/" title="configure" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ configure
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> them on your website set &lt;code>enableEmoji&lt;/code> to &lt;code>true&lt;/code>,Then you can directly enter the emoji code in the article.&lt;/p></description></item><item><title>Support user-defined design</title><link>/mist/en-us/demo/custom-files.html</link><pubDate>Sat, 25 Jan 2025 21:12:32 +0800</pubDate><guid>/mist/en-us/demo/custom-files.html</guid><description>&lt;p>For users familiar with front-end development, personalized adjustments can be made to the style and layout of the site through custom file configuration. In terms of layout, it mainly supports the site overview section in the left sidebar, as well as the two positions at the bottom of the site, but the style reset can be anywhere on the entire site.&lt;/p>
+&lt;h2 id="open-configuration-parameters">Open configuration parameters
+&lt;a class="header-anchor" href="#open-configuration-parameters">&lt;/a>
+&lt;/h2>&lt;p>Firstly, it is necessary to clarify that the following parameters are configured in the &lt;code>params&lt;/code> area of the configuration file:&lt;/p></description></item><item><title>Article Catalog Navigation</title><link>/mist/en-us/demo/table-of-content.html</link><pubDate>Sat, 25 Jan 2025 20:58:52 +0800</pubDate><guid>/mist/en-us/demo/table-of-content.html</guid><description>&lt;p>General Patton once said, &amp;ldquo;The measure of a person&amp;rsquo;s success is not by standing at the peak, but by the rebound force after falling from the peak.&amp;rdquo; Chu Shijian&amp;rsquo;s life was like this: he became wealthy in middle age, gained both fame and fortune, and then fell to the bottom again. He started his own business at the age of 74, returned with Chu Cheng 10 years later, and made a comeback with billions of wealth. His development trajectory was a process of rebound.&lt;/p></description></item><item><title>Markdown Syntax Support</title><link>/mist/en-us/demo/markdown-syntax.html</link><pubDate>Sat, 25 Jan 2025 20:52:18 +0800</pubDate><guid>/mist/en-us/demo/markdown-syntax.html</guid><description>&lt;p>Only use this article to test whether the various syntax written in the content of the &lt;code>Markdown&lt;/code> file is supported when building a website using the &lt;code>Hugo&lt;/code> engine in the &lt;code>NexT&lt;/code> theme, and demonstrate the actual effect.&lt;/p></description></item></channel></rss>

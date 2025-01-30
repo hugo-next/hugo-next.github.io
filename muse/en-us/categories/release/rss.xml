@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release on Hugo NexT</title><link>/muse/en-us/categories/release/</link><description>Recent content in Release on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 30 Jan 2025 21:59:41 +0800</lastBuildDate><atom:link href="/muse/en-us/categories/release/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/muse/en-us/hugo-next-organization.html</link><pubDate>Thu, 30 Jan 2025 21:59:41 +0800</pubDate><guid>/muse/en-us/hugo-next-organization.html</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
+&lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hexo NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> Transplanted from the theme, specifically designed for 
+&lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> The high-quality and elegant theme created maintains its original simple and easy-to-use features and powerful functions.&lt;/p>
+&lt;h1 id="roadmap">Roadmap
+&lt;a class="header-anchor" href="#roadmap">&lt;/a>
+&lt;/h1>&lt;p>At present, the Hugo NexT theme is still under development and improvement. Specific features and the next roadmap details can be found at 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/9" title="Hugo NexT V4 Roadmap" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo NexT V4 Roadmap
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> Please review and feel free to participate in the joint development of PR.&lt;/p></description></item><item><title>Introduction to Hugo NexT V4</title><link>/muse/en-us/hugo-next-v4-introduced.html</link><pubDate>Thu, 30 Jan 2025 21:50:02 +0800</pubDate><guid>/muse/en-us/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> theme &lt;strong>V4&lt;/strong> version ported from 
+&lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hexo NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>. The latest version retains its original simple and easy-to-use features and powerful functions, all because &amp;#x2764;&amp;#xfe0f; Let&amp;rsquo;s start again. We hope you will also enjoy it and welcome you to join us smile:&lt;/p></description></item></channel></rss>

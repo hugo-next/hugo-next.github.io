@@ -14,9 +14,11 @@
 &lt;ul>
 &lt;li>修复左侧51la统计页板不显示数据问题&lt;/li>
 &lt;/ul>
-&lt;blockquote>
-&lt;p>受配置文件参数名称变更所影响&lt;/p>
-&lt;/blockquote>
+
+ &lt;blockquote>
+ &lt;p>受配置文件参数名称变更所影响&lt;/p>
+
+ &lt;/blockquote>
 &lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.5.2 Release(HotFixed)</title><link>/muse/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/muse/hugo-next-4-5-2-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>增加生成索引内容时可指定长度（默认为1000个字）

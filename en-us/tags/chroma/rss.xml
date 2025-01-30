@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Chroma on Hugo NexT</title><link>/en-us/tags/chroma/</link><description>Recent content in Chroma on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 29 Jan 2025 20:09:52 +0800</lastBuildDate><atom:link href="/en-us/tags/chroma/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo's Built in Chroma Grammar Highlighting</title><link>/en-us/demo/syntax-highlighting.html</link><pubDate>Wed, 29 Jan 2025 20:09:52 +0800</pubDate><guid>/en-us/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo provides very fast syntax highlighting through Chroma, and now uses Chroma as code block highlighting support in Hugo. It is built into the Go language, and the speed is really, really fast. Most importantly, it is also compatible with the Pygments method we used before.&lt;/p>
+&lt;p>The following verifies the rendering effect of code blocks in different languages and their correct highlighting through Hugo&amp;rsquo;s built-in short code &amp;lsquo;highlight&amp;rsquo; and &amp;lsquo;Markodown&amp;rsquo; code blocks. For more information on optimizing syntax highlighting, please refer to the 
+&lt;a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo Documentation" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo Documentation
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>.&lt;/p></description></item></channel></rss>

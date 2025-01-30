@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Grammar on Hugo NexT</title><link>/pisces/en-us/categories/grammar/</link><description>Recent content in Grammar on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 29 Jan 2025 21:24:02 +0800</lastBuildDate><atom:link href="/pisces/en-us/categories/grammar/rss.xml" rel="self" type="application/rss+xml"/><item><title>Support block information emphasis annotation in Markdown documents</title><link>/pisces/en-us/demo/github-blockquote.html</link><pubDate>Wed, 29 Jan 2025 21:24:02 +0800</pubDate><guid>/pisces/en-us/demo/github-blockquote.html</guid><description>&lt;p>In the past, the &lt;code>Hugo NexT&lt;/code> theme used to annotate block information through custom phrases. Recently, it has been discovered that &lt;code>Hugo&lt;/code> has been updated from 
+&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.134.0" title="v0.134.0" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ v0.134.0
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>. From the beginning of the version, it is possible to support rendering Blockquote styles in Markdown documents through hook mode (which needs to be implemented by oneself), achieving warning style styles similar to Github. So 7 different styles were added to the &lt;code>Hugo NexT&lt;/code> theme for users to choose from, and they could also customize icons and color configurations.&lt;/p></description></item><item><title>Custom shortcode example</title><link>/pisces/en-us/demo/shortcodes.html</link><pubDate>Wed, 29 Jan 2025 21:08:50 +0800</pubDate><guid>/pisces/en-us/demo/shortcodes.html</guid><description>&lt;p>Although the &lt;code>Markdown&lt;/code> syntax is already very rich and can meet the vast majority of our writing needs, in order to better layout the content of the article in a more friendly way, a set of custom phrases has been designed for citation, which can be quickly referenced when used.&lt;/p></description></item><item><title>Hugo's Built in Chroma Grammar Highlighting</title><link>/pisces/en-us/demo/syntax-highlighting.html</link><pubDate>Wed, 29 Jan 2025 20:09:52 +0800</pubDate><guid>/pisces/en-us/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo provides very fast syntax highlighting through Chroma, and now uses Chroma as code block highlighting support in Hugo. It is built into the Go language, and the speed is really, really fast. Most importantly, it is also compatible with the Pygments method we used before.&lt;/p>
+&lt;p>The following verifies the rendering effect of code blocks in different languages and their correct highlighting through Hugo&amp;rsquo;s built-in short code &amp;lsquo;highlight&amp;rsquo; and &amp;lsquo;Markodown&amp;rsquo; code blocks. For more information on optimizing syntax highlighting, please refer to the 
+&lt;a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo Documentation" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo Documentation
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>.&lt;/p></description></item><item><title>Support Emoji emojis</title><link>/pisces/en-us/demo/emoji-support.html</link><pubDate>Sat, 25 Jan 2025 21:18:52 +0800</pubDate><guid>/pisces/en-us/demo/emoji-support.html</guid><description>&lt;p>Emojis can be enabled in various ways in the Hugo project.&lt;/p>
+&lt;p>
+&lt;a href="https://gohugo.io/functions/emojify/" title="emojify" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ &lt;code>emojify&lt;/code>
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>The method can be called directly in the template, or use [Inline Shortcodes](
+&lt;a href="https://gohugo.io/templates/shortcode-templates#inline" title="https://gohugo.io/templates/shortcode-templates#inline" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ https://gohugo.io/templates/shortcode-templates#inline
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> -shortcodes).&lt;/p>
+&lt;p>To use emojis globally, you need to 
+&lt;a href="https://gohugo.io/getting-started/configuration/" title="configure" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ configure
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> them on your website set &lt;code>enableEmoji&lt;/code> to &lt;code>true&lt;/code>,Then you can directly enter the emoji code in the article.&lt;/p></description></item></channel></rss>

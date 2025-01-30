@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo NexT</title><link>/pisces/</link><description>Recent content on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 14 Dec 2024 19:03:04 +0800</lastBuildDate><atom:link href="/pisces/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/hugo-next-organization.html</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo NexT</title><link>/pisces/</link><description>Recent content on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 02 Jan 2025 19:08:02 +0800</lastBuildDate><atom:link href="/pisces/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/demo/02-external-link/</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/demo/02-external-link/</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
+&lt;a href="https://theme-next.js.org/" title="Theme NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Theme NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> 移植过来的为 
+&lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>打造的高品质优雅主题，保持简单易用的特性和强大的功能。&lt;/p>
+&lt;h2 id="用户指南">用户指南
+&lt;a class="header-anchor" href="#%e7%94%a8%e6%88%b7%e6%8c%87%e5%8d%97">&lt;/a>
+&lt;/h2>&lt;p>设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p></description></item><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/hugo-next-organization.html</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
 &lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -14,8 +29,8 @@
 &lt;h1 id="路线图">路线图
 &lt;a class="header-anchor" href="#%e8%b7%af%e7%ba%bf%e5%9b%be">&lt;/a>
 &lt;/h1>&lt;p>目前 Hugo NexT 主题还在开发与完善中，具体的功能及下一步的路线图详情，可访问
-&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/9" title=" Hugo NexT V4 Roadmap " rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
- Hugo NexT V4 Roadmap 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/9" title=" Hugo NexT V4 Roadmap" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo NexT V4 Roadmap
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
@@ -25,12 +40,28 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 &amp;#x2764;&amp;#xfe0f; 重新出发，愿你同样会喜欢，也欢迎加入共建！ &amp;#x1f604;&lt;/p></description></item><item><title>感谢网友打赏</title><link>/pisces/donation.html</link><pubDate>Fri, 30 Sep 2022 20:07:37 +0800</pubDate><guid>/pisces/donation.html</guid><description>&lt;h2 id="致谢">致谢
+&lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 &amp;#x2764;&amp;#xfe0f; 重新出发，愿你同样会喜欢，也欢迎加入共建！ &amp;#x1f604;&lt;/p></description></item><item><title>世界，你好！</title><link>/pisces/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/pisces/demo/hello-world.html</guid><description>&lt;blockquote>
+ &lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
+
+ &lt;/blockquote>
+&lt;p>
+&lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item><item><title>感谢网友打赏</title><link>/pisces/donation.html</link><pubDate>Fri, 30 Sep 2022 20:07:37 +0800</pubDate><guid>/pisces/donation.html</guid><description>&lt;h2 id="致谢">致谢
 &lt;a class="header-anchor" href="#%e8%87%b4%e8%b0%a2">&lt;/a>
 &lt;/h2>&lt;p>开发 &lt;code>Hugo NexT&lt;/code> 主题原本是个人的业余爱好，但没想到网友们这么的热情，感谢有你们的支持，让我们大家一起来见证它的成长。&lt;/p>
 &lt;h2 id="打赏名单">打赏名单
 &lt;a class="header-anchor" href="#%e6%89%93%e8%b5%8f%e5%90%8d%e5%8d%95">&lt;/a>
-&lt;/h2>&lt;p>以下是打赏名单列表（按时间顺序）：&lt;/p></description></item><item><title>Hugo Next 4.6.3 Release(HotFixed)</title><link>/pisces/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/pisces/hugo-next-4-6-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;/h2>&lt;p>以下是打赏名单列表（按时间顺序）：&lt;/p></description></item><item><title>支持在Markdown文档中实现块信息强调标注</title><link>/pisces/demo/github-blockquote.html</link><pubDate>Thu, 02 Jan 2025 16:08:02 +0800</pubDate><guid>/pisces/demo/github-blockquote.html</guid><description>&lt;p>过去 &lt;code>HugoNexT&lt;/code> 主题都是通过自定义短语来实现块信息的标注，近期发现 &lt;code>Hugo&lt;/code> 从
+&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.134.0" title="v0.134.0" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ v0.134.0
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>版本开始便是可以支持通过hook方式渲染Markdown文档中的Blockquote样式（需要自己实现），实现类似Github的警告风格样式。于是便在 &lt;code>HugoNexT&lt;/code> 主题中添加7种不同风格供用户可选择使用，还可以自定义图标与颜色配置。&lt;/p></description></item><item><title>Hugo Next 4.6.3 Release(HotFixed)</title><link>/pisces/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/pisces/hugo-next-4-6-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>修改有关于配置文件中CDN供应商的名称缩进的错误，感谢
 &lt;a href="https://github.com/zanxj" title="@zanxj" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -46,41 +77,43 @@
 &lt;ul>
 &lt;li>增加第三方插件引用本地依赖的支持，同时新增加了cdnjs、unpkg、jsdelivr、staticfile、bootcdn、7ed、zstatic、zeyao等8个不同的CDN服务商，支持自定义CDN服务商配置，并在底部增加相应CDN服务的logo图示。默认使用本地资源加载&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1"> 1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2"> 2&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-3">&lt;a class="lnlinks" href="#hl-0-3"> 3&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-4">&lt;a class="lnlinks" href="#hl-0-4"> 4&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-5">&lt;a class="lnlinks" href="#hl-0-5"> 5&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-6">&lt;a class="lnlinks" href="#hl-0-6"> 6&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-7">&lt;a class="lnlinks" href="#hl-0-7"> 7&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-8">&lt;a class="lnlinks" href="#hl-0-8"> 8&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-9">&lt;a class="lnlinks" href="#hl-0-9"> 9&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-10">&lt;a class="lnlinks" href="#hl-0-10">10&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-11">&lt;a class="lnlinks" href="#hl-0-11">11&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-12">&lt;a class="lnlinks" href="#hl-0-12">12&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-13">&lt;a class="lnlinks" href="#hl-0-13">13&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-14">&lt;a class="lnlinks" href="#hl-0-14">14&lt;/a>
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ---------------------------------------------------------------&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CDN 服务&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CDN Settings&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ---------------------------------------------------------------&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">vendors&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># The CDN provider of NexT internal scripts.&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Available values: local | cdn&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">internal&lt;/span>: &lt;span style="color:#ae81ff">local&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># The default CDN provider of third-party plugins.&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Available values: local | cdnjs | unpkg | &lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># jsdelivr | staticfile | bootcdn | 7ed |&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># zstatic | zeyao | custom&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">plugins&lt;/span>: &lt;span style="color:#ae81ff">local &lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># ---------------------------------------------------------------&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># CDN 服务&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># CDN Settings&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># ---------------------------------------------------------------&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">vendors&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># The CDN provider of NexT internal scripts.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># Available values: local | cdn&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">internal&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">local&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># The default CDN provider of third-party plugins.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># Available values: local | cdnjs | unpkg | &lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># jsdelivr | staticfile | bootcdn | 7ed |&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># zstatic | zeyao | custom&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">plugins&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">local &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;ul>
+&lt;/div>
+
+&lt;ul>
 &lt;li>修复有关于图像浏览器在非文章页面的加载失败错误&lt;/li>
 &lt;li>增加有关于图像浏览器的使用效果示例文章&lt;/li>
 &lt;li>尝试修复文章二级分类统计问题，感谢
@@ -133,8 +166,9 @@
  
 &lt;/a>贡献的代码&lt;/li>
 &lt;/ul>
-&lt;blockquote>
-&lt;p>因个人的时间原因此次发版直接跳过4.5.4，4.6.0，4.6.1的3个版本，同时此次也有不少新的小伙伴加入，感谢
+
+ &lt;blockquote>
+ &lt;p>因个人的时间原因此次发版直接跳过4.5.4，4.6.0，4.6.1的3个版本，同时此次也有不少新的小伙伴加入，感谢
 &lt;a href="https://github.com/WaterLemons2k" title="@WaterLemons2k" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  @WaterLemons2k
  
@@ -174,9 +208,11 @@
 &lt;ul>
 &lt;li>修复左侧51la统计页板不显示数据问题&lt;/li>
 &lt;/ul>
-&lt;blockquote>
-&lt;p>受配置文件参数名称变更所影响&lt;/p>
-&lt;/blockquote>
+
+ &lt;blockquote>
+ &lt;p>受配置文件参数名称变更所影响&lt;/p>
+
+ &lt;/blockquote>
 &lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.5.2 Release(HotFixed)</title><link>/pisces/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/pisces/hugo-next-4-5-2-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>增加生成索引内容时可指定长度（默认为1000个字）
@@ -205,24 +241,27 @@
 &lt;li>新增标题超连接锚定功能，同时支持鼠标滑动效果（注意观察最右侧的图标显示）&lt;/li>
 &lt;li>实现支持文章二级分类功能，直接在文章&lt;code>front-matter&lt;/code>中配置如下形式就可以实现二级分类&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-3">&lt;a class="lnlinks" href="#hl-0-3">3&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-4">&lt;a class="lnlinks" href="#hl-0-4">4&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-5">&lt;a class="lnlinks" href="#hl-0-5">5&lt;/a>
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-md" data-lang="md">&lt;span style="display:flex;">&lt;span>---
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>categories:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">-&lt;/span> 一级分类
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">-&lt;/span> 二级分类
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">categories:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 一级分类
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 二级分类
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;blockquote>
-&lt;p>具体的效果可点击
+&lt;/div>
+
+
+ &lt;blockquote>
+ &lt;p>具体的效果可点击
 &lt;a href="/pisces/categories/" title="分类" >
  &lt;strong>分类&lt;/strong>
  
@@ -241,10 +280,24 @@
 &lt;div class="note warning ">
  注意： 此次升级增删了些配置项目，建议使用对比工具检查与你本地配置文件的差异地方，手动调整一下，比如增加CDN服务商，waline文章评论显示，默认开启文章目录等等。 😄
 &lt;/div>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>没有H1-6标题头的文章</title><link>/pisces/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>/pisces/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
-&lt;blockquote>
-&lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭。&lt;/p>
-&lt;/blockquote></description></item><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/pisces/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/pisces/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>没有H1-6标题头和评论的文章</title><link>/pisces/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>/pisces/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
+
+
+
+ &lt;div class="post-alert-info">
+ &lt;div class="post-alert-title">
+ &lt;i class="fa-solid fa-circle-info">&lt;/i>
+ &lt;span>
+ 
+ 信息
+ 
+ &lt;/span>
+ &lt;/div>
+ &lt;div class="post-alert-content">
+ &lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭，并关闭评论功能。&lt;/p>
+
+ &lt;/div>
+ &lt;/div></description></item><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/pisces/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/pisces/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>升级 Waline 至最新版本支持文章表情互动（点赞功能）&lt;/li>
 &lt;li>与配置文件联动，优化深浅色主题的切换逻辑&lt;/li>
@@ -339,8 +392,9 @@
  
 &lt;/a>&lt;/li>
 &lt;/ul>
-&lt;blockquote>
-&lt;p>注意： 本地搜索和 Algolia 的搜索索引生成方式不一样，详细参考 &lt;code>config.yaml&lt;/code> 文件说明，若嫌 Algolia 配置麻烦，可直接使用本地搜索功能，配置较简单&lt;/p></description></item><item><title>自定义短语示例</title><link>/pisces/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>/pisces/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为此设计了一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>Hugo Next 4.1.0 Release</title><link>/pisces/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/pisces/hugo-next-4-1-0-release.html</guid><description>&lt;p>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下：&lt;/p>
+
+ &lt;blockquote>
+ &lt;p>注意： 本地搜索和 Algolia 的搜索索引生成方式不一样，详细参考 &lt;code>config.yaml&lt;/code> 文件说明，若嫌 Algolia 配置麻烦，可直接使用本地搜索功能，配置较简单&lt;/p></description></item><item><title>自定义短语示例</title><link>/pisces/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>/pisces/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为引设计一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>Hugo Next 4.1.0 Release</title><link>/pisces/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/pisces/hugo-next-4-1-0-release.html</guid><description>&lt;p>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>使用较低的 Hugo 版本生成站点报错（增加版本识别提示） 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/21" title="#21" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -441,34 +495,19 @@
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
 &lt;/a>中设置 &lt;code>enableEmoji&lt;/code> 为 &lt;code>true&lt;/code>，
-然后你就可以直接在文章中输入 emoji 的代码。&lt;/p></description></item><item><title>Markdown 语法支持</title><link>/pisces/demo/markdown-syntax.html</link><pubDate>Fri, 03 Jun 2022 11:52:18 +0800</pubDate><guid>/pisces/demo/markdown-syntax.html</guid><description>&lt;p>仅以此篇文章来测试下在 &lt;code>NexT&lt;/code> 主题中在通过 &lt;code>Hugo&lt;/code> 引擎来建站时，是否支持 &lt;code>Markdown&lt;/code> 文件内容中所写的各种语法，并展示下实际的效果。&lt;/p></description></item><item><title>世界，你好！</title><link>/pisces/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/pisces/demo/hello-world.html</guid><description>&lt;blockquote>
-&lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
-&lt;/blockquote>
-&lt;p>
-&lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
- Hugo
- 
- &lt;i class="fa fa-external-link-alt">&lt;/i>
- 
-&lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item><item><title>站点示例</title><link>/pisces/flinks.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/pisces/flinks.html</guid><description>&lt;p>如你也正在使用 &lt;code>Hugo NexT&lt;/code> 主题，欢迎在 
-&lt;a href="https://github.com/hugo-next/hugo-next-docs/blob/develop/data/flinks.yaml" title="flinks.yaml" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
- flinks.yaml
- 
- &lt;i class="fa fa-external-link-alt">&lt;/i>
- 
-&lt;/a> 文件底部提交贵站的名称，描述，头像，链接等信息，具体格式内容参考如下：&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+然后你就可以直接在文章中输入 emoji 的代码。&lt;/p></description></item><item><title>Markdown 语法支持</title><link>/pisces/demo/markdown-syntax.html</link><pubDate>Fri, 03 Jun 2022 11:52:18 +0800</pubDate><guid>/pisces/demo/markdown-syntax.html</guid><description>&lt;p>仅以此篇文章来测试下在 &lt;code>NexT&lt;/code> 主题中在通过 &lt;code>Hugo&lt;/code> 引擎来建站时，是否支持 &lt;code>Markdown&lt;/code> 文件内容中所写的各种语法，并展示下实际的效果。&lt;/p></description></item><item><title>站点示例</title><link>/pisces/flinks.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/pisces/flinks.html</guid><description>&lt;p>如想交换本站友情链接，请在评论区留下你的站点信息，格式参考如下：&lt;/p>
+
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-3">&lt;a class="lnlinks" href="#hl-0-3">3&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-4">&lt;a class="lnlinks" href="#hl-0-4">4&lt;/a>
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">NexT 主题&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">desc&lt;/span>: &lt;span style="color:#ae81ff">保持简单的易用性和强大的功能。&lt;/span> &lt;span style="color:#75715e"># 支持HTML代码&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">avatar&lt;/span>: &lt;span style="color:#ae81ff">https://hugo-next.eu.org/imgs/hugo_next_avatar.png&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">link&lt;/span>: &lt;span style="color:#ae81ff">https://hugo-next.eu.org&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Hugo-NexT&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">desc&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Hugo NexT 官方预览网站。&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">avatar&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://hugo-next.eu.org/imgs/hugo_next_avatar.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">link&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://hugo-next.eu.org&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>等待下一次部署成功后，便会在此页面中展示出贵站信息。&lt;/p></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>

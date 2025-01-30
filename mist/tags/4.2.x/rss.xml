@@ -8,5 +8,6 @@
  
 &lt;/a>&lt;/li>
 &lt;/ul>
-&lt;blockquote>
-&lt;p>注意： 本地搜索和 Algolia 的搜索索引生成方式不一样，详细参考 &lt;code>config.yaml&lt;/code> 文件说明，若嫌 Algolia 配置麻烦，可直接使用本地搜索功能，配置较简单&lt;/p></description></item></channel></rss>
+
+ &lt;blockquote>
+ &lt;p>注意： 本地搜索和 Algolia 的搜索索引生成方式不一样，详细参考 &lt;code>config.yaml&lt;/code> 文件说明，若嫌 Algolia 配置麻烦，可直接使用本地搜索功能，配置较简单&lt;/p></description></item></channel></rss>

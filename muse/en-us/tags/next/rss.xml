@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NexT on Hugo NexT</title><link>/muse/en-us/tags/next/</link><description>Recent content in NexT on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 30 Jan 2025 21:59:41 +0800</lastBuildDate><atom:link href="/muse/en-us/tags/next/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/muse/en-us/hugo-next-organization.html</link><pubDate>Thu, 30 Jan 2025 21:59:41 +0800</pubDate><guid>/muse/en-us/hugo-next-organization.html</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
+&lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hexo NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> Transplanted from the theme, specifically designed for 
+&lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> The high-quality and elegant theme created maintains its original simple and easy-to-use features and powerful functions.&lt;/p>
+&lt;h1 id="roadmap">Roadmap
+&lt;a class="header-anchor" href="#roadmap">&lt;/a>
+&lt;/h1>&lt;p>At present, the Hugo NexT theme is still under development and improvement. Specific features and the next roadmap details can be found at 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/9" title="Hugo NexT V4 Roadmap" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo NexT V4 Roadmap
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> Please review and feel free to participate in the joint development of PR.&lt;/p></description></item><item><title>Welcome to the Hugo NexT organization</title><link>/muse/en-us/demo/02-external-link/</link><pubDate>Sat, 25 Jan 2025 20:59:12 +0800</pubDate><guid>/muse/en-us/demo/02-external-link/</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
+&lt;a href="https://theme-next.js.org/" title="Theme NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Theme NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> The transplanted one is 
+&lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> The high-quality and elegant theme created maintains its easy-to-use features and powerful functionality.&lt;/p>
+&lt;h2 id="user-guide">User Guide
+&lt;a class="header-anchor" href="#user-guide">&lt;/a>
+&lt;/h2>&lt;p>Setting up a NexT theme is easy. Simply follow the documentation to quickly create your personal website!&lt;/p>
+&lt;h2 id="feedback">Feedback
+&lt;a class="header-anchor" href="#feedback">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>Visit the Awesome NexT list to share plugins and tutorials with other users.&lt;/li>
+&lt;li>Join our Gitter chat.&lt;/li>
+&lt;li>Add or improve translations within seconds.&lt;/li>
+&lt;li>Report one in GitHub Issues &amp;#x1f41b; .&lt;/li>
+&lt;li>Apply for a new feature on GitHub.&lt;/li>
+&lt;li>Request a vote for the most popular feature.&lt;/li>
+&lt;/ul></description></item><item><title>Introduction to Hugo NexT V4</title><link>/muse/en-us/hugo-next-v4-introduced.html</link><pubDate>Thu, 30 Jan 2025 21:50:02 +0800</pubDate><guid>/muse/en-us/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> theme &lt;strong>V4&lt;/strong> version ported from 
+&lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hexo NexT
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>. The latest version retains its original simple and easy-to-use features and powerful functions, all because &amp;#x2764;&amp;#xfe0f; Let&amp;rsquo;s start again. We hope you will also enjoy it and welcome you to join us smile:&lt;/p></description></item></channel></rss>

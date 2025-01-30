@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blockquote on Hugo NexT</title><link>/muse/tags/blockquote/</link><description>Recent content in Blockquote on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 02 Jan 2025 19:08:02 +0800</lastBuildDate><atom:link href="/muse/tags/blockquote/rss.xml" rel="self" type="application/rss+xml"/><item><title>支持在Markdown文档中实现块信息强调标注</title><link>/muse/demo/github-blockquote.html</link><pubDate>Thu, 02 Jan 2025 16:08:02 +0800</pubDate><guid>/muse/demo/github-blockquote.html</guid><description>&lt;p>过去 &lt;code>HugoNexT&lt;/code> 主题都是通过自定义短语来实现块信息的标注，近期发现 &lt;code>Hugo&lt;/code> 从
+&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.134.0" title="v0.134.0" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ v0.134.0
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>版本开始便是可以支持通过hook方式渲染Markdown文档中的Blockquote样式（需要自己实现），实现类似Github的警告风格样式。于是便在 &lt;code>HugoNexT&lt;/code> 主题中添加7种不同风格供用户可选择使用，还可以自定义图标与颜色配置。&lt;/p></description></item></channel></rss>
