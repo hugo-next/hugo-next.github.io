@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.7.x on Hugo NexT</title><link>/mist/tags/4.7.x/</link><description>Recent content in 4.7.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 31 Jan 2025 17:18:09 +0800</lastBuildDate><atom:link href="/mist/tags/4.7.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo NexT 4.7.2 Release</title><link>/mist/release/hugo-next-4-7-1-release.html</link><pubDate>Fri, 31 Jan 2025 17:18:09 +0800</pubDate><guid>/mist/release/hugo-next-4-7-1-release.html</guid><description>&lt;p>此次版本发布共提交 &lt;strong>60&lt;/strong> 余处按照路线图增加些新功能，同时修复发现的Bug，详细参考如下：&lt;/p>
+&lt;h2 id="sparkles-新特性">&amp;#x2728; 新特性
+&lt;a class="header-anchor" href="#sparkles-%e6%96%b0%e7%89%b9%e6%80%a7">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>支持不同国家的多语言切换 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/148" title="Feature-#148" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#148
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持显示文章的总结摘要与过期信息提示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/111" title="Feature-#111" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#111
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持对长的代码块进行折叠显示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/108" title="Feature-#108" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#108
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持Bilibili视频与音乐播放嵌入显示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/93" title="Feature-#93" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#93
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持在&lt;code>Gemini&lt;/code>和&lt;code>Pisces&lt;/code>模式下显示二级导航菜单&lt;/li>
+&lt;li>支持类似Github风格的告警效果&lt;/li>
+&lt;li>支持阅读更多按钮时跳转时锚定后续内容的效果&lt;/li>
+&lt;li>支持全新的文章分享按钮&lt;/li>
+&lt;li>支持Waline3的评论系统&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-bug修复">&amp;#x1f41b; Bug修复
+&lt;a class="header-anchor" href="#bug-bug%e4%bf%ae%e5%a4%8d">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>修复animate.cssr的动画效果失效
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/158" title="Bug-#158" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#158
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复部分代码块在移动端显示时溢出
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/155" title="Bug-#155" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#155
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复代码复制时会自动在末尾增加换行
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/139" title="Bug-#139" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#139
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复网站资讯中的更新时间参考为文章最后更新时间
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/109" title="Bug-#109" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#109
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复数学公式在行内时显示失效
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/90" title="Bug-#90" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#90
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="zap-优化">&amp;#x26a1; 优化
+&lt;a class="header-anchor" href="#zap-%e4%bc%98%e5%8c%96">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>优化移动设备上文章显示连接效果
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/154" title="Improve-#154" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Improve-#154
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>优化代码块选择时颜色高亮区分
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/140" title="Improve-#140" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Improve-#140
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>优化短代码的使用移除文章头参数设置&lt;/li>
+&lt;li>优化多语言的文字翻译版本&lt;/li>
+&lt;li>其他Hugo版本升级代码迭代优化&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item></channel></rss>

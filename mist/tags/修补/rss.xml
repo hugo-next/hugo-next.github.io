@@ -1,1 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>修补 on Hugo NexT</title><link>/mist/tags/%E4%BF%AE%E8%A1%A5/</link><description>Recent content in 修补 on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Jul 2024 22:34:21 +0800</lastBuildDate><atom:link href="/mist/tags/%E4%BF%AE%E8%A1%A5/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.6.3 Release(HotFixed)</title><link>/mist/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/mist/hugo-next-4-6-3-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 修改有关于配置文件中CDN供应商的名称缩进的错误，感谢 @zanxj 的及时反馈 移除底部无用供应商名称，增加Git</description></item><item><title>Hugo Next 4.5.3 Release(HotFixed)</title><link>/mist/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/mist/hugo-next-4-5-3-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 修复左侧51la统计页板不显示数据问题 受配置文件参数名称变更所影响 欢迎大家使用和反馈，祝你好运！！！</description></item><item><title>Hugo Next 4.5.2 Release(HotFixed)</title><link>/mist/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/hugo-next-4-5-2-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 增加生成索引内容时可指定长度（默认为1000个字） #101 关于algolia索引大小限制 欢迎大家使用和反馈</description></item><item><title>Hugo Next 4.5.1 Release(HotFixed)</title><link>/mist/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/hugo-next-4-5-1-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 分类名称中包含英文时，英文会被小写转换 欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;</description></item><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/mist/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/mist/hugo-next-4-3-1-release.html</guid><description>此次修补版本发布主要是做了少许的优化，参考如下： 升级 Waline 至最新版本支持文章表情互动（点赞功能） 与配置文件联动，优化深浅色主题的切换逻辑 给文章导</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>修补 on Hugo NexT</title><link>/mist/tags/%E4%BF%AE%E8%A1%A5/</link><description>Recent content in 修补 on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Jul 2024 22:34:21 +0800</lastBuildDate><atom:link href="/mist/tags/%E4%BF%AE%E8%A1%A5/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo NexT 4.6.3 Release(HotFixed)</title><link>/mist/release/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/mist/release/hugo-next-4-6-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;ul>
+&lt;li>修改有关于配置文件中CDN供应商的名称缩进的错误，感谢
+&lt;a href="https://github.com/zanxj" title="@zanxj" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @zanxj
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>的及时反馈&lt;/li>
+&lt;li>移除底部无用供应商名称，增加Github为云资源供应商标识&lt;/li>
+&lt;li>增加底部logo按黑白主题切换填充颜色的效果&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.3 Release(HotFixed)</title><link>/mist/release/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/mist/release/hugo-next-4-5-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;ul>
+&lt;li>修复左侧51la统计页板不显示数据问题&lt;/li>
+&lt;/ul>
+
+ &lt;blockquote>
+ &lt;p>受配置文件参数名称变更所影响&lt;/p>
+ &lt;/blockquote>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.2 Release(HotFixed)</title><link>/mist/release/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/release/hugo-next-4-5-2-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;ul>
+&lt;li>增加生成索引内容时可指定长度（默认为1000个字）
+&lt;a href="https://github.com/hugo-next/hugo-theme-next" title="#101 关于algolia索引大小限制" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #101 关于algolia索引大小限制
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.1 Release(HotFixed)</title><link>/mist/release/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/release/hugo-next-4-5-1-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;ul>
+&lt;li>分类名称中包含英文时，英文会被小写转换&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.3.1 Release(HotFixed)</title><link>/mist/release/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/mist/release/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
+&lt;ul>
+&lt;li>升级 Waline 至最新版本支持文章表情互动（点赞功能）&lt;/li>
+&lt;li>与配置文件联动，优化深浅色主题的切换逻辑&lt;/li>
+&lt;li>给文章导航样式增加树形连线效果&lt;/li>
+&lt;li>增加主题的模板功能，参考：
+&lt;a href="https://github.com/hugo-next/hugo-theme-next-starter" title="hugo-theme-next-starter" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ hugo-theme-next-starter
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item></channel></rss>

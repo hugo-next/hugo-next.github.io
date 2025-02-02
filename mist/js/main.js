@@ -123,15 +123,50 @@ HTMLElement.prototype.wrap = function (wrapper) {
 };
 
 NexT.utils = {
-  registerMenuClick: function() {
+  registerAPlayer: function () {
+    this.getStyle(
+      NexT.utils.getCDNResource(NexT.CONFIG.page.music.css)
+    );
+    
+    NexT.CONFIG.page.music.js.forEach(function(js) {
+      NexT.utils.getScript(NexT.utils.getCDNResource(js), true);
+    });
+    
+  },
+  calPostExpiredDate: function() {
+    const postMetaDom = document.querySelector('.post-meta-container');
+    let postTime = postMetaDom.querySelector('time[itemprop="dateCreated datePublished"]').getAttribute("datetime");
+    let postLastmodTime = postMetaDom.querySelector('time[itemprop="dateModified dateLastmod"]');
+
+    if (postLastmodTime != null) postTime = postLastmodTime.getAttribute("datetime");
+
+    let expiredTip = '';
+    const expireCfg = NexT.CONFIG.page.expiredTips;
+    let expiredTime = this.diffDate(postTime, 2);
+
+    if (expiredTime.indexOf(NexT.CONFIG.i18n.ds_years) > -1) {
+      expiredTip = expireCfg.warn.split('#');
+    } else {
+      let days = parseInt(expiredTime.replace(NexT.CONFIG.i18n.ds_days, '').trim(), 10);
+      if (days < 180)  return; 
+      expiredTip = expireCfg.info.split('#');
+    }
+
+    let expiredTipPre = expiredTip[0];
+    let expiredTipSuf = expiredTip[1];
+    expiredTip = expiredTipPre + '<span class="post-expired-times">' + expiredTime + '</span>' + expiredTipSuf;
+    document.getElementById('post-expired-content').innerHTML = expiredTip;
+    this.domAddClass('#post-expired-tip', 'show');
+  },
+  registerMenuClick: function () {
     const pMenus = document.querySelectorAll('.main-menu > li > a.menus-parent');
-    pMenus.forEach(function(item) {
+    pMenus.forEach(function (item) {
       const icon = item.querySelector('span > i');
-      var ul = item.nextElementSibling;  
-      
-      item.addEventListener('click', function(e) {
+      var ul = item.nextElementSibling;
+
+      item.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         ul.classList.toggle('expand');
         if (ul.classList.contains('expand')) {
           icon.className = 'fa fa-angle-down';
@@ -146,9 +181,9 @@ NexT.utils = {
       }
     });
   },
-  registerImageLoadEvent: function() {
+  registerImageLoadEvent: function () {
     const images = document.querySelectorAll('.sidebar img, .post-block img, .vendors-list img');
-			
+
     const callback = (entries) => {
       entries.forEach(item => {
         if (item.intersectionRatio > 0) {
@@ -156,7 +191,7 @@ NexT.utils = {
           let imgSrc = ele.getAttribute('data-src');
           if (imgSrc) {
             let img = new Image();
-            img.addEventListener('load', function() {
+            img.addEventListener('load', function () {
               ele.src = imgSrc;
             }, false);
             ele.src = imgSrc;
@@ -166,23 +201,23 @@ NexT.utils = {
         }
       })
     };
-      
+
     const observer = new IntersectionObserver(callback);
     images.forEach(img => {
       observer.observe(img);
     });
   },
 
-  registerImageViewer: function() {
+  registerImageViewer: function () {
     const post_body = document.querySelector('.post-body');
     if (post_body) {
-      new Viewer(post_body,{ navbar:2, toolbar:2 });
+      new Viewer(post_body, { navbar: 2, toolbar: 2 });
     }
   },
 
   registerToolButtons: function () {
     const buttons = document.querySelector('.tool-buttons');
-    
+
     const scrollbar_buttons = buttons.querySelectorAll('div:not(#toggle-theme)');
     scrollbar_buttons.forEach(button => {
       let targetId = button.id;
@@ -202,12 +237,12 @@ NexT.utils = {
 
   slidScrollBarAnime: function (targetId, easing = 'linear', duration = 500) {
     const targetObj = document.getElementById(targetId);
-   
+
     window.anime({
       targets: document.scrollingElement,
       duration: duration,
       easing: easing,
-      scrollTop:  targetId == '' || !targetObj ? 0 : targetObj.getBoundingClientRect().top + window.scrollY
+      scrollTop: targetId == '' || !targetObj ? 0 : targetObj.getBoundingClientRect().top + window.scrollY
     });
   },
 
@@ -263,8 +298,8 @@ NexT.utils = {
     }
   },
 
-  fmtLaWidget: function(){
-    setTimeout(function(){
+  fmtLaWidget: function () {
+    setTimeout(function () {
       const laWidget = document.querySelectorAll('#la-siteinfo-widget span');
       if (laWidget.length > 0) {
         const valIds = [0, 2, 4, 6];
@@ -278,8 +313,8 @@ NexT.utils = {
   },
 
   fmtBusuanzi: function () {
-    setTimeout(function(){
-      const bszUV = document.getElementById('busuanzi_value_site_uv');    
+    setTimeout(function () {
+      const bszUV = document.getElementById('busuanzi_value_site_uv');
       if (bszUV) {
         bszUV.innerText = NexT.utils.numberFormat(bszUV.innerText);
       }
@@ -287,7 +322,7 @@ NexT.utils = {
       if (bszPV) {
         bszPV.innerText = NexT.utils.numberFormat(bszPV.innerText);
       }
-    }, 800);  
+    }, 800);
   },
 
   numberFormat: function (number) {
@@ -360,14 +395,14 @@ NexT.utils = {
 
     let router = NexT.CONFIG.vendor.router;
     let { name, version, file, alias, alias_name } = res;
-   
+
     let res_src = '';
-  
+
     switch (router.type) {
       case "modern":
         if (alias_name) name = alias_name;
         let alias_file = file.replace(/^(dist|lib|source|\/js|)\/(browser\/|)/, '');
-        if (alias_file.indexOf('min') == -1) {          
+        if (alias_file.indexOf('min') == -1) {
           alias_file = alias_file.replace(/\.js$/, '.min.js');
         }
         res_src = `${router.url}/${name}/${version}/${alias_file}`;
@@ -387,27 +422,57 @@ NexT.utils = {
   registerCopyCode: function () {
     if (!NexT.CONFIG.copybtn) return;
 
-    let figure = document.querySelectorAll('.highlight pre');
+   /** let figure = document.querySelectorAll('.highlight pre');
     if (figure.length === 0 || !NexT.CONFIG.copybtn) return;
     figure.forEach(element => {
-      let cn = element.querySelector('code').className;
-      // TODO seems hard code need find other ways fixed it.
-      if (cn == '') return;
-      element.insertAdjacentHTML('beforeend', '<div class="copy-btn"><i class="fa fa-copy fa-fw"></i></div>');
+      let cn = element.querySelector('code').className;      
+      if (cn === '') return;
+      element.children[0].insertAdjacentHTML('beforebegin', '<div class="copy-btn" data-clipboard-snippe><i class="fa fa-copy fa-fw"></i></div>');
+      var clipboard = new ClipboardJS(element.children[0],
+        { 
+          text: function(trigger) {
+            return trigger.nextElementSibling.textContent.trim();
+          }
+        });
+      clipboard.on('success', function (e) {
+        e.clearSelection();
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        button.querySelector('i').className = 'fa fa-check-circle fa-fw';
+      });
+      clipboard.on('error', function (e) {
+        console.error('复制失败:', e);
+        button.querySelector('i').className = 'fa fa-times-circle fa-fw';
+      });
       const button = element.querySelector('.copy-btn');
-      button.addEventListener('click', () => {
+      element.addEventListener('mouseleave', () => {
+        setTimeout(() => {
+          button.querySelector('i').className = 'fa fa-copy fa-fw';
+        }, 300);
+      });
+    });**/
+   /** figure.forEach(element => {
+      let cn = element.querySelector('code').className;      
+      if (cn === '') return;
+     element.insertAdjacentHTML('beforeend', '<div class="copy-btn"><i class="fa fa-copy fa-fw"></i></div>');
+      // element.insertAdjacentHTML('beforeend', '<div class="copy-btn"><i class="fa fa-copy fa-fw"></i></div>');
+      const button = element.querySelector('.copy-btn');
+      button.addEventListener('click', async () => {
         const lines = element.querySelector('.code') || element.querySelector('code');
-        const code = lines.innerText.replace(/(\n{2,})/g, '\n');
+        let code = lines.textContent.trim();
+        console.log('尝试复制代码:', code);
+
         if (navigator.clipboard) {
-          // https://caniuse.com/mdn-api_clipboard_writetext
           navigator.clipboard.writeText(code).then(() => {
+            console.log('复制成功');
             button.querySelector('i').className = 'fa fa-check-circle fa-fw';
-          }, () => {
+          }).catch((err) => {
+            console.error('复制失败:', err);
             button.querySelector('i').className = 'fa fa-times-circle fa-fw';
           });
         } else {
           const ta = document.createElement('textarea');
-          ta.style.top = window.scrollY + 'px'; // Prevent page scrolling
+          ta.style.top = window.scrollY + 'px';
           ta.style.position = 'absolute';
           ta.style.opacity = '0';
           ta.readOnly = true;
@@ -415,20 +480,22 @@ NexT.utils = {
           document.body.append(ta);
           ta.select();
           ta.setSelectionRange(0, code.length);
-          ta.readOnly = false;
-          const result = document.execCommand('copy');
-          button.querySelector('i').className = result ? 'fa fa-check-circle fa-fw' : 'fa fa-times-circle fa-fw';
-          ta.blur(); // For iOS
-          button.blur();
+          try {
+            const successful = document.execCommand('copy');
+            if (!successful) throw new Error('复制命令执行失败');
+          } catch (err) {
+            console.error('复制失败:', err);
+          }
           document.body.removeChild(ta);
         }
+       
       });
       element.addEventListener('mouseleave', () => {
         setTimeout(() => {
           button.querySelector('i').className = 'fa fa-copy fa-fw';
         }, 300);
       });
-    });
+    });**/
   },
 
   wrapTableWithBox: function () {
@@ -548,22 +615,58 @@ NexT.utils = {
       const isSubPath = !NexT.CONFIG.root.startsWith(target.pathname) && location.pathname.startsWith(target.pathname);
       target.classList.toggle('menu-item-active', target.hostname === location.hostname && (isSamePath || isSubPath));
     });
-  },
+  },*/
 	
   registerLangSelect: function() {
-    const selects = document.querySelectorAll('.lang-select');
-    selects.forEach(sel => {
-      sel.value = NexT.CONFIG.page.lang;
-      sel.addEventListener('change', () => {
-        const target = sel.options[sel.selectedIndex];
-        document.querySelectorAll('.lang-select-label span').forEach(span => {
-          span.innerText = target.text;
-        });
-        // Disable Pjax to force refresh translation of menu item
-        window.location.href = target.dataset.href;
+    let selects = document.getElementById('lang-select');
+    if (!selects) return;
+
+    let selected = selects.querySelector('#lang-selected');
+    let selectedVal = selected.querySelectorAll('span');
+    let flagIcon = selectedVal[0];
+    let langName = selectedVal[1];
+    let selectIcon = selected.querySelector('i');
+   
+
+    let options = selects.querySelectorAll('#lang-options>div');
+    let optionsDom = options[0].parentNode;
+    options.forEach(option => {
+      option.addEventListener('click', () => {
+        let langCode = option.getAttribute('lang-code');
+        flagIcon.className = 'flag-icon flag-icon-'+langCode;
+        langName.innerHTML = option.getAttribute('lang-name');
+        selectIcon.className = 'fa fa-chevron-down';
+        optionsDom.style.opacity = '0';
+        optionsDom.style.transform = 'translateY(-10px)';
+
+        let url = option.getAttribute('lang-url');
+        
+        setTimeout(() => {
+          optionsDom.style.display = 'none';
+          window.location.href = url;
+        }, 300);
       });
+    }); 
+
+    selected.addEventListener('mouseenter', function() {
+      selectIcon.className = 'fa fa-chevron-up';
+      optionsDom.style.display = 'block';
+      optionsDom.style.opacity = '1';
+      optionsDom.style.transform = 'translateY(0)';
+      
     });
-  },*/
+
+    optionsDom.addEventListener('mouseleave', function() {
+      selectIcon.className = 'fa fa-chevron-down';
+      optionsDom.style.opacity = '0';
+      optionsDom.style.transform = 'translateY(-10px)';
+      
+      setTimeout(() => {
+        optionsDom.style.display = 'none';
+      }, 300);
+    });
+    
+  },
 
   registerSidebarTOC: function () {
     const toc = document.getElementById('TableOfContents');
@@ -623,13 +726,6 @@ NexT.utils = {
         }
       });
     });
-  },
-
-  hideComments: function () {
-    let postComments = document.querySelector('.post-comments');
-    if (postComments !== null) {
-        postComments.style.display = 'none';
-    }
   },
 
   hiddeLodingCmp: function (selector) {
@@ -703,7 +799,7 @@ NexT.utils = {
     });
   },
 
-  getStyle: function (src, position='after', parent) {
+  getStyle: function (src, position = 'after', parent) {
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('type', 'text/css');
@@ -723,8 +819,11 @@ NexT.utils = {
         condition: legacyCondition
       }).then(options);
     }
+
     const {
       condition = false,
+      module = false,
+      textContent = undefined,
       attributes: {
         id = '',
         async = false,
@@ -744,6 +843,8 @@ NexT.utils = {
 
         if (id) script.id = id;
         if (crossOrigin) script.crossOrigin = crossOrigin;
+        if (module) script.type = 'module';
+        if (textContent != undefined) script.textContent = textContent;
         script.async = async;
         script.defer = defer;
         Object.assign(script.dataset, dataset);
@@ -754,22 +855,25 @@ NexT.utils = {
         script.onload = resolve;
         script.onerror = reject;
 
-        if (typeof src === 'object') {
-          const { url, integrity } = src;
-          script.src = url;
-          if (integrity) {
-            script.integrity = integrity;
-            script.crossOrigin = 'anonymous';
+        if (src != null && src != undefined) {
+          if (typeof src === 'object') {
+            const { url, integrity } = src;
+            script.src = url;
+            if (integrity) {
+              script.integrity = integrity;
+              script.crossOrigin = 'anonymous';
+            }
+          } else {
+            script.src = src;
           }
-        } else {
-          script.src = src;
         }
+
         (parentNode || document.head).appendChild(script);
       }
     });
   },
 
-  lazyLoadComponent: function(selector, legacyCallback) {
+  lazyLoadComponent: function (selector, legacyCallback) {
     if (legacyCallback) {
       return this.lazyLoadComponent(selector).then(legacyCallback);
     }
@@ -855,19 +959,26 @@ NexT.boot.refresh = function() {
 
   NexT.utils.fmtSiteInfo();
 
+  if (NexT.CONFIG.isMultiLang) {
+    NexT.utils.registerLangSelect();
+  }
+
   if (!NexT.CONFIG.page.isPage) return;
  
-  NexT.utils.registerSidebarTOC();
-  NexT.utils.registerCopyCode();
+  if (NexT.CONFIG.page.toc) NexT.utils.registerSidebarTOC();
+  if (NexT.CONFIG.page.expired) NexT.utils.calPostExpiredDate();
+  if (NexT.CONFIG.page.music) NexT.utils.registerAPlayer();
+
+  NexT.utils.registerImageViewer();
   NexT.utils.registerPostReward();
+
   if(NexT.CONFIG.page.comments) {    
     NexT.utils.initCommontesDispaly();
     NexT.utils.registerCommonSwitch();
-    NexT.utils.domAddClass('#goto-comments', 'goto-comments-on');
+    NexT.utils.domAddClass('#goto-comments', 'show');
   } else {
-    NexT.utils.hideComments();
+    NexT.utils.domAddClass('#goto-comments', 'hidden');
   }
-  NexT.utils.registerImageViewer();
 
   //TODO
    /**
@@ -1005,10 +1116,10 @@ NexT.motion.middleWares = {
       });
     }
 
-    animate(postblock, '.post-block,.flinks-block, .pagination, .post-comments');
+    animate(postblock, '.post-block, .flinks-block, .pagination, .post-comments');
     animate(collheader, '.collection-header');
-    animate(postheader, '.post-header');
-    animate(postbody, '.post-body');
+    animate(postheader, '.post-header, .flinks-header');
+    animate(postbody, '.post-body, .flinks-body');
 
     return sequence;
   },
@@ -1093,111 +1204,157 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 ;
-/* AddThis share plugin */
-NexT.plugins.share.addthis = function() {
-  const element = '.addthis_inline_share_toolbox';
-  if (!NexT.CONFIG.addthis || !NexT.utils.checkDOMExist(element)) return; 
+/* Addtoany share plugin */
+NexT.plugins.share.addtoany = function() {
+  const element = '.a2a_kit';
+  if (!NexT.CONFIG.share.enable || !NexT.utils.checkDOMExist(element)) return; 
 
-  const addthis_js = NexT.CONFIG.addthis.js + '?pubid=' + NexT.CONFIG.addthis.cfg.pubid;
+  const addtoany = NexT.CONFIG.share.addtoany;
+
+  if (!addtoany) return;
 
   NexT.utils.lazyLoadComponent(element, function() {
-    NexT.utils.getScript(addthis_js, {
-      attributes: {
-        async: false
-      },
-      parentNode: document.querySelector(element)
-    });
+    let addtoany_cfg = `
+      var a2a_config = a2a_config || {};
+      a2a_config.onclick = 1;
+      a2a_config.locale = "${addtoany.locale}";
+      a2a_config.num_services = ${addtoany.num};
+    `;
+
+    NexT.utils.getScript(null, {
+      textContent: addtoany_cfg
+    });   
+    
+    NexT.utils.getScript(addtoany.js, () => { NexT.utils.hiddeLodingCmp(element); });
   });
 }
 ;
-/* Waline comment plugin */
-NexT.plugins.comments.waline = function() {
-  const element = '.waline-container';
-  if (!NexT.CONFIG.waline
-    || !NexT.utils.checkDOMExist(element)) return; 
-  
+/* Waline3 comment plugin */
+NexT.plugins.comments.waline3 = function () {
+  const element = '.waline3-container';
+  if (!NexT.CONFIG.waline3
+    || !NexT.utils.checkDOMExist(element)) return;
+    
   const {
-    comment,
-    emoji, 
-    imguploader, 
-    pageview, 
-    placeholder, 
+    emoji,
+    search,
+    imguploader,
+    placeholder,
     sofa,
-    requiredmeta, 
-    serverurl, 
+    requiredmeta,
+    serverurl,
     wordlimit,
     reaction,
     reactiontext,
     reactiontitle
-  } = NexT.CONFIG.waline.cfg;
+  } = NexT.CONFIG.waline3.cfg;
 
-  const waline_js = NexT.utils.getCDNResource(NexT.CONFIG.waline.js);
+  const waline_js = NexT.utils.getCDNResource(NexT.CONFIG.waline3.js);
 
-  let locale = {
-    placeholder   : placeholder,
-    sofa          : sofa,
-    reactionTitle : reactiontitle
-  };
+  NexT.utils.lazyLoadComponent(element, () => {
+    
+    const waline_css = NexT.utils.getCDNResource(NexT.CONFIG.waline3.css);
+    NexT.utils.getStyle(waline_css, 'before');
+   
+    let waline_script = `
+      let locale = {
+        placeholder   : '${placeholder}',
+        sofa          : '${sofa}',
+        reactionTitle : '${reactiontitle}'
+      };
 
-  reactiontext.forEach(function(value, index){
-    locale['reaction'+index] = value;
-  });
-
-  NexT.utils.lazyLoadComponent(element, function () {    
-    NexT.utils.getScript(waline_js, function(){
-      const waline_css = NexT.utils.getCDNResource(NexT.CONFIG.waline.css);
-      NexT.utils.getStyle(waline_css, 'before');
-
-      Waline.init({
-        locale,
-        el            : element,
-        pageview      : pageview,
-        comment       : comment,
-        emoji         : emoji,
-        imageUploader : imguploader,
-        wordLimit     : wordlimit,
-        requiredMeta  : requiredmeta,
-        reaction      : reaction,
-        serverURL     : serverurl,
-        lang          : NexT.CONFIG.lang,
-        dark          : 'html[data-theme="dark"]'
+      let recatt = ${JSON.stringify(reactiontext)}
+      recatt.forEach(function(value, index){
+        locale['reaction'+index] = value;
       });
+    
+      import('${waline_js}').then((Waline) => {
+        Waline.init({
+          locale,
+          el            : '${element}',
+          emoji         : ${emoji},
+          search        : ${search},
+          imageUploader : ${imguploader},
+          wordLimit     : ${wordlimit},
+          requiredMeta  : ${JSON.stringify(requiredmeta)},
+          reaction      : ${reaction},
+          serverURL     : '${serverurl}',
+          dark          : 'html[data-theme="dark"]'
+        });
 
-      NexT.utils.hiddeLodingCmp(element);
-    })
+        NexT.utils.hiddeLodingCmp('${element}');
+      });
+    `;
+    
+    NexT.utils.getScript(null, { module: true, textContent: waline_script });
   });
 }
 ;
 /* Page's view & comment counter plugin */
-NexT.plugins.others.counter = function() {
-    let pageview_js = undefined;
-    let comment_js = undefined;
+NexT.plugins.others.counter = function () {
+  let pageview_js = undefined;
+  let comment_js = undefined;
 
-    const post_meta = NexT.CONFIG.postmeta;
+  const post_meta = NexT.CONFIG.postmeta;
 
-    const views = post_meta.views;
-    if(views != undefined && views.enable) {
-      if (views.plugin == 'waline') {
-        pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.js[0]);
-        NexT.utils.getScript(pageview_js, function(){
+  const views = post_meta.views;
+  if (views != undefined && views.enable) {
+    let pageview_el = '#pageview-count';
+
+    switch (views.plugin) {
+      case 'waline':
+        pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.pagecnt);
+        NexT.utils.getScript(pageview_js, function () {
           Waline.pageviewCount({
+            selector : pageview_el,
             serverURL: NexT.CONFIG.waline.cfg.serverurl
           });
         });
-      }
+        break;
+      case 'waline3':
+        pageview_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline3.pagecnt);
+
+        let pageview_script = `
+          import('${pageview_js}').then((Waline) => {
+            Waline.pageviewCount({             
+              selector : '${pageview_el}',
+              serverURL: '${NexT.CONFIG.waline3.cfg.serverurl}'
+            })
+          });
+          `;
+        NexT.utils.getScript(null, { module: true, textContent: pageview_script });
+        break;
     }
 
-    const comments = post_meta.comments;
-    if (comments != undefined && comments.enable) {
-      if (comments.plugin == 'waline') {
-        comment_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.js[1]);
-        NexT.utils.getScript(comment_js, function(){
+  }
+
+  const comments = post_meta.comments;
+  if (comments != undefined && comments.enable) {
+    let comments_el = '#comments-count';
+    switch (comments.plugin) {
+      case 'waline':
+        comment_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline.commentcnt);
+        NexT.utils.getScript(comment_js, function () {
           Waline.commentCount({
+            selector : comments_el,
             serverURL: NexT.CONFIG.waline.cfg.serverurl
           });
         });
-      }
+        break;
+      case 'waline3':
+        comment_js = NexT.utils.getCDNResource(NexT.CONFIG.page.waline3.commentcnt);
+        let comment_script = `
+          import('${comment_js}').then((Waline) => {
+            Waline.commentCount({             
+              selector : '${comments_el}',
+              serverURL: '${NexT.CONFIG.waline3.cfg.serverurl}'
+            })
+          });
+          `;
+        NexT.utils.getScript(null, { module: true, textContent: comment_script });
+        break;
     }
+  }
 }
 ;
 /* Giscus comment plugin */
@@ -1388,6 +1545,11 @@ NexT.plugins.search.algolia = function() {
 ;
 /* 51La sidebar data widget */
 NexT.plugins.others.lawidget = function() {
+
+  if (!NexT.CONFIG.lawidget ) {
+    return;
+  }
+
   const element = '#siteinfo-card-widget';
   const lawt_js = NexT.CONFIG.lawidget.js.replace('laId', NexT.CONFIG.lawidget.id);
   

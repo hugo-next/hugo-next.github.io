@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.4.x on Hugo NexT</title><link>/pisces/tags/4.4.x/</link><description>Recent content in 4.4.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 30 Oct 2022 21:51:40 +0800</lastBuildDate><atom:link href="/pisces/tags/4.4.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.4.0 Release</title><link>/pisces/hugo-next-4-4-0-release.html</link><pubDate>Sun, 30 Oct 2022 21:51:40 +0800</pubDate><guid>/pisces/hugo-next-4-4-0-release.html</guid><description>此次版本发布共提交 40 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 实现全站图片懒加载，并添加图片查看器功能 实现全站JS库（非必要</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.4.x on Hugo NexT</title><link>/pisces/tags/4.4.x/</link><description>Recent content in 4.4.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 30 Oct 2022 21:51:40 +0800</lastBuildDate><atom:link href="/pisces/tags/4.4.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo NexT 4.4.0 Release</title><link>/pisces/release/hugo-next-4-4-0-release.html</link><pubDate>Sun, 30 Oct 2022 21:51:40 +0800</pubDate><guid>/pisces/release/hugo-next-4-4-0-release.html</guid><description>&lt;p>此次版本发布共提交 40 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;ul>
+&lt;li>实现全站图片懒加载，并添加图片查看器功能&lt;/li>
+&lt;li>实现全站JS库（非必要）依赖加载，提升页面加载速度&lt;/li>
+&lt;li>新增加 &lt;code>bootcdn&lt;/code> 和七牛云两个CDN服务&lt;/li>
+&lt;li>优化页面访问次数显示方式，页面打开就加载&lt;/li>
+&lt;li>新增加评论次数显示，暂只支持 &lt;code>waline&lt;/code> 组件&lt;/li>
+&lt;li>重新设计 Aloglia 搜索页面效果及索引内容&lt;/li>
+&lt;li>重构第三方JS库架构设计，更利于后续的扩展&lt;/li>
+&lt;li>修复深浅主题切换时的页面闪烁问题&lt;/li>
+&lt;li>更新依赖库的版本为最新版本&lt;/li>
+&lt;/ul>
+&lt;div class="note warning ">
+ 注意： 此次升级增删了些配置项目，建议使用对比工具检查与你本地配置文件的差异地方，手动调整一下，比如增加CDN服务商，waline文章评论显示，默认开启文章目录等等。 😄
+&lt;/div>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item></channel></rss>

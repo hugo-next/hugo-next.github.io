@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.5.x on Hugo NexT</title><link>/muse/categories/4.5.x/</link><description>Recent content in 4.5.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Jul 2023 12:07:21 +0800</lastBuildDate><atom:link href="/muse/categories/4.5.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.5.3 Release(HotFixed)</title><link>/muse/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/muse/hugo-next-4-5-3-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 修复左侧51la统计页板不显示数据问题 受配置文件参数名称变更所影响 欢迎大家使用和反馈，祝你好运！！！</description></item><item><title>Hugo Next 4.5.2 Release(HotFixed)</title><link>/muse/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/muse/hugo-next-4-5-2-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 增加生成索引内容时可指定长度（默认为1000个字） #101 关于algolia索引大小限制 欢迎大家使用和反馈</description></item><item><title>Hugo Next 4.5.1 Release(HotFixed)</title><link>/muse/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/muse/hugo-next-4-5-1-release.html</guid><description>此次紧急修复版本，主要是为解决如下问题： 分类名称中包含英文时，英文会被小写转换 欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;</description></item><item><title>Hugo Next 4.5.0 Release</title><link>/muse/hugo-next-4-5-0-release.html</link><pubDate>Sat, 24 Jun 2023 16:27:21 +0800</pubDate><guid>/muse/hugo-next-4-5-0-release.html</guid><description>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下： 重新调整多语言支持的配置方式，更加易读和扩展 修复文章统计和评论</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.5.x on Hugo NexT</title><link>/muse/categories/4.5.x/</link><description>Recent content in 4.5.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Jul 2023 12:07:21 +0800</lastBuildDate><atom:link href="/muse/categories/4.5.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo NexT 4.5.3 Release(HotFixed)</title><link>/muse/release/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/muse/release/hugo-next-4-5-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;ul>
+&lt;li>修复左侧51la统计页板不显示数据问题&lt;/li>
+&lt;/ul>
+
+ &lt;blockquote>
+ &lt;p>受配置文件参数名称变更所影响&lt;/p>
+ &lt;/blockquote>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.2 Release(HotFixed)</title><link>/muse/release/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/muse/release/hugo-next-4-5-2-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;ul>
+&lt;li>增加生成索引内容时可指定长度（默认为1000个字）
+&lt;a href="https://github.com/hugo-next/hugo-theme-next" title="#101 关于algolia索引大小限制" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #101 关于algolia索引大小限制
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.1 Release(HotFixed)</title><link>/muse/release/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/muse/release/hugo-next-4-5-1-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;ul>
+&lt;li>分类名称中包含英文时，英文会被小写转换&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.0 Release</title><link>/muse/release/hugo-next-4-5-0-release.html</link><pubDate>Sat, 24 Jun 2023 16:27:21 +0800</pubDate><guid>/muse/release/hugo-next-4-5-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;ul>
+&lt;li>重新调整多语言支持的配置方式，更加易读和扩展&lt;/li>
+&lt;li>修复文章统计和评论统计功能配置，更加简单清晰&lt;/li>
+&lt;li>增加中文繁体的多语言支持，感谢
+&lt;a href="https://github.com/vishnucho" title="Vishnu Cho" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Vishnu Cho
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>贡献的PR&lt;/li>
+&lt;li>新增标题超连接锚定功能，同时支持鼠标滑动效果（注意观察最右侧的图标显示）&lt;/li>
+&lt;li>实现支持文章二级分类功能，直接在文章&lt;code>front-matter&lt;/code>中配置如下形式就可以实现二级分类&lt;/li>
+&lt;/ul>
+
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt" id="hl-0-1">&lt;a class="lnlinks" href="#hl-0-1">1&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-2">&lt;a class="lnlinks" href="#hl-0-2">2&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-3">&lt;a class="lnlinks" href="#hl-0-3">3&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-4">&lt;a class="lnlinks" href="#hl-0-4">4&lt;/a>
+&lt;/span>&lt;span class="lnt" id="hl-0-5">&lt;a class="lnlinks" href="#hl-0-5">5&lt;/a>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">categories:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 一级分类
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 二级分类
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+
+
+ &lt;blockquote>
+ &lt;p>具体的效果可点击
+&lt;a href="/muse/categories/" title="分类" >
+ &lt;strong>分类&lt;/strong>
+ 
+&lt;/a>页面进行预览&lt;/p></description></item></channel></rss>

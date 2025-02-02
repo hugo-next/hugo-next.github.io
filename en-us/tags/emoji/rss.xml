@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Emoji on Hugo NexT</title><link>/en-us/tags/emoji/</link><description>Recent content in Emoji on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Sat, 25 Jan 2025 21:18:52 +0800</lastBuildDate><atom:link href="/en-us/tags/emoji/rss.xml" rel="self" type="application/rss+xml"/><item><title>Support Emoji emojis</title><link>/en-us/demo/emoji-support.html</link><pubDate>Sat, 25 Jan 2025 21:18:52 +0800</pubDate><guid>/en-us/demo/emoji-support.html</guid><description>&lt;p>Emojis can be enabled in various ways in the Hugo project.&lt;/p>
+&lt;p>
+&lt;a href="https://gohugo.io/functions/emojify/" title="emojify" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ &lt;code>emojify&lt;/code>
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>The method can be called directly in the template, or use [Inline Shortcodes](
+&lt;a href="https://gohugo.io/templates/shortcode-templates#inline" title="https://gohugo.io/templates/shortcode-templates#inline" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ https://gohugo.io/templates/shortcode-templates#inline
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> -shortcodes).&lt;/p>
+&lt;p>To use emojis globally, you need to 
+&lt;a href="https://gohugo.io/getting-started/configuration/" title="configure" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ configure
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> them on your website set &lt;code>enableEmoji&lt;/code> to &lt;code>true&lt;/code>,Then you can directly enter the emoji code in the article.&lt;/p></description></item></channel></rss>

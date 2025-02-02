@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.1.x on Hugo NexT</title><link>/mist/tags/4.1.x/</link><description>Recent content in 4.1.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Jul 2022 16:49:28 +0800</lastBuildDate><atom:link href="/mist/tags/4.1.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.1.0 Release</title><link>/mist/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/mist/hugo-next-4-1-0-release.html</guid><description>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下： 使用较低的 Hugo 版本生成站点报错（增加版本识别提示） #21 实现全站动态加载外</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.1.x on Hugo NexT</title><link>/mist/tags/4.1.x/</link><description>Recent content in 4.1.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Jul 2022 16:49:28 +0800</lastBuildDate><atom:link href="/mist/tags/4.1.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo NexT 4.1.0 Release</title><link>/mist/release/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/mist/release/hugo-next-4-1-0-release.html</guid><description>&lt;p>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;ul>
+&lt;li>使用较低的 Hugo 版本生成站点报错（增加版本识别提示） 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/21" title="#21" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #21
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>实现全站动态加载外部JS脚本&lt;/li>
+&lt;li>调整layout引入的顺序并加入缓存，提升页面生成性能&lt;/li>
+&lt;li>重构 &lt;code>config.js&lt;/code> 脚本加载逻辑与方式&lt;/li>
+&lt;li>重构所以评论插件的引入方式 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/12" title="#12" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #12
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>更新 FontAwesome 字体图标的版本&lt;/li>
+&lt;li>增加特定的归档页面，可显示出站点的所有文章&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item></channel></rss>

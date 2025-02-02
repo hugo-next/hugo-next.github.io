@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>图序功能 on Hugo NexT</title><link>/categories/%E5%9B%BE%E5%BA%8F%E5%8A%9F%E8%83%BD/</link><description>Recent content in 图序功能 on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 18 Sep 2022 20:58:13 +0800</lastBuildDate><atom:link href="/categories/%E5%9B%BE%E5%BA%8F%E5%8A%9F%E8%83%BD/rss.xml" rel="self" type="application/rss+xml"/><item><title>Mermaid支持流程图</title><link>/demo/mermaid-charts.html</link><pubDate>Sun, 18 Sep 2022 20:58:13 +0800</pubDate><guid>/demo/mermaid-charts.html</guid><description>&lt;p>本主题已支持 &lt;code>Mermaid&lt;/code> 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 &lt;code>Mermaid&lt;/code> 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站：
+&lt;a href="https://mermaid-js.github.io/" title="https://mermaid-js.github.io/" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ https://mermaid-js.github.io/
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>。&lt;/p></description></item></channel></rss>

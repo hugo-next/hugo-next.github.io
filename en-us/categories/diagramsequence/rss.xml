@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DiagramSequence on Hugo NexT</title><link>/en-us/categories/diagramsequence/</link><description>Recent content in DiagramSequence on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 29 Jan 2025 21:01:13 +0800</lastBuildDate><atom:link href="/en-us/categories/diagramsequence/rss.xml" rel="self" type="application/rss+xml"/><item><title>Mermaid Support Flowchart</title><link>/en-us/demo/mermaid-charts.html</link><pubDate>Wed, 29 Jan 2025 21:01:13 +0800</pubDate><guid>/en-us/demo/mermaid-charts.html</guid><description>&lt;p>This theme now supports the use of &lt;code>Mermaid&lt;/code> to draw flowcharts, sequence diagrams, Gantt charts, state diagrams, relationship diagrams, and more in plain text format. With the gradual development of &lt;code>Mermaid&lt;/code>, various types of diagrams will be introduced in the future. For more types and usage methods, please follow its official website:
+&lt;a href="https://mermaid-js.github.io/" title="https://mermaid-js.github.io/" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ https://mermaid-js.github.io/
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>.&lt;/p></description></item></channel></rss>

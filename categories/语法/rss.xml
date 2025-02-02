@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>语法 on Hugo NexT</title><link>/categories/%E8%AF%AD%E6%B3%95/</link><description>Recent content in 语法 on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 02 Jan 2025 19:08:02 +0800</lastBuildDate><atom:link href="/categories/%E8%AF%AD%E6%B3%95/rss.xml" rel="self" type="application/rss+xml"/><item><title>支持在Markdown文档中实现块信息强调标注</title><link>/demo/github-blockquote.html</link><pubDate>Thu, 02 Jan 2025 16:08:02 +0800</pubDate><guid>/demo/github-blockquote.html</guid><description>&lt;p>过去 &lt;code>HugoNexT&lt;/code> 主题都是通过自定义短语来实现块信息的标注，近期发现 &lt;code>Hugo&lt;/code> 从
+&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.134.0" title="v0.134.0" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ v0.134.0
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>版本开始便是可以支持通过hook方式渲染Markdown文档中的Blockquote样式（需要自己实现），实现类似Github的警告风格样式。于是便在 &lt;code>HugoNexT&lt;/code> 主题中添加7种不同风格供用户可选择使用，还可以自定义图标与颜色配置。&lt;/p></description></item><item><title>自定义短语示例</title><link>/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为引设计一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>Hugo 内置的 Chroma 语法高亮</title><link>/demo/syntax-highlighting.html</link><pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate><guid>/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p>
+&lt;p>以下通过 Hugo 内置短代码 &lt;code>highlight&lt;/code> 和 &lt;code>Markdown&lt;/code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
+&lt;a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo 文档" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Hugo 文档
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>。&lt;/p></description></item><item><title>支持 Emoji 表情</title><link>/demo/emoji-support.html</link><pubDate>Sat, 04 Jun 2022 19:46:45 +0800</pubDate><guid>/demo/emoji-support.html</guid><description>&lt;p>Emoji 可以通过多种方式在 Hugo 项目中启用。&lt;/p>
+&lt;p>
+&lt;a href="https://gohugo.io/functions/emojify/" title="emojify" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ &lt;code>emojify&lt;/code>
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> 方法可以直接在模板中调用, 或者使用
+&lt;a href="https://gohugo.io/templates/shortcode-templates#inline-shortcodes" title="行内 Shortcodes" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ 行内 Shortcodes
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>.&lt;/p>
+&lt;p>要全局使用 emoji, 需要在你的
+&lt;a href="https://gohugo.io/getting-started/configuration/" title="网站配置" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ 网站配置
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>中设置 &lt;code>enableEmoji&lt;/code> 为 &lt;code>true&lt;/code>，
+然后你就可以直接在文章中输入 emoji 的代码。&lt;/p></description></item></channel></rss>

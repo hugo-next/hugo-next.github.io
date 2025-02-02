@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>标题 on Hugo NexT</title><link>/tags/%E6%A0%87%E9%A2%98/</link><description>Recent content in 标题 on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 06 Oct 2022 09:02:26 +0800</lastBuildDate><atom:link href="/tags/%E6%A0%87%E9%A2%98/rss.xml" rel="self" type="application/rss+xml"/><item><title>没有H1-6标题头的文章</title><link>/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
-&lt;blockquote>
-&lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭。&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>标题 on Hugo NexT</title><link>/tags/%E6%A0%87%E9%A2%98/</link><description>Recent content in 标题 on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 30 Oct 2022 21:03:16 +0800</lastBuildDate><atom:link href="/tags/%E6%A0%87%E9%A2%98/rss.xml" rel="self" type="application/rss+xml"/><item><title>没有H1-6标题头和评论的文章</title><link>/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
+
+
+
+ &lt;div class="post-alert-info">
+ &lt;div class="post-alert-title">
+ &lt;i class="fa-solid fa-circle-info">&lt;/i>
+ &lt;span>
+ 
+ 信息
+ 
+ &lt;/span>
+ &lt;/div>
+ &lt;div class="post-alert-content">
+ &lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭，并关闭评论功能。&lt;/p>
+ &lt;/div>
+ &lt;/div></description></item></channel></rss>

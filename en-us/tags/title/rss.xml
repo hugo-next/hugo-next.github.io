@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Title on Hugo NexT</title><link>/en-us/tags/title/</link><description>Recent content in Title on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 29 Jan 2025 19:45:16 +0800</lastBuildDate><atom:link href="/en-us/tags/title/rss.xml" rel="self" type="application/rss+xml"/><item><title>Articles without H1-6 header and comments</title><link>/en-us/demo/no-header-title.html</link><pubDate>Wed, 29 Jan 2025 19:45:16 +0800</pubDate><guid>/en-us/demo/no-header-title.html</guid><description>&lt;p>Liu Cixin&amp;rsquo;s acceptance speech for the 2018 Clark Prize (excerpt from some content).&lt;/p>
+
+
+
+ &lt;div class="post-alert-info">
+ &lt;div class="post-alert-title">
+ &lt;i class="fa-solid fa-circle-info">&lt;/i>
+ &lt;span>
+ 
+ Info
+ 
+ &lt;/span>
+ &lt;/div>
+ &lt;div class="post-alert-content">
+ &lt;p>Used to test whether the directory navigation of an article will be directly closed and the comment function will be disabled without the H1-6 title header.&lt;/p>
+ &lt;/div>
+ &lt;/div></description></item></channel></rss>
