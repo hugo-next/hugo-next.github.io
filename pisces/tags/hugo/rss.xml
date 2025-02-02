@@ -13,7 +13,7 @@
 &lt;/a>打造的高品质优雅主题，保持简单易用的特性和强大的功能。&lt;/p>
 &lt;h2 id="用户指南">用户指南
 &lt;a class="header-anchor" href="#%e7%94%a8%e6%88%b7%e6%8c%87%e5%8d%97">&lt;/a>
-&lt;/h2>&lt;p>设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p></description></item><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/hugo-next-organization.html</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
+&lt;/h2>&lt;p>设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p></description></item><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/release/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/release/hugo-next-organization.html</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
 &lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -34,7 +34,7 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>进行查看，也欢迎大家提 PR 参与共同开发。&lt;/p></description></item><item><title>Hugo NexT V4 介绍</title><link>/pisces/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/pisces/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自 
+&lt;/a>进行查看，也欢迎大家提 PR 参与共同开发。&lt;/p></description></item><item><title>Hugo NexT V4 介绍</title><link>/pisces/release/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/pisces/release/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自 
 &lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -42,7 +42,6 @@
  
 &lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 &amp;#x2764;&amp;#xfe0f; 重新出发，愿你同样会喜欢，也欢迎加入共建！ &amp;#x1f604;&lt;/p></description></item><item><title>世界，你好！</title><link>/pisces/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/pisces/demo/hello-world.html</guid><description>&lt;blockquote>
  &lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
-
  &lt;/blockquote>
 &lt;p>
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">

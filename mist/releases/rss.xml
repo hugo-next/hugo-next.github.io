@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on Hugo NexT</title><link>/mist/releases/</link><description>Recent content in Releases on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Jul 2024 22:34:21 +0800</lastBuildDate><atom:link href="/mist/releases/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/mist/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/mist/hugo-next-organization.html</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on Hugo NexT</title><link>/mist/releases/</link><description>Recent content in Releases on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 31 Jan 2025 17:18:09 +0800</lastBuildDate><atom:link href="/mist/releases/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/mist/release/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/mist/release/hugo-next-organization.html</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
 &lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -19,13 +19,111 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>进行查看，也欢迎大家提 PR 参与共同开发。&lt;/p></description></item><item><title>Hugo NexT V4 介绍</title><link>/mist/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/mist/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自 
+&lt;/a>进行查看，也欢迎大家提 PR 参与共同开发。&lt;/p></description></item><item><title>Hugo NexT V4 介绍</title><link>/mist/release/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/mist/release/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自 
 &lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 &amp;#x2764;&amp;#xfe0f; 重新出发，愿你同样会喜欢，也欢迎加入共建！ &amp;#x1f604;&lt;/p></description></item><item><title>Hugo Next 4.6.3 Release(HotFixed)</title><link>/mist/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/mist/hugo-next-4-6-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 &amp;#x2764;&amp;#xfe0f; 重新出发，愿你同样会喜欢，也欢迎加入共建！ &amp;#x1f604;&lt;/p></description></item><item><title>Hugo NexT 4.7.2 Release</title><link>/mist/release/hugo-next-4-7-1-release.html</link><pubDate>Fri, 31 Jan 2025 17:18:09 +0800</pubDate><guid>/mist/release/hugo-next-4-7-1-release.html</guid><description>&lt;p>此次版本发布共提交 &lt;strong>60&lt;/strong> 余处按照路线图增加些新功能，同时修复发现的Bug，详细参考如下：&lt;/p>
+&lt;h2 id="sparkles-新特性">&amp;#x2728; 新特性
+&lt;a class="header-anchor" href="#sparkles-%e6%96%b0%e7%89%b9%e6%80%a7">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>支持不同国家的多语言切换 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/148" title="Feature-#148" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#148
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持显示文章的总结摘要与过期信息提示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/111" title="Feature-#111" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#111
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持对长的代码块进行折叠显示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/108" title="Feature-#108" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#108
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持Bilibili视频与音乐播放嵌入显示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/93" title="Feature-#93" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#93
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持在&lt;code>Gemini&lt;/code>和&lt;code>Pisces&lt;/code>模式下显示二级导航菜单&lt;/li>
+&lt;li>支持类似Github风格的告警效果&lt;/li>
+&lt;li>支持阅读更多按钮时跳转时锚定后续内容的效果&lt;/li>
+&lt;li>支持全新的文章分享按钮&lt;/li>
+&lt;li>支持Waline3的评论系统&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-bug修复">&amp;#x1f41b; Bug修复
+&lt;a class="header-anchor" href="#bug-bug%e4%bf%ae%e5%a4%8d">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>修复animate.cssr的动画效果失效
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/158" title="Bug-#158" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#158
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复部分代码块在移动端显示时溢出
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/155" title="Bug-#155" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#155
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复代码复制时会自动在末尾增加换行
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/139" title="Bug-#139" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#139
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复网站资讯中的更新时间参考为文章最后更新时间
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/109" title="Bug-#109" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#109
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复数学公式在行内时显示失效
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/90" title="Bug-#90" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#90
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="zap-优化">&amp;#x26a1; 优化
+&lt;a class="header-anchor" href="#zap-%e4%bc%98%e5%8c%96">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>优化移动设备上文章显示连接效果
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/154" title="Improve-#154" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Improve-#154
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>优化代码块选择时颜色高亮区分
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/140" title="Improve-#140" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Improve-#140
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>优化短代码的使用移除文章头参数设置&lt;/li>
+&lt;li>优化多语言的文字翻译版本&lt;/li>
+&lt;li>其他Hugo版本升级代码迭代优化&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.6.3 Release(HotFixed)</title><link>/mist/release/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/mist/release/hugo-next-4-6-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>修改有关于配置文件中CDN供应商的名称缩进的错误，感谢
 &lt;a href="https://github.com/zanxj" title="@zanxj" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -37,7 +135,7 @@
 &lt;li>移除底部无用供应商名称，增加Github为云资源供应商标识&lt;/li>
 &lt;li>增加底部logo按黑白主题切换填充颜色的效果&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.6.2 Release</title><link>/mist/hugo-next-4-6-2-release.html</link><pubDate>Sun, 21 Jul 2024 21:40:01 +0800</pubDate><guid>/mist/hugo-next-4-6-2-release.html</guid><description>&lt;p>此次版本发布共提交 39 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.6.2 Release</title><link>/mist/release/hugo-next-4-6-2-release.html</link><pubDate>Sun, 21 Jul 2024 21:40:01 +0800</pubDate><guid>/mist/release/hugo-next-4-6-2-release.html</guid><description>&lt;p>此次版本发布共提交 39 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>增加第三方插件引用本地依赖的支持，同时新增加了cdnjs、unpkg、jsdelivr、staticfile、bootcdn、7ed、zstatic、zeyao等8个不同的CDN服务商，支持自定义CDN服务商配置，并在底部增加相应CDN服务的logo图示。默认使用本地资源加载&lt;/li>
 &lt;/ul>
@@ -168,16 +266,15 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>，在此非常感感谢他们贡献的代码，也期待更多小伙伴们的加入，谢谢。&lt;/p></description></item><item><title>Hugo Next 4.5.3 Release(HotFixed)</title><link>/mist/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/mist/hugo-next-4-5-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;/a>，在此非常感感谢他们贡献的代码，也期待更多小伙伴们的加入，谢谢。&lt;/p></description></item><item><title>Hugo NexT 4.5.3 Release(HotFixed)</title><link>/mist/release/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/mist/release/hugo-next-4-5-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>修复左侧51la统计页板不显示数据问题&lt;/li>
 &lt;/ul>
 
  &lt;blockquote>
  &lt;p>受配置文件参数名称变更所影响&lt;/p>
-
  &lt;/blockquote>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.5.2 Release(HotFixed)</title><link>/mist/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/hugo-next-4-5-2-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.2 Release(HotFixed)</title><link>/mist/release/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/release/hugo-next-4-5-2-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>增加生成索引内容时可指定长度（默认为1000个字）
 &lt;a href="https://github.com/hugo-next/hugo-theme-next" title="#101 关于algolia索引大小限制" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -187,11 +284,11 @@
  
 &lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.5.1 Release(HotFixed)</title><link>/mist/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/hugo-next-4-5-1-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.1 Release(HotFixed)</title><link>/mist/release/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/release/hugo-next-4-5-1-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>分类名称中包含英文时，英文会被小写转换&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.5.0 Release</title><link>/mist/hugo-next-4-5-0-release.html</link><pubDate>Sat, 24 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/hugo-next-4-5-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.0 Release</title><link>/mist/release/hugo-next-4-5-0-release.html</link><pubDate>Sat, 24 Jun 2023 16:27:21 +0800</pubDate><guid>/mist/release/hugo-next-4-5-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>重新调整多语言支持的配置方式，更加易读和扩展&lt;/li>
 &lt;li>修复文章统计和评论统计功能配置，更加简单清晰&lt;/li>
@@ -229,7 +326,7 @@
 &lt;a href="/mist/categories/" title="分类" >
  &lt;strong>分类&lt;/strong>
  
-&lt;/a>页面进行预览&lt;/p></description></item><item><title>Hugo Next 4.4.0 Release</title><link>/mist/hugo-next-4-4-0-release.html</link><pubDate>Sun, 30 Oct 2022 21:51:40 +0800</pubDate><guid>/mist/hugo-next-4-4-0-release.html</guid><description>&lt;p>此次版本发布共提交 40 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;/a>页面进行预览&lt;/p></description></item><item><title>Hugo NexT 4.4.0 Release</title><link>/mist/release/hugo-next-4-4-0-release.html</link><pubDate>Sun, 30 Oct 2022 21:51:40 +0800</pubDate><guid>/mist/release/hugo-next-4-4-0-release.html</guid><description>&lt;p>此次版本发布共提交 40 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>实现全站图片懒加载，并添加图片查看器功能&lt;/li>
 &lt;li>实现全站JS库（非必要）依赖加载，提升页面加载速度&lt;/li>
@@ -244,7 +341,7 @@
 &lt;div class="note warning ">
  注意： 此次升级增删了些配置项目，建议使用对比工具检查与你本地配置文件的差异地方，手动调整一下，比如增加CDN服务商，waline文章评论显示，默认开启文章目录等等。 😄
 &lt;/div>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/mist/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/mist/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.3.1 Release(HotFixed)</title><link>/mist/release/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/mist/release/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>升级 Waline 至最新版本支持文章表情互动（点赞功能）&lt;/li>
 &lt;li>与配置文件联动，优化深浅色主题的切换逻辑&lt;/li>
@@ -257,7 +354,7 @@
  
 &lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.3.0 Release</title><link>/mist/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/mist/hugo-next-4-3-0-release.html</guid><description>&lt;p>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.3.0 Release</title><link>/mist/release/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/mist/release/hugo-next-4-3-0-release.html</guid><description>&lt;p>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>增加百度，谷歌、不蒜子统计支持 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/19" title="#19" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -323,7 +420,7 @@
 &lt;div class="note warning ">
  注意： 此次升级增删了些配置项目，建议使用对比工具检查与你本地配置文件的差异地方，手动调整一下，比如站点信息，数据公式，默认关闭文章目录等等。 😄
 &lt;/div>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.2.0 Release</title><link>/mist/hugo-next-4-2-0-release.html</link><pubDate>Mon, 15 Aug 2022 22:33:15 +0800</pubDate><guid>/mist/hugo-next-4-2-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.2.0 Release</title><link>/mist/release/hugo-next-4-2-0-release.html</link><pubDate>Mon, 15 Aug 2022 22:33:15 +0800</pubDate><guid>/mist/release/hugo-next-4-2-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>文章搜索功能，本地搜索和Algolia在线搜索 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/18" title="#18" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -335,7 +432,7 @@
 &lt;/ul>
 
  &lt;blockquote>
- &lt;p>注意： 本地搜索和 Algolia 的搜索索引生成方式不一样，详细参考 &lt;code>config.yaml&lt;/code> 文件说明，若嫌 Algolia 配置麻烦，可直接使用本地搜索功能，配置较简单&lt;/p></description></item><item><title>Hugo Next 4.1.0 Release</title><link>/mist/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/mist/hugo-next-4-1-0-release.html</guid><description>&lt;p>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下：&lt;/p>
+ &lt;p>注意： 本地搜索和 Algolia 的搜索索引生成方式不一样，详细参考 &lt;code>config.yaml&lt;/code> 文件说明，若嫌 Algolia 配置麻烦，可直接使用本地搜索功能，配置较简单&lt;/p></description></item><item><title>Hugo NexT 4.1.0 Release</title><link>/mist/release/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/mist/release/hugo-next-4-1-0-release.html</guid><description>&lt;p>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>使用较低的 Hugo 版本生成站点报错（增加版本识别提示） 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/21" title="#21" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -357,7 +454,7 @@
 &lt;li>更新 FontAwesome 字体图标的版本&lt;/li>
 &lt;li>增加特定的归档页面，可显示出站点的所有文章&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.0.1 Release(HotFixed)</title><link>/mist/hugo-next-4-0-1-release.html</link><pubDate>Tue, 05 Jul 2022 16:49:19 +0800</pubDate><guid>/mist/hugo-next-4-0-1-release.html</guid><description>&lt;p>此次发布是个 hotfix 版本，修复了些较为紧急的 BUG，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.0.1 Release(HotFixed)</title><link>/mist/release/hugo-next-4-0-1-release.html</link><pubDate>Tue, 05 Jul 2022 16:49:19 +0800</pubDate><guid>/mist/release/hugo-next-4-0-1-release.html</guid><description>&lt;p>此次发布是个 hotfix 版本，修复了些较为紧急的 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>使用 Hugo v0.92.2 版本编译运行主题失败 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/14" title="#14" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -378,7 +475,7 @@
 &lt;li>更新 README 的2处错误描述&lt;/li>
 &lt;li>更新主题发布的截图信息&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.0.0 Release</title><link>/mist/hugo-next-4-0-0-release.html</link><pubDate>Mon, 04 Jul 2022 14:03:34 +0800</pubDate><guid>/mist/hugo-next-4-0-0-release.html</guid><description>&lt;p>全新设计的 &lt;code>Hugo NexT&lt;/code> 主题 4.0.0 正式发布，移植自 &lt;code>NexT&lt;/code> 的最新版本，已经实现的功能如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.0.0 Release</title><link>/mist/release/hugo-next-4-0-0-release.html</link><pubDate>Mon, 04 Jul 2022 14:03:34 +0800</pubDate><guid>/mist/release/hugo-next-4-0-0-release.html</guid><description>&lt;p>全新设计的 &lt;code>Hugo NexT&lt;/code> 主题 4.0.0 正式发布，移植自 &lt;code>NexT&lt;/code> 的最新版本，已经实现的功能如下：&lt;/p>
 &lt;ul>
 &lt;li>保留 4 种不同页面布局模式，完成所有设计迁移&lt;/li>
 &lt;li>实现 SCSS 动态样式迁移及语法和显示问题修复&lt;/li>

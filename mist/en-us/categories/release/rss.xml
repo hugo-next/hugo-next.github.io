@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release on Hugo NexT</title><link>/mist/en-us/categories/release/</link><description>Recent content in Release on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 30 Jan 2025 21:59:41 +0800</lastBuildDate><atom:link href="/mist/en-us/categories/release/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/mist/en-us/hugo-next-organization.html</link><pubDate>Thu, 30 Jan 2025 21:59:41 +0800</pubDate><guid>/mist/en-us/hugo-next-organization.html</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release on Hugo NexT</title><link>/mist/en-us/categories/release/</link><description>Recent content in Release on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Fri, 31 Jan 2025 18:11:08 +0800</lastBuildDate><atom:link href="/mist/en-us/categories/release/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/mist/en-us/release/hugo-next-organization.html</link><pubDate>Thu, 30 Jan 2025 21:59:41 +0800</pubDate><guid>/mist/en-us/release/hugo-next-organization.html</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
 &lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -19,10 +19,107 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a> Please review and feel free to participate in the joint development of PR.&lt;/p></description></item><item><title>Introduction to Hugo NexT V4</title><link>/mist/en-us/hugo-next-v4-introduced.html</link><pubDate>Thu, 30 Jan 2025 21:50:02 +0800</pubDate><guid>/mist/en-us/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> theme &lt;strong>V4&lt;/strong> version ported from 
+&lt;/a> Please review and feel free to participate in the joint development of PR.&lt;/p></description></item><item><title>Introduction to Hugo NexT V4</title><link>/mist/en-us/release/hugo-next-v4-introduced.html</link><pubDate>Thu, 30 Jan 2025 21:50:02 +0800</pubDate><guid>/mist/en-us/release/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> theme &lt;strong>V4&lt;/strong> version ported from 
 &lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>. The latest version retains its original simple and easy-to-use features and powerful functions, all because &amp;#x2764;&amp;#xfe0f; Let&amp;rsquo;s start again. We hope you will also enjoy it and welcome you to join us smile:&lt;/p></description></item></channel></rss>
+&lt;/a>. The latest version retains its original simple and easy-to-use features and powerful functions, all because &amp;#x2764;&amp;#xfe0f; Let&amp;rsquo;s start again. We hope you will also enjoy it and welcome you to join us smile:&lt;/p></description></item><item><title>Hugo NexT 4.7.2 Release</title><link>/mist/en-us/release/hugo-next-4-7-1-release.html</link><pubDate>Fri, 31 Jan 2025 18:11:08 +0800</pubDate><guid>/mist/en-us/release/hugo-next-4-7-1-release.html</guid><description>&lt;p>This version release includes over &lt;strong>60&lt;/strong> new features added according to the roadmap, as well as bug fixes. For details, see below:&lt;/p>
+&lt;h2 id="sparkles-new-features">&amp;#x2728; New Features
+&lt;a class="header-anchor" href="#sparkles-new-features">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>Support for multi-language switching for different countries 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/148" title="Feature-#148" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#148
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Display article summaries and expiration information 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/111" title="Feature-#111" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#111
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Collapsible display for long code blocks 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/108" title="Feature-#108" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#108
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Embedding display for Bilibili videos and music 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/93" title="Feature-#93" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#93
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Support displaying secondary navigation menus in &lt;code>Gemini&lt;/code> and &lt;code>Pisces&lt;/code> modes&lt;/li>
+&lt;li>Support for GitHub-style alert effects&lt;/li>
+&lt;li>Support for anchor effect when jumping to subsequent content with the &amp;ldquo;Read More&amp;rdquo; button&lt;/li>
+&lt;li>Support Waline3 comment system&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-bug-fixes">&amp;#x1f41b; Bug Fixes
+&lt;a class="header-anchor" href="#bug-bug-fixes">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>Fix the failure of animation effects in animate.css 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/158" title="Bug-#158" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#158
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Fix overflow of some code blocks on mobile devices 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/155" title="Bug-#155" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#155
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Fix automatic addition of line breaks at the end when copying code 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/139" title="Bug-#139" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#139
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Update the website information to reflect the last update time of the article 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/109" title="Bug-#109" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#109
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Fix the failure of inline math formula display 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/90" title="Bug-#90" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#90
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="zap-optimization">&amp;#x26a1; Optimization
+&lt;a class="header-anchor" href="#zap-optimization">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>Optimize the display of article links on mobile devices 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/154" title="Improve-#154" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Improve-#154
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Optimize color highlighting when selecting code blocks 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/140" title="Improve-#140" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Improve-#140
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>Optimize multilingual text translation versions&lt;/li>
+&lt;li>Remove article header parameter settings for shortcode usage&lt;/li>
+&lt;li>Other code iteration optimizations for Hugo version upgrades&lt;/li>
+&lt;/ul>
+&lt;p>We welcome everyone to use and provide feedback. Good luck!!! &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item></channel></rss>

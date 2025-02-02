@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.3.x on Hugo NexT</title><link>/muse/tags/4.3.x/</link><description>Recent content in 4.3.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 02 Oct 2022 21:46:18 +0800</lastBuildDate><atom:link href="/muse/tags/4.3.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/muse/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/muse/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.3.x on Hugo NexT</title><link>/muse/tags/4.3.x/</link><description>Recent content in 4.3.x on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 02 Oct 2022 21:46:18 +0800</lastBuildDate><atom:link href="/muse/tags/4.3.x/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo NexT 4.3.1 Release(HotFixed)</title><link>/muse/release/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/muse/release/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>升级 Waline 至最新版本支持文章表情互动（点赞功能）&lt;/li>
 &lt;li>与配置文件联动，优化深浅色主题的切换逻辑&lt;/li>
@@ -11,7 +11,7 @@
  
 &lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.3.0 Release</title><link>/muse/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/muse/hugo-next-4-3-0-release.html</guid><description>&lt;p>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.3.0 Release</title><link>/muse/release/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/muse/release/hugo-next-4-3-0-release.html</guid><description>&lt;p>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>增加百度，谷歌、不蒜子统计支持 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/19" title="#19" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">

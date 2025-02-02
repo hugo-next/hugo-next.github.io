@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NexT on Hugo NexT</title><link>/en-us/tags/next/</link><description>Recent content in NexT on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 30 Jan 2025 21:59:41 +0800</lastBuildDate><atom:link href="/en-us/tags/next/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/en-us/hugo-next-organization.html</link><pubDate>Thu, 30 Jan 2025 21:59:41 +0800</pubDate><guid>/en-us/hugo-next-organization.html</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NexT on Hugo NexT</title><link>/en-us/tags/next/</link><description>Recent content in NexT on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 30 Jan 2025 21:59:41 +0800</lastBuildDate><atom:link href="/en-us/tags/next/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/en-us/release/hugo-next-organization.html</link><pubDate>Thu, 30 Jan 2025 21:59:41 +0800</pubDate><guid>/en-us/release/hugo-next-organization.html</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
 &lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -44,7 +44,7 @@
 &lt;li>Report one in GitHub Issues &amp;#x1f41b; .&lt;/li>
 &lt;li>Apply for a new feature on GitHub.&lt;/li>
 &lt;li>Request a vote for the most popular feature.&lt;/li>
-&lt;/ul></description></item><item><title>Introduction to Hugo NexT V4</title><link>/en-us/hugo-next-v4-introduced.html</link><pubDate>Thu, 30 Jan 2025 21:50:02 +0800</pubDate><guid>/en-us/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> theme &lt;strong>V4&lt;/strong> version ported from 
+&lt;/ul></description></item><item><title>Introduction to Hugo NexT V4</title><link>/en-us/release/hugo-next-v4-introduced.html</link><pubDate>Thu, 30 Jan 2025 21:50:02 +0800</pubDate><guid>/en-us/release/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> theme &lt;strong>V4&lt;/strong> version ported from 
 &lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  

@@ -15,7 +15,6 @@
 &lt;a class="header-anchor" href="#%e7%94%a8%e6%88%b7%e6%8c%87%e5%8d%97">&lt;/a>
 &lt;/h2>&lt;p>设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p></description></item><item><title>世界，你好！</title><link>/pisces/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/pisces/demo/hello-world.html</guid><description>&lt;blockquote>
  &lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
-
  &lt;/blockquote>
 &lt;p>
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -44,7 +43,6 @@
  &lt;/div>
  &lt;div class="post-alert-content">
  &lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭，并关闭评论功能。&lt;/p>
-
  &lt;/div>
  &lt;/div></description></item><item><title>Mermaid支持流程图</title><link>/pisces/demo/mermaid-charts.html</link><pubDate>Sun, 18 Sep 2022 20:58:13 +0800</pubDate><guid>/pisces/demo/mermaid-charts.html</guid><description>&lt;p>本主题已支持 &lt;code>Mermaid&lt;/code> 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 &lt;code>Mermaid&lt;/code> 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站：
 &lt;a href="https://mermaid-js.github.io/" title="https://mermaid-js.github.io/" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">

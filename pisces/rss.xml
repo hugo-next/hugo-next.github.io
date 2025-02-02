@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo NexT</title><link>/pisces/</link><description>Recent content on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 02 Jan 2025 19:08:02 +0800</lastBuildDate><atom:link href="/pisces/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/demo/02-external-link/</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/demo/02-external-link/</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo NexT</title><link>/pisces/</link><description>Recent content on Hugo NexT</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 31 Jan 2025 17:18:09 +0800</lastBuildDate><atom:link href="/pisces/rss.xml" rel="self" type="application/rss+xml"/><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/demo/02-external-link/</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/demo/02-external-link/</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
 &lt;a href="https://theme-next.js.org/" title="Theme NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Theme NexT
  
@@ -13,7 +13,7 @@
 &lt;/a>打造的高品质优雅主题，保持简单易用的特性和强大的功能。&lt;/p>
 &lt;h2 id="用户指南">用户指南
 &lt;a class="header-anchor" href="#%e7%94%a8%e6%88%b7%e6%8c%87%e5%8d%97">&lt;/a>
-&lt;/h2>&lt;p>设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p></description></item><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/hugo-next-organization.html</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
+&lt;/h2>&lt;p>设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p></description></item><item><title>欢迎加入 Hugo NexT 组织！</title><link>/pisces/release/hugo-next-organization.html</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>/pisces/release/hugo-next-organization.html</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
 &lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -34,7 +34,7 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>进行查看，也欢迎大家提 PR 参与共同开发。&lt;/p></description></item><item><title>Hugo NexT V4 介绍</title><link>/pisces/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/pisces/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自 
+&lt;/a>进行查看，也欢迎大家提 PR 参与共同开发。&lt;/p></description></item><item><title>Hugo NexT V4 介绍</title><link>/pisces/release/hugo-next-v4-introduced.html</link><pubDate>Mon, 04 Jul 2022 11:30:02 +0800</pubDate><guid>/pisces/release/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 主题 &lt;strong>V4&lt;/strong> 版本移植自 
 &lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -42,7 +42,6 @@
  
 &lt;/a> 的最新版本，保留其原本的简单易用特性和强大的功能，一切都是因 &amp;#x2764;&amp;#xfe0f; 重新出发，愿你同样会喜欢，也欢迎加入共建！ &amp;#x1f604;&lt;/p></description></item><item><title>世界，你好！</title><link>/pisces/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>/pisces/demo/hello-world.html</guid><description>&lt;blockquote>
  &lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
-
  &lt;/blockquote>
 &lt;p>
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -55,13 +54,111 @@
 &lt;/h2>&lt;p>开发 &lt;code>Hugo NexT&lt;/code> 主题原本是个人的业余爱好，但没想到网友们这么的热情，感谢有你们的支持，让我们大家一起来见证它的成长。&lt;/p>
 &lt;h2 id="打赏名单">打赏名单
 &lt;a class="header-anchor" href="#%e6%89%93%e8%b5%8f%e5%90%8d%e5%8d%95">&lt;/a>
-&lt;/h2>&lt;p>以下是打赏名单列表（按时间顺序）：&lt;/p></description></item><item><title>支持在Markdown文档中实现块信息强调标注</title><link>/pisces/demo/github-blockquote.html</link><pubDate>Thu, 02 Jan 2025 16:08:02 +0800</pubDate><guid>/pisces/demo/github-blockquote.html</guid><description>&lt;p>过去 &lt;code>HugoNexT&lt;/code> 主题都是通过自定义短语来实现块信息的标注，近期发现 &lt;code>Hugo&lt;/code> 从
+&lt;/h2>&lt;p>以下是打赏名单列表（按时间顺序）：&lt;/p></description></item><item><title>Hugo NexT 4.7.2 Release</title><link>/pisces/release/hugo-next-4-7-1-release.html</link><pubDate>Fri, 31 Jan 2025 17:18:09 +0800</pubDate><guid>/pisces/release/hugo-next-4-7-1-release.html</guid><description>&lt;p>此次版本发布共提交 &lt;strong>60&lt;/strong> 余处按照路线图增加些新功能，同时修复发现的Bug，详细参考如下：&lt;/p>
+&lt;h2 id="sparkles-新特性">&amp;#x2728; 新特性
+&lt;a class="header-anchor" href="#sparkles-%e6%96%b0%e7%89%b9%e6%80%a7">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>支持不同国家的多语言切换 
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/148" title="Feature-#148" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#148
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持显示文章的总结摘要与过期信息提示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/111" title="Feature-#111" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#111
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持对长的代码块进行折叠显示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/108" title="Feature-#108" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#108
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持Bilibili视频与音乐播放嵌入显示
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/93" title="Feature-#93" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Feature-#93
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>支持在&lt;code>Gemini&lt;/code>和&lt;code>Pisces&lt;/code>模式下显示二级导航菜单&lt;/li>
+&lt;li>支持类似Github风格的告警效果&lt;/li>
+&lt;li>支持阅读更多按钮时跳转时锚定后续内容的效果&lt;/li>
+&lt;li>支持全新的文章分享按钮&lt;/li>
+&lt;li>支持Waline3的评论系统&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-bug修复">&amp;#x1f41b; Bug修复
+&lt;a class="header-anchor" href="#bug-bug%e4%bf%ae%e5%a4%8d">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>修复animate.cssr的动画效果失效
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/158" title="Bug-#158" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#158
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复部分代码块在移动端显示时溢出
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/155" title="Bug-#155" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#155
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复代码复制时会自动在末尾增加换行
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/139" title="Bug-#139" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#139
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复网站资讯中的更新时间参考为文章最后更新时间
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/109" title="Bug-#109" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#109
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>修复数学公式在行内时显示失效
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/90" title="Bug-#90" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Bug-#90
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="zap-优化">&amp;#x26a1; 优化
+&lt;a class="header-anchor" href="#zap-%e4%bc%98%e5%8c%96">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>优化移动设备上文章显示连接效果
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/154" title="Improve-#154" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Improve-#154
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>优化代码块选择时颜色高亮区分
+&lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/140" title="Improve-#140" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Improve-#140
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/li>
+&lt;li>优化短代码的使用移除文章头参数设置&lt;/li>
+&lt;li>优化多语言的文字翻译版本&lt;/li>
+&lt;li>其他Hugo版本升级代码迭代优化&lt;/li>
+&lt;/ul>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>支持在Markdown文档中实现块信息强调标注</title><link>/pisces/demo/github-blockquote.html</link><pubDate>Thu, 02 Jan 2025 16:08:02 +0800</pubDate><guid>/pisces/demo/github-blockquote.html</guid><description>&lt;p>过去 &lt;code>HugoNexT&lt;/code> 主题都是通过自定义短语来实现块信息的标注，近期发现 &lt;code>Hugo&lt;/code> 从
 &lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.134.0" title="v0.134.0" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  v0.134.0
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>版本开始便是可以支持通过hook方式渲染Markdown文档中的Blockquote样式（需要自己实现），实现类似Github的警告风格样式。于是便在 &lt;code>HugoNexT&lt;/code> 主题中添加7种不同风格供用户可选择使用，还可以自定义图标与颜色配置。&lt;/p></description></item><item><title>Hugo Next 4.6.3 Release(HotFixed)</title><link>/pisces/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/pisces/hugo-next-4-6-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;/a>版本开始便是可以支持通过hook方式渲染Markdown文档中的Blockquote样式（需要自己实现），实现类似Github的警告风格样式。于是便在 &lt;code>HugoNexT&lt;/code> 主题中添加7种不同风格供用户可选择使用，还可以自定义图标与颜色配置。&lt;/p></description></item><item><title>Hugo NexT 4.6.3 Release(HotFixed)</title><link>/pisces/release/hugo-next-4-6-3-release.html</link><pubDate>Mon, 22 Jul 2024 22:34:21 +0800</pubDate><guid>/pisces/release/hugo-next-4-6-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>修改有关于配置文件中CDN供应商的名称缩进的错误，感谢
 &lt;a href="https://github.com/zanxj" title="@zanxj" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -73,7 +170,7 @@
 &lt;li>移除底部无用供应商名称，增加Github为云资源供应商标识&lt;/li>
 &lt;li>增加底部logo按黑白主题切换填充颜色的效果&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.6.2 Release</title><link>/pisces/hugo-next-4-6-2-release.html</link><pubDate>Sun, 21 Jul 2024 21:40:01 +0800</pubDate><guid>/pisces/hugo-next-4-6-2-release.html</guid><description>&lt;p>此次版本发布共提交 39 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.6.2 Release</title><link>/pisces/release/hugo-next-4-6-2-release.html</link><pubDate>Sun, 21 Jul 2024 21:40:01 +0800</pubDate><guid>/pisces/release/hugo-next-4-6-2-release.html</guid><description>&lt;p>此次版本发布共提交 39 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>增加第三方插件引用本地依赖的支持，同时新增加了cdnjs、unpkg、jsdelivr、staticfile、bootcdn、7ed、zstatic、zeyao等8个不同的CDN服务商，支持自定义CDN服务商配置，并在底部增加相应CDN服务的logo图示。默认使用本地资源加载&lt;/li>
 &lt;/ul>
@@ -204,16 +301,15 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>，在此非常感感谢他们贡献的代码，也期待更多小伙伴们的加入，谢谢。&lt;/p></description></item><item><title>图像浏览工具</title><link>/pisces/demo/image-viewer.html</link><pubDate>Sun, 21 Jul 2024 10:28:12 +0800</pubDate><guid>/pisces/demo/image-viewer.html</guid><description>&lt;p>本主题自带图像浏览器功能，支持对文章区域内出现的图片进行浏览，点击图片可以查看大图，点击空白处可以关闭。不需要配置任何参数，只要在文章里面相应的位置添加图片信息即可 。&lt;/p></description></item><item><title>Hugo Next 4.5.3 Release(HotFixed)</title><link>/pisces/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/pisces/hugo-next-4-5-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;/a>，在此非常感感谢他们贡献的代码，也期待更多小伙伴们的加入，谢谢。&lt;/p></description></item><item><title>图像浏览工具</title><link>/pisces/demo/image-viewer.html</link><pubDate>Sun, 21 Jul 2024 10:28:12 +0800</pubDate><guid>/pisces/demo/image-viewer.html</guid><description>&lt;p>本主题自带图像浏览器功能，支持对文章区域内出现的图片进行浏览，点击图片可以查看大图，点击空白处可以关闭。不需要配置任何参数，只要在文章里面相应的位置添加图片信息即可 。&lt;/p></description></item><item><title>Hugo NexT 4.5.3 Release(HotFixed)</title><link>/pisces/release/hugo-next-4-5-3-release.html</link><pubDate>Tue, 18 Jul 2023 12:07:21 +0800</pubDate><guid>/pisces/release/hugo-next-4-5-3-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>修复左侧51la统计页板不显示数据问题&lt;/li>
 &lt;/ul>
 
  &lt;blockquote>
  &lt;p>受配置文件参数名称变更所影响&lt;/p>
-
  &lt;/blockquote>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.5.2 Release(HotFixed)</title><link>/pisces/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/pisces/hugo-next-4-5-2-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.2 Release(HotFixed)</title><link>/pisces/release/hugo-next-4-5-2-release.html</link><pubDate>Wed, 28 Jun 2023 16:27:21 +0800</pubDate><guid>/pisces/release/hugo-next-4-5-2-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>增加生成索引内容时可指定长度（默认为1000个字）
 &lt;a href="https://github.com/hugo-next/hugo-theme-next" title="#101 关于algolia索引大小限制" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -223,11 +319,11 @@
  
 &lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.5.1 Release(HotFixed)</title><link>/pisces/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/pisces/hugo-next-4-5-1-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.1 Release(HotFixed)</title><link>/pisces/release/hugo-next-4-5-1-release.html</link><pubDate>Tue, 27 Jun 2023 16:27:21 +0800</pubDate><guid>/pisces/release/hugo-next-4-5-1-release.html</guid><description>&lt;p>此次紧急修复版本，主要是为解决如下问题：&lt;/p>
 &lt;ul>
 &lt;li>分类名称中包含英文时，英文会被小写转换&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.5.0 Release</title><link>/pisces/hugo-next-4-5-0-release.html</link><pubDate>Sat, 24 Jun 2023 16:27:21 +0800</pubDate><guid>/pisces/hugo-next-4-5-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！&amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.5.0 Release</title><link>/pisces/release/hugo-next-4-5-0-release.html</link><pubDate>Sat, 24 Jun 2023 16:27:21 +0800</pubDate><guid>/pisces/release/hugo-next-4-5-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>重新调整多语言支持的配置方式，更加易读和扩展&lt;/li>
 &lt;li>修复文章统计和评论统计功能配置，更加简单清晰&lt;/li>
@@ -265,7 +361,7 @@
 &lt;a href="/pisces/categories/" title="分类" >
  &lt;strong>分类&lt;/strong>
  
-&lt;/a>页面进行预览&lt;/p></description></item><item><title>Hugo Next 4.4.0 Release</title><link>/pisces/hugo-next-4-4-0-release.html</link><pubDate>Sun, 30 Oct 2022 21:51:40 +0800</pubDate><guid>/pisces/hugo-next-4-4-0-release.html</guid><description>&lt;p>此次版本发布共提交 40 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;/a>页面进行预览&lt;/p></description></item><item><title>Hugo NexT 4.4.0 Release</title><link>/pisces/release/hugo-next-4-4-0-release.html</link><pubDate>Sun, 30 Oct 2022 21:51:40 +0800</pubDate><guid>/pisces/release/hugo-next-4-4-0-release.html</guid><description>&lt;p>此次版本发布共提交 40 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>实现全站图片懒加载，并添加图片查看器功能&lt;/li>
 &lt;li>实现全站JS库（非必要）依赖加载，提升页面加载速度&lt;/li>
@@ -295,9 +391,8 @@
  &lt;/div>
  &lt;div class="post-alert-content">
  &lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭，并关闭评论功能。&lt;/p>
-
  &lt;/div>
- &lt;/div></description></item><item><title>Hugo Next 4.3.1 Release(HotFixed)</title><link>/pisces/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/pisces/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
+ &lt;/div></description></item><item><title>Hugo NexT 4.3.1 Release(HotFixed)</title><link>/pisces/release/hugo-next-4-3-1-release.html</link><pubDate>Sun, 02 Oct 2022 21:46:18 +0800</pubDate><guid>/pisces/release/hugo-next-4-3-1-release.html</guid><description>&lt;p>此次修补版本发布主要是做了少许的优化，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>升级 Waline 至最新版本支持文章表情互动（点赞功能）&lt;/li>
 &lt;li>与配置文件联动，优化深浅色主题的切换逻辑&lt;/li>
@@ -310,7 +405,7 @@
  
 &lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.3.0 Release</title><link>/pisces/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/pisces/hugo-next-4-3-0-release.html</guid><description>&lt;p>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.3.0 Release</title><link>/pisces/release/hugo-next-4-3-0-release.html</link><pubDate>Fri, 30 Sep 2022 21:15:47 +0800</pubDate><guid>/pisces/release/hugo-next-4-3-0-release.html</guid><description>&lt;p>此次版本发布共提交 26 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>增加百度，谷歌、不蒜子统计支持 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/19" title="#19" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -382,7 +477,7 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>。&lt;/p></description></item><item><title>数学公式渲染</title><link>/pisces/demo/math-formula.html</link><pubDate>Sun, 11 Sep 2022 10:16:02 +0800</pubDate><guid>/pisces/demo/math-formula.html</guid><description>&lt;p>本主题支持 &lt;code>mathjax&lt;/code> 和 &lt;code>katex&lt;/code> 两种不的方案支持数学公式的渲染，可根据自已的需求进行选择。&lt;/p></description></item><item><title>支持用户自定义设计</title><link>/pisces/demo/custom-files.html</link><pubDate>Sat, 10 Sep 2022 21:02:32 +0800</pubDate><guid>/pisces/demo/custom-files.html</guid><description>&lt;p>对于熟悉前端开发的用户来说，可以通过自定义文件配置，实现对站点的样式和布局进行个性化的调整。其中布局方面主要是支持左侧边栏的站点概览部分，以及站点底部2个位置，但样式的重置可以是整个站点的任意位置。&lt;/p></description></item><item><title>Hugo Next 4.2.0 Release</title><link>/pisces/hugo-next-4-2-0-release.html</link><pubDate>Mon, 15 Aug 2022 22:33:15 +0800</pubDate><guid>/pisces/hugo-next-4-2-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
+&lt;/a>。&lt;/p></description></item><item><title>数学公式渲染</title><link>/pisces/demo/math-formula.html</link><pubDate>Sun, 11 Sep 2022 10:16:02 +0800</pubDate><guid>/pisces/demo/math-formula.html</guid><description>&lt;p>本主题支持 &lt;code>mathjax&lt;/code> 和 &lt;code>katex&lt;/code> 两种不的方案支持数学公式的渲染，可根据自已的需求进行选择。&lt;/p></description></item><item><title>支持用户自定义设计</title><link>/pisces/demo/custom-files.html</link><pubDate>Sat, 10 Sep 2022 21:02:32 +0800</pubDate><guid>/pisces/demo/custom-files.html</guid><description>&lt;p>对于熟悉前端开发的用户来说，可以通过自定义文件配置，实现对站点的样式和布局进行个性化的调整。其中布局方面主要是支持左侧边栏的站点概览部分，以及站点底部2个位置，但样式的重置可以是整个站点的任意位置。&lt;/p></description></item><item><title>Hugo NexT 4.2.0 Release</title><link>/pisces/release/hugo-next-4-2-0-release.html</link><pubDate>Mon, 15 Aug 2022 22:33:15 +0800</pubDate><guid>/pisces/release/hugo-next-4-2-0-release.html</guid><description>&lt;p>此次版本发布共提交 30 余处按照路线图增加些新功能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>文章搜索功能，本地搜索和Algolia在线搜索 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/18" title="#18" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -394,7 +489,7 @@
 &lt;/ul>
 
  &lt;blockquote>
- &lt;p>注意： 本地搜索和 Algolia 的搜索索引生成方式不一样，详细参考 &lt;code>config.yaml&lt;/code> 文件说明，若嫌 Algolia 配置麻烦，可直接使用本地搜索功能，配置较简单&lt;/p></description></item><item><title>自定义短语示例</title><link>/pisces/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>/pisces/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为引设计一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>Hugo Next 4.1.0 Release</title><link>/pisces/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/pisces/hugo-next-4-1-0-release.html</guid><description>&lt;p>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下：&lt;/p>
+ &lt;p>注意： 本地搜索和 Algolia 的搜索索引生成方式不一样，详细参考 &lt;code>config.yaml&lt;/code> 文件说明，若嫌 Algolia 配置麻烦，可直接使用本地搜索功能，配置较简单&lt;/p></description></item><item><title>自定义短语示例</title><link>/pisces/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>/pisces/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为引设计一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>Hugo NexT 4.1.0 Release</title><link>/pisces/release/hugo-next-4-1-0-release.html</link><pubDate>Wed, 27 Jul 2022 16:49:28 +0800</pubDate><guid>/pisces/release/hugo-next-4-1-0-release.html</guid><description>&lt;p>此次版本发布主要是为提升站点页面生成性能，同时修复了些 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>使用较低的 Hugo 版本生成站点报错（增加版本识别提示） 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/21" title="#21" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -416,7 +511,7 @@
 &lt;li>更新 FontAwesome 字体图标的版本&lt;/li>
 &lt;li>增加特定的归档页面，可显示出站点的所有文章&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.0.1 Release(HotFixed)</title><link>/pisces/hugo-next-4-0-1-release.html</link><pubDate>Tue, 05 Jul 2022 16:49:19 +0800</pubDate><guid>/pisces/hugo-next-4-0-1-release.html</guid><description>&lt;p>此次发布是个 hotfix 版本，修复了些较为紧急的 BUG，参考如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.0.1 Release(HotFixed)</title><link>/pisces/release/hugo-next-4-0-1-release.html</link><pubDate>Tue, 05 Jul 2022 16:49:19 +0800</pubDate><guid>/pisces/release/hugo-next-4-0-1-release.html</guid><description>&lt;p>此次发布是个 hotfix 版本，修复了些较为紧急的 BUG，参考如下：&lt;/p>
 &lt;ul>
 &lt;li>使用 Hugo v0.92.2 版本编译运行主题失败 
 &lt;a href="https://github.com/hugo-next/hugo-theme-next/issues/14" title="#14" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -437,7 +532,7 @@
 &lt;li>更新 README 的2处错误描述&lt;/li>
 &lt;li>更新主题发布的截图信息&lt;/li>
 &lt;/ul>
-&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo Next 4.0.0 Release</title><link>/pisces/hugo-next-4-0-0-release.html</link><pubDate>Mon, 04 Jul 2022 14:03:34 +0800</pubDate><guid>/pisces/hugo-next-4-0-0-release.html</guid><description>&lt;p>全新设计的 &lt;code>Hugo NexT&lt;/code> 主题 4.0.0 正式发布，移植自 &lt;code>NexT&lt;/code> 的最新版本，已经实现的功能如下：&lt;/p>
+&lt;p>欢迎大家使用和反馈，祝你好运！！！ &amp;#x1f389; &amp;#x1f389; &amp;#x1f389;&lt;/p></description></item><item><title>Hugo NexT 4.0.0 Release</title><link>/pisces/release/hugo-next-4-0-0-release.html</link><pubDate>Mon, 04 Jul 2022 14:03:34 +0800</pubDate><guid>/pisces/release/hugo-next-4-0-0-release.html</guid><description>&lt;p>全新设计的 &lt;code>Hugo NexT&lt;/code> 主题 4.0.0 正式发布，移植自 &lt;code>NexT&lt;/code> 的最新版本，已经实现的功能如下：&lt;/p>
 &lt;ul>
 &lt;li>保留 4 种不同页面布局模式，完成所有设计迁移&lt;/li>
 &lt;li>实现 SCSS 动态样式迁移及语法和显示问题修复&lt;/li>

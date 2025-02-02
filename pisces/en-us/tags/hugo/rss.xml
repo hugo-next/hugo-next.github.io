@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Hugo NexT</title><link>/pisces/en-us/tags/hugo/</link><description>Recent content in Hugo on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 30 Jan 2025 21:59:41 +0800</lastBuildDate><atom:link href="/pisces/en-us/tags/hugo/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/pisces/en-us/hugo-next-organization.html</link><pubDate>Thu, 30 Jan 2025 21:59:41 +0800</pubDate><guid>/pisces/en-us/hugo-next-organization.html</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Hugo NexT</title><link>/pisces/en-us/tags/hugo/</link><description>Recent content in Hugo on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 30 Jan 2025 21:59:41 +0800</lastBuildDate><atom:link href="/pisces/en-us/tags/hugo/rss.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Hugo NexT organization</title><link>/pisces/en-us/release/hugo-next-organization.html</link><pubDate>Thu, 30 Jan 2025 21:59:41 +0800</pubDate><guid>/pisces/en-us/release/hugo-next-organization.html</guid><description>&lt;p>Welcome to the Hugo NexT documentation site! It is from 
 &lt;a href="https://theme-next.js.org/" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -44,7 +44,7 @@
 &lt;li>Report one in GitHub Issues &amp;#x1f41b; .&lt;/li>
 &lt;li>Apply for a new feature on GitHub.&lt;/li>
 &lt;li>Request a vote for the most popular feature.&lt;/li>
-&lt;/ul></description></item><item><title>Introduction to Hugo NexT V4</title><link>/pisces/en-us/hugo-next-v4-introduced.html</link><pubDate>Thu, 30 Jan 2025 21:50:02 +0800</pubDate><guid>/pisces/en-us/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> theme &lt;strong>V4&lt;/strong> version ported from 
+&lt;/ul></description></item><item><title>Introduction to Hugo NexT V4</title><link>/pisces/en-us/release/hugo-next-v4-introduced.html</link><pubDate>Thu, 30 Jan 2025 21:50:02 +0800</pubDate><guid>/pisces/en-us/release/hugo-next-v4-introduced.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> theme &lt;strong>V4&lt;/strong> version ported from 
 &lt;a href="https://theme-next.js.org" title="Hexo NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hexo NexT
  
@@ -52,7 +52,6 @@
  
 &lt;/a>. The latest version retains its original simple and easy-to-use features and powerful functions, all because &amp;#x2764;&amp;#xfe0f; Let&amp;rsquo;s start again. We hope you will also enjoy it and welcome you to join us smile:&lt;/p></description></item><item><title>Hello world</title><link>/pisces/en-us/demo/hello-world.html</link><pubDate>Sat, 25 Jan 2025 19:12:32 +0800</pubDate><guid>/pisces/en-us/demo/hello-world.html</guid><description>&lt;blockquote>
  &lt;p>Use the keyword &lt;code>weight&lt;/code> to top the article.&lt;/p>
-
  &lt;/blockquote>
 &lt;p>
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">

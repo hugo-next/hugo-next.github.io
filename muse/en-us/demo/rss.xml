@@ -25,7 +25,6 @@
 &lt;li>Request a vote for the most popular feature.&lt;/li>
 &lt;/ul></description></item><item><title>Hello world</title><link>/muse/en-us/demo/hello-world.html</link><pubDate>Sat, 25 Jan 2025 19:12:32 +0800</pubDate><guid>/muse/en-us/demo/hello-world.html</guid><description>&lt;blockquote>
  &lt;p>Use the keyword &lt;code>weight&lt;/code> to top the article.&lt;/p>
-
  &lt;/blockquote>
 &lt;p>
 &lt;a href="https://gohugo.io/" title="Hugo" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
@@ -67,7 +66,6 @@
  &lt;/div>
  &lt;div class="post-alert-content">
  &lt;p>Used to test whether the directory navigation of an article will be directly closed and the comment function will be disabled without the H1-6 title header.&lt;/p>
-
  &lt;/div>
  &lt;/div></description></item><item><title>Image Browsing Tool</title><link>/muse/en-us/demo/image-viewer.html</link><pubDate>Sat, 25 Jan 2025 21:28:12 +0800</pubDate><guid>/muse/en-us/demo/image-viewer.html</guid><description>&lt;p>This theme comes with an image browser function that supports browsing images that appear in the article area. Clicking on an image can view a larger image, while clicking on a blank space can close it. No need to configure any parameters, just add image information at the corresponding position in the article.&lt;/p></description></item><item><title>Support Emoji emojis</title><link>/muse/en-us/demo/emoji-support.html</link><pubDate>Sat, 25 Jan 2025 21:18:52 +0800</pubDate><guid>/muse/en-us/demo/emoji-support.html</guid><description>&lt;p>Emojis can be enabled in various ways in the Hugo project.&lt;/p>
 &lt;p>
