@@ -416,88 +416,6 @@ NexT.utils = {
     return res_src;
   },
 
-  /**
-   * One-click copy code support.
-   */
-  registerCopyCode: function () {
-    if (!NexT.CONFIG.copybtn) return;
-
-   /** let figure = document.querySelectorAll('.highlight pre');
-    if (figure.length === 0 || !NexT.CONFIG.copybtn) return;
-    figure.forEach(element => {
-      let cn = element.querySelector('code').className;      
-      if (cn === '') return;
-      element.children[0].insertAdjacentHTML('beforebegin', '<div class="copy-btn" data-clipboard-snippe><i class="fa fa-copy fa-fw"></i></div>');
-      var clipboard = new ClipboardJS(element.children[0],
-        { 
-          text: function(trigger) {
-            return trigger.nextElementSibling.textContent.trim();
-          }
-        });
-      clipboard.on('success', function (e) {
-        e.clearSelection();
-        console.info('Action:', e.action);
-        console.info('Text:', e.text);
-        button.querySelector('i').className = 'fa fa-check-circle fa-fw';
-      });
-      clipboard.on('error', function (e) {
-        console.error('复制失败:', e);
-        button.querySelector('i').className = 'fa fa-times-circle fa-fw';
-      });
-      const button = element.querySelector('.copy-btn');
-      element.addEventListener('mouseleave', () => {
-        setTimeout(() => {
-          button.querySelector('i').className = 'fa fa-copy fa-fw';
-        }, 300);
-      });
-    });**/
-   /** figure.forEach(element => {
-      let cn = element.querySelector('code').className;      
-      if (cn === '') return;
-     element.insertAdjacentHTML('beforeend', '<div class="copy-btn"><i class="fa fa-copy fa-fw"></i></div>');
-      // element.insertAdjacentHTML('beforeend', '<div class="copy-btn"><i class="fa fa-copy fa-fw"></i></div>');
-      const button = element.querySelector('.copy-btn');
-      button.addEventListener('click', async () => {
-        const lines = element.querySelector('.code') || element.querySelector('code');
-        let code = lines.textContent.trim();
-        console.log('尝试复制代码:', code);
-
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText(code).then(() => {
-            console.log('复制成功');
-            button.querySelector('i').className = 'fa fa-check-circle fa-fw';
-          }).catch((err) => {
-            console.error('复制失败:', err);
-            button.querySelector('i').className = 'fa fa-times-circle fa-fw';
-          });
-        } else {
-          const ta = document.createElement('textarea');
-          ta.style.top = window.scrollY + 'px';
-          ta.style.position = 'absolute';
-          ta.style.opacity = '0';
-          ta.readOnly = true;
-          ta.value = code;
-          document.body.append(ta);
-          ta.select();
-          ta.setSelectionRange(0, code.length);
-          try {
-            const successful = document.execCommand('copy');
-            if (!successful) throw new Error('复制命令执行失败');
-          } catch (err) {
-            console.error('复制失败:', err);
-          }
-          document.body.removeChild(ta);
-        }
-       
-      });
-      element.addEventListener('mouseleave', () => {
-        setTimeout(() => {
-          button.querySelector('i').className = 'fa fa-copy fa-fw';
-        }, 300);
-      });
-    });**/
-  },
-
   wrapTableWithBox: function () {
     document.querySelectorAll('table').forEach(element => {
       const box = document.createElement('div');
@@ -958,6 +876,7 @@ NexT.boot.registerEvents = function() {
 NexT.boot.refresh = function() {
 
   NexT.utils.fmtSiteInfo();
+  NexT.utils.wrapTableWithBox();
 
   if (NexT.CONFIG.isMultiLang) {
     NexT.utils.registerLangSelect();
@@ -993,8 +912,8 @@ NexT.boot.refresh = function() {
   // NexT.CONFIG.pangu && window.pangu.spacingPage();
   /*NexT.utils.registerTabsTag();
   NexT.utils.registerActiveMenuItem();
-  NexT.utils.registerLangSelect();*/
-  /*NexT.utils.wrapTableWithBox();
+  NexT.utils.registerLangSelect();
+  NexT.utils.wrapTableWithBox();
   NexT.utils.registerVideoIframe();*/
 
 };
@@ -1352,6 +1271,34 @@ NexT.plugins.others.counter = function () {
           });
           `;
         NexT.utils.getScript(null, { module: true, textContent: comment_script });
+        break;
+      case 'twikoo':
+        comment_js = NexT.utils.getCDNResource(NexT.CONFIG.twikoo.js);
+        NexT.utils.lazyLoadComponent("#twikoo", function () {
+          NexT.utils.getScript(comment_js, function () {
+            ele_list = document.querySelectorAll(comments_el);
+            let paths = [];
+            ele_list.forEach(ele => {
+              paths.push(ele.getAttribute('data-path'));
+            });
+            twikoo.getCommentsCount({
+              envId: NexT.CONFIG.twikoo.cfg.envid,
+              region: NexT.CONFIG.twikoo.cfg.region ? NexT.CONFIG.twikoo.cfg.region : 'ap-shanghai',
+              urls: paths,
+              includeReply: true,
+            }).then(function (res) {
+              let count_map = {};
+              res.forEach(item => {
+                count_map[item.url] = item.count;
+              });
+              ele_list.forEach(ele => {
+                ele.innerHTML = count_map[ele.getAttribute('data-path')];
+              });
+            }).catch(function (err) {
+              console.error(err);
+            });;
+          });
+        });
         break;
     }
   }

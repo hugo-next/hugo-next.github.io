@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>发布 on Hugo NexT</title><link>/muse/en-us/categories/%E5%8F%91%E5%B8%83/</link><description>Recent content in 发布 on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Mon, 05 May 2025 11:52:54 +0800</lastBuildDate><atom:link href="/muse/en-us/categories/%E5%8F%91%E5%B8%83/rss.xml" rel="self" type="application/rss+xml"/><item><title>Hugo NexT 4.7.3 Release</title><link>/muse/en-us/release/hugo-next-4-7-3-release.html</link><pubDate>Mon, 05 May 2025 11:52:54 +0800</pubDate><guid>/muse/en-us/release/hugo-next-4-7-3-release.html</guid><description>&lt;div class="post-alert-important">
+ &lt;div class="post-alert-title">
+ &lt;i class="fa-solid fa-circle-plus">&lt;/i>
+ &lt;span>
+ 
+ Important
+ 
+ &lt;/span>
+ &lt;/div>
+ &lt;div class="post-alert-content">
+ &lt;p>&lt;strong>Note:&lt;/strong> The new version of the Hugo framework has significant changes. The current theme only supports versions between &lt;code>v0.134.0&lt;/code> and &lt;code>v0.145.0&lt;/code>.&lt;br/>
+Special thanks to netizen 
+&lt;a href="https://github.com/JefferyWang" title="@JefferyWang" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ @JefferyWang
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> for contributing the &lt;code>Twikoo&lt;/code> comment component in the new version. However, the example code within this component contains pseudo-key information, which triggers GitHub&amp;rsquo;s security management requirements and may cause repository submissions to fail. There is currently no other feasible solution. You can only manually click &amp;ldquo;allow&amp;rdquo; during the first submission. For more information, refer to: 
+&lt;a href="https://github.com/twikoojs/twikoo/issues/793" title="#793" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ #793
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>&lt;/p></description></item></channel></rss>
