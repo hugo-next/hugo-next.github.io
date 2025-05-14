@@ -5165,7 +5165,7 @@ mark.search-keyword {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #957a12;
+  background: #501df5;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
