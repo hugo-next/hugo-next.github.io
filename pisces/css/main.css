@@ -3695,7 +3695,7 @@ header.header {
 .post-body {
   font-family: posts, global, "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
-  /** Defined speical border properties for top card of post **/
+  /** Defined special border properties for top card of post **/
 }
 
 @media (min-width: 1200px) {
@@ -4027,7 +4027,7 @@ header.header {
   margin: 0 .5em;
 }
 
-/* Make post meta dislay in oneline
+/* Make post meta display in one line
 .post-meta-item-icon {
   margin-right: 3px;
 } */
