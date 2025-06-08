@@ -908,18 +908,18 @@ td {
 }
 
 .highlight > .chroma .lntd:last-child pre {
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
-  line-break: anywhere;
-  word-break: break-all;
+  overflow-wrap: normal;
+  white-space: pre;
+  word-break: normal;
+  line-break: auto;
   overflow-x: auto;
 }
 
 .highlight > .chroma > code > span {
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
-  line-break: anywhere;
-  word-break: break-all;
+  overflow-wrap: normal;
+  white-space: pre;
+  word-break: normal;
+  line-break: auto;
 }
 
 .highlight > .chroma:hover .copy-btn {
@@ -5318,7 +5318,7 @@ hr {
 }
 
 .links-of-author a::before, .links-of-social a::before {
-  background: #7ddcb7;
+  background: #ca5f9e;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
